@@ -1,0 +1,116 @@
+{
+    "result": {
+        "data": {
+            "disallow_reattempt": null,
+            "tests_taken": 675045,
+            "L3": [
+                {
+                    "package_bought": false,
+                    "L4": [
+                        {
+                            "L5": [
+                                [
+                                    "Solid State (Difficult)",
+                                    30,
+                                    120,
+                                    "1800",
+                                    0,
+                                    "/testapp/182201",
+                                    "[\"1\"]",
+                                    false,
+                                    null,
+                                    false,
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Solid_State_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Solid_State_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Solid_State_(Difficult).json"
+                                    }
+                                ],
+                                [
+                                    "Solid State (Difficult)",
+                                    30,
+                                    120,
+                                    "1800",
+                                    0,
+                                    "/testapp/182202",
+                                    "[\"1\"]",
+                                    false,
+                                    null,
+                                    false,
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Solid_State_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Solid_State_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Solid_State_(Difficult).json"
+                                    }
+                                ],
+                                [
+                                    "General Principles And Processes Of Isolation Of Elements (Difficult)",
+                                    25,
+                                    100,
+                                    "1800",
+                                    0,
+                                    "/testapp/182193",
+                                    "[\"1\"]",
+                                    false,
+                                    null,
+                                    false,
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_General_Principles_And_Processes_Of_Isolation_Of_Elements_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_General_Principles_And_Processes_Of_Isolation_Of_Elements_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_General_Principles_And_Processes_Of_Isolation_Of_Elements_(Difficult).json"
+                                    }
+                                ],
+                                [
+                                    "Organic Compounds Containing Nitrogen (Difficult)",
+                                    45,
+                                    180,
+                                    "2700",
+                                    0,
+                                    "/testapp/182200",
+                                    "[\"1\"]",
+                                    false,
+                                    null,
+                                    false,
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Organic_Compounds_Containing_Nitrogen_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Organic_Compounds_Containing_Nitrogen_(Difficult).json"
+                                    },
+                                    {
+                                        "file_path": "responseBody\\Chemistry_Class_XII_Organic_Compounds_Containing_Nitrogen_(Difficult).json"
+                                    }
+                                ]
+                            ],
+                            "name": "Chemistry Class XII"
+                        }
+                    ],
+                    "id": 84224,
+                    "mt_coming": true,
+                    "name": "Chapterwise PYQ",
+                    "url": "/api/v2/ecatalog/L4/300/84224"
+                }
+            ],
+            "tests_available": 486,
+            "l0_image": "/static/images/L0_Images/520.png",
+            "quizes": [],
+            "image": "/static/media/wl_client/251995/l2_exam_images/43ec86b12250451b96dd8dc7d049b5e9.jpg",
+            "total_users_count": 4000,
+            "exam_calender": [],
+            "students": 94412,
+            "name": "NEET UG"
+        }
+    }
+}
