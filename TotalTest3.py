@@ -1,4 +1,3 @@
-import ast
 from flask import Flask, render_template_string, request, redirect, url_for
 import json
 import requests
@@ -7,95 +6,15 @@ import urllib.parse
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
-def select_class():
-    if request.method == 'POST':
-        selected_class = request.form.get('class_selection')
-        if selected_class:
-            return redirect(url_for('l3_screen', class_selection=selected_class))
-    
-    html_template = '''
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Select Class</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-            }
-            .container {
-                width: 95%;
-                margin: 0 auto;
-                text-align: center;
-            }
-            .header {
-                padding: 20px;
-            }
-            .form-container {
-                margin: 20px 0;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-            }
-            .form-container form {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .button-group {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            .button-group div {
-                margin: 5px;
-            }
-            .form-container button {
-                margin-top: 20px;
-                padding: 10px 20px;
-                font-size: 16px;
-            }
-        </style>
-    </head>
-    <body>
-    <div class="container">
-        <div class="header">
-            <h1>Select Class</h1>
-        </div>
-        <div class="form-container">
-            <form method="POST">
-                <div class="button-group">
-                    <div>
-                        <input type="radio" id="class_xi" name="class_selection" value="XI" required>
-                        <label for="class_xi">Class XI</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="class_xii" name="class_selection" value="XII" required>
-                        <label for="class_xii">Class XII</label>
-                    </div>
-                </div>
-                <button type="submit">Proceed</button>
-            </form>
-        </div>
-    </div>
-    </body>
-    </html>
-    '''
-    
-    return render_template_string(html_template)
-
-@app.route('/l3_screen/<class_selection>', methods=['GET', 'POST'])
-def l3_screen(class_selection):
-    json_file = f'CBSE_{class_selection}.json'
-    
-    # Load data from selected JSON file
-    with open(json_file, 'r') as file:
+def l3_screen():
+    # Load data from local JSON file
+    with open('CBSE_XI.json', 'r') as file:
         data = json.load(file)['result']['data']
     
     if request.method == 'POST':
         selected_l3 = request.form.get('l3_category')
         if selected_l3:
-            return redirect(url_for('l4_l5_screen', class_selection=class_selection, l3_id=selected_l3))
+            return redirect(url_for('l4_l5_screen', l3_id=selected_l3))
     
     html_template = '''
     <!DOCTYPE html>
@@ -166,12 +85,10 @@ def l3_screen(class_selection):
     
     return render_template_string(html_template, data=data)
 
-@app.route('/l4_l5_screen/<class_selection>/<l3_id>', methods=['GET', 'POST'])
-def l4_l5_screen(class_selection, l3_id):
-    json_file = f'CBSE_{class_selection}.json'
-    
-    # Load data from selected JSON file
-    with open(json_file, 'r') as file:
+@app.route('/l4_l5_screen/<l3_id>', methods=['GET', 'POST'])
+def l4_l5_screen(l3_id):
+    # Load data from local JSON file
+    with open('CBSE_XI.json', 'r') as file:
         data = json.load(file)['result']['data']
     
     l4_data = next((l3['L4'] for l3 in data['L3'] if str(l3['id']) == l3_id), [])
@@ -253,8 +170,8 @@ def l4_l5_screen(class_selection, l3_id):
                         <div class="button-group">
                             {% for test in section['L5'] %}
                                 <div>
-                                    <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}" value="{{ test[10] }}">
-                                    <label for="{{ test[10] }}">{{ test[0] }}</label>
+                                    <input type="checkbox" id="{{ test[5] }}" name="{{ section['name'] }}" value="{{ test[5] }}">
+                                    <label for="{{ test[5] }}">{{ test[0] }}</label>
                                 </div>
                             {% endfor %}
                         </div>
@@ -305,24 +222,17 @@ def test_page():
             questions_by_section[category] = []
             for test_url in test_urls:
                 # Complete the endpoint URL
-                # test_url = "/testget/" + test_url.split("p/")[1]
-                # full_url = f"https://kodemapa.com/api/v1/testapp{test_url}?attempt_current_test=1"
+                test_url = "/testget/" + test_url.split("p/")[1]
+                full_url = f"https://kodemapa.com/api/v1/testapp{test_url}?attempt_current_test=1"
                 # Make the GET request to the endpoint
-                # response = requests.get(full_url, headers=headers)
-                test_url=ast.literal_eval(test_url)
-                json_file = test_url["file_path"]
-    
-                # Load data from selected JSON file
-                with open(json_file, 'r') as file:
-                    data = json.load(file)['result']['data']
-
-                # data.raise_for_status()  # Raise an HTTPError for bad responses
-                # data = data.json()  # Parse the JSON response
+                response = requests.get(full_url, headers=headers)
+                response.raise_for_status()  # Raise an HTTPError for bad responses
+                data = response.json()  # Parse the JSON response
                 
-                # if not data.get("status"):
-                #     return "Error fetching data from the endpoint", 500
+                if not data.get("status"):
+                    return "Error fetching data from the endpoint", 500
                 
-                test_info = data[0]
+                test_info = data['result']['data'][0]
                 questions_by_section[category].extend(test_info['sec_details'][0]['sec_questions'])
     
     except requests.exceptions.RequestException as e:
