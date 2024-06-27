@@ -300,7 +300,7 @@ def test_page():
                             for question in sec_detail.get('sec_questions', []):
                                 # Determine difficulty level if not provided
                                 if 'difficulty_level' not in question:
-                                    question['difficulty_level'] = 'medium'  # Default value, replace with your logic
+                                    question['difficulty_level'] = determine_difficulty(json_file)
                                 else:
                                     # Ensure difficulty_level is lowercase
                                     question['difficulty_level'] = question['difficulty_level'].lower()
@@ -311,16 +311,6 @@ def test_page():
                                 # Remove content inside <b> tags
                                 q_string = re.sub(r'<b>.*?</b>', '', q_string)
                                 
-                                # Fix common LaTeX issues such as unbalanced \left and \right
-                                # q_string = re.sub(r'\\left\(', '(', q_string)
-                                # q_string = re.sub(r'\\right\)', ')', q_string)
-                                # q_string = re.sub(r'\\left\[', '[', q_string)
-                                # q_string = re.sub(r'\\right\]', ']', q_string)
-
-                                # Remove specific patterns at the end of the q_string
-                                # q_string = re.sub(r'\s*\[\d{1,2} \w{3} \d{4} Shift \d\]\s*$', '', q_string)
-                                # q_string = re.sub(r'\s*\[\d{1,2}-\w{3}-\d{4}-Shift-\d\]\s*$', '', q_string)
-
                                 question['que']['1']['q_string'] = q_string
                                 
                                 # Add the question to the category
