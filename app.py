@@ -289,7 +289,7 @@ def test_page():
             for test_url in test_urls:
                 test_url = ast.literal_eval(test_url)
                 json_file = test_url["file_path"]
-    
+                json_file = json_file.replace('\\', '/')
                 # Load data from selected JSON file
                 with open(json_file, 'r') as file:
                     data = json.load(file)['result']['data']
