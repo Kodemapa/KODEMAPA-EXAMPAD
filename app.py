@@ -508,28 +508,22 @@ def test_page():
                                     <tr>
                                         <th>Difficulty</th>
                                         <th>Total Questions</th>
-                                        <th>Select Random</th>
+                                        
                                     </tr>
                                     <tr>
                                         <td>Easy</td>
                                         <td id="{{ section }}-easy-count">0</td>
-                                        <td><input type="number" min="0" id="{{ section }}-easy-random" class="random-input">
-                                            <button type="button" onclick="selectRandomByDifficulty('{{ section }}', 'easy')">Select</button>
-                                        </td>
+                                        
                                     </tr>
                                     <tr>
                                         <td>Moderate</td>
                                         <td id="{{ section }}-moderate-count">0</td>
-                                        <td><input type="number" min="0" id="{{ section }}-moderate-random" class="random-input">
-                                            <button type="button" onclick="selectRandomByDifficulty('{{ section }}', 'moderate')">Select</button>
-                                        </td>
+                                        
                                     </tr>
                                     <tr>
                                         <td>Difficult</td>
                                         <td id="{{ section }}-difficult-count">0</td>
-                                        <td><input type="number" min="0" id="{{ section }}-difficult-random" class="random-input">
-                                            <button type="button" onclick="selectRandomByDifficulty('{{ section }}', 'difficult')">Select</button>
-                                        </td>
+                                        
                                     </tr>
                                 </table>
                             </div>
