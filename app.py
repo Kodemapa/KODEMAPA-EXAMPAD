@@ -1,5 +1,7 @@
 import ast
-from flask import Flask, render_template_string, request, redirect, url_for
+import random
+import re
+from flask import Flask, jsonify, render_template_string, request, redirect, url_for
 import json
 import requests
 import urllib.parse
@@ -278,25 +280,6 @@ def test_page():
     # Decode the dictionary values
     for category in test_urls_by_category:
         test_urls_by_category[category] = test_urls_by_category[category][0].split(',')
-
-    headers = {
-        'Accept': 'application/json, text/plain, */*',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8,fi;q=0.7',
-        'Connection': 'keep-alive',
-        'Content-Type': 'application/json',  # Ensure Content-Type is application/json
-         'Cookie': 'G_ENABLED_IDPS=google; __stripe_mid=5348a0e2-0460-4150-b6c5-96020a471031008362; client_meta=%7B%22homepage_masthead%22%3A%22%7B%5C%22show_banner%5C%22%3A%20%5C%221%5C%22%2C%20%5C%22usm_so%5C%22%3A%20%5C%220%5C%22%2C%20%5C%22usm_cceg%5C%22%3A%204000%2C%20%5C%22background%5C%22%3A%20%5B%5C%22e9e8e8%5C%22%2C%20%5C%2200a9e5%5C%22%5D%2C%20%5C%22tagline%5C%22%3A%20%5C%22Discover%20the%20Joy%20of%20Lucid%20Learning%5C%22%2C%20%5C%22show_actv_key%5C%22%3A%20%5C%221%5C%22%7D%22%2C%22android_main_app_url%22%3A%22https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.app.learningsolutions.kodemapa%26amp%3Bpcampaignid%3Dweb_share%22%2C%22url_advertise_with_us%22%3A%22%22%7D; lang=1; eg_user="2|1:0|10:1719200528|7:eg_user|48:MTszZjlmZDI3YzNmODM0YjMxOGExMjk5MTUzZmY2Yjc4Mg==|7e983b975ab2df70fabc9ee1c4460a8a584924c7a813a4babbd4e3640f4fd748"; g_state={"i_l":0,"i_t":1719286926821}',
-        'Host': 'kodemapa.com',
-        'Origin': 'https://kodemapa.com',
-        'Referer': 'https://kodemapa.com/login',
-        'Sec-Fetch-Dest': 'empty',
-        'Sec-Fetch-Mode': 'cors',
-        'Sec-Fetch-Site': 'same-origin',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0',
-        'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Microsoft Edge";v="126"',
-        'sec-ch-ua-mobile': '?0',
-        'sec-ch-ua-platform': '"Windows"'
-    }
     
     questions_by_section = {}
     
@@ -304,30 +287,51 @@ def test_page():
         for category, test_urls in test_urls_by_category.items():
             questions_by_section[category] = []
             for test_url in test_urls:
-                # Complete the endpoint URL
-                # test_url = "/testget/" + test_url.split("p/")[1]
-                # full_url = f"https://kodemapa.com/api/v1/testapp{test_url}?attempt_current_test=1"
-                # Make the GET request to the endpoint
-                # response = requests.get(full_url, headers=headers)
-                test_url=ast.literal_eval(test_url)
+                test_url = ast.literal_eval(test_url)
                 json_file = test_url["file_path"]
     
                 # Load data from selected JSON file
                 with open(json_file, 'r') as file:
                     data = json.load(file)['result']['data']
 
-                # data.raise_for_status()  # Raise an HTTPError for bad responses
-                # data = data.json()  # Parse the JSON response
-                
-                # if not data.get("status"):
-                #     return "Error fetching data from the endpoint", 500
-                
-                test_info = data[0]
-                questions_by_section[category].extend(test_info['sec_details'][0]['sec_questions'])
+                for test_info in data:
+                    if 'sec_details' in test_info:
+                        for sec_detail in test_info['sec_details']:
+                            for question in sec_detail.get('sec_questions', []):
+                                # Determine difficulty level if not provided
+                                if 'difficulty_level' not in question:
+                                    question['difficulty_level'] = 'medium'  # Default value, replace with your logic
+                                else:
+                                    # Ensure difficulty_level is lowercase
+                                    question['difficulty_level'] = question['difficulty_level'].lower()
+                                
+                                # Clean the q_string field
+                                q_string = question['que']['1']['q_string']
+                                
+                                # Remove content inside <b> tags
+                                q_string = re.sub(r'<b>.*?</b>', '', q_string)
+                                
+                                # Fix common LaTeX issues such as unbalanced \left and \right
+                                # q_string = re.sub(r'\\left\(', '(', q_string)
+                                # q_string = re.sub(r'\\right\)', ')', q_string)
+                                # q_string = re.sub(r'\\left\[', '[', q_string)
+                                # q_string = re.sub(r'\\right\]', ']', q_string)
+
+                                # Remove specific patterns at the end of the q_string
+                                # q_string = re.sub(r'\s*\[\d{1,2} \w{3} \d{4} Shift \d\]\s*$', '', q_string)
+                                # q_string = re.sub(r'\s*\[\d{1,2}-\w{3}-\d{4}-Shift-\d\]\s*$', '', q_string)
+
+                                question['que']['1']['q_string'] = q_string
+                                
+                                # Add the question to the category
+                                questions_by_section[category].append(question)
+                    else:
+                        print(f"Warning: 'sec_details' not found in test_info: {test_info}")
+
     
     except requests.exceptions.RequestException as e:
         return f"Error fetching data from the endpoint: {e}", 500
-    except requests.exceptions.JSONDecodeError as e:
+    except json.JSONDecodeError as e:
         return f"Error decoding JSON: {e}", 500
     
     if request.method == 'POST':
@@ -483,6 +487,19 @@ def test_page():
                 .content table {
                     width: 100%;
                 }
+                .section-summary {
+                    margin-bottom: 20px;
+                }
+                .summary-table {
+                    width: auto;
+                    margin-bottom: 10px;
+                }
+                .random-selection {
+                    margin-bottom: 20px;
+                }
+                .random-input {
+                    width: 50px;
+                }
             </style>
         </head>
         <body>
@@ -495,6 +512,42 @@ def test_page():
                     {% for section, questions in questions_by_section.items() %}
                         <button type="button" class="collapsible">{{ section }}</button>
                         <div class="content">
+                            <div class="section-summary">
+                                <h3>Question Summary</h3>
+                                <table class="summary-table">
+                                    <tr>
+                                        <th>Difficulty</th>
+                                        <th>Total Questions</th>
+                                        <th>Select Random</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Easy</td>
+                                        <td id="{{ section }}-easy-count">0</td>
+                                        <td><input type="number" min="0" id="{{ section }}-easy-random" class="random-input">
+                                            <button type="button" onclick="selectRandomByDifficulty('{{ section }}', 'easy')">Select</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Moderate</td>
+                                        <td id="{{ section }}-moderate-count">0</td>
+                                        <td><input type="number" min="0" id="{{ section }}-moderate-random" class="random-input">
+                                            <button type="button" onclick="selectRandomByDifficulty('{{ section }}', 'moderate')">Select</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Difficult</td>
+                                        <td id="{{ section }}-difficult-count">0</td>
+                                        <td><input type="number" min="0" id="{{ section }}-difficult-random" class="random-input">
+                                            <button type="button" onclick="selectRandomByDifficulty('{{ section }}', 'difficult')">Select</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="random-selection">
+                                <label for="num_questions_{{ section }}">Number of Questions to Randomly Select (All Difficulties):</label>
+                                <input type="number" id="num_questions_{{ section }}" name="num_questions_{{ section }}">
+                                <button type="button" onclick="selectRandomQuestions('{{ section }}')">Select Random Questions</button>
+                            </div>
                             <table>
                                 <tr>
                                     <th><input type="checkbox" onclick="toggleSelectAll(this)"> Select All</th>
@@ -503,7 +556,7 @@ def test_page():
                                 </tr>
                                 {% for index, question in enumerate(questions) %}
                                 <tr>
-                                    <td><input type="checkbox" name="question" value="{{ section }}-{{ index }}"></td>
+                                    <td><input type="checkbox" name="question" value="{{ section }}-{{ index }}" data-difficulty="{{ question['difficulty_level'] }}"></td>
                                     <td>
                                         <p><strong>Question {{ index + 1 }}:</strong> {{ question['que']['1']['q_string'] | safe }}</p>
                                         <ul>
@@ -512,13 +565,10 @@ def test_page():
                                             {% endfor %}
                                         </ul>
                                     </td>
-                                    <td>{{ question.get('difficulty_level', 'N/A') }}</td>
+                                    <td>{{ question['difficulty_level'] }}</td>
                                 </tr>
                                 {% endfor %}
                             </table>
-                            <label for="num_questions_{{ section }}">Number of Questions to Randomly Select:</label>
-                            <input type="number" id="num_questions_{{ section }}" name="num_questions_{{ section }}">
-                            <button type="button" onclick="selectRandomQuestions('{{ section }}')">Select Random Questions</button>
                         </div>
                     {% endfor %}
                     <label for="test_name">Test Name:</label>
@@ -538,8 +588,7 @@ def test_page():
                     }
                 }
             }
-
-            function selectRandomQuestions(section) {
+function selectRandomQuestions(section) {
                 var numQuestions = document.getElementById('num_questions_' + section).value;
                 var checkboxes = document.querySelectorAll('.content input[type="checkbox"][name="question"][value^="' + section + '-"]');
                 var checkboxesArray = Array.from(checkboxes);
@@ -556,10 +605,57 @@ def test_page():
                 }
 
                 // Select the required number of questions
-                for (let i = 0; i < numQuestions; i++) {
-                    if (checkboxesArray[i]) {
-                        checkboxesArray[i].checked = true;
-                    }
+                for (let i = 0; i < numQuestions && i < checkboxesArray.length; i++) {
+                    checkboxesArray[i].checked = true;
+                }
+            }
+
+            function selectRandomByDifficulty(section, difficulty) {
+                var numQuestions = document.getElementById(section + '-' + difficulty + '-random').value;
+                var checkboxes = document.querySelectorAll('.content input[type="checkbox"][name="question"][value^="' + section + '-"][data-difficulty="' + difficulty + '"]');
+                var checkboxesArray = Array.from(checkboxes);
+
+                // Clear checkboxes of this difficulty
+                checkboxesArray.forEach(function(checkbox) {
+                    checkbox.checked = false;
+                });
+
+                // Shuffle array
+                for (let i = checkboxesArray.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [checkboxesArray[i], checkboxesArray[j]] = [checkboxesArray[j], checkboxesArray[i]];
+                }
+
+                // Select the required number of questions
+                for (let i = 0; i < numQuestions && i < checkboxesArray.length; i++) {
+                    checkboxesArray[i].checked = true;
+                }
+            }
+
+            function updateQuestionCounts() {
+                var sections = document.getElementsByClassName('collapsible');
+                for (var i = 0; i < sections.length; i++) {
+                    var section = sections[i].textContent.trim();
+                    var checkboxes = document.querySelectorAll('.content input[type="checkbox"][name="question"][value^="' + section + '-"]');
+                    var easyCounts = 0, moderateCounts = 0, difficultCounts = 0;
+
+                    checkboxes.forEach(function(checkbox) {
+                        switch(checkbox.getAttribute('data-difficulty').toLowerCase()) {
+                            case 'easy':
+                                easyCounts++;
+                                break;
+                            case 'moderate':
+                                moderateCounts++;
+                                break;
+                            case 'difficult':
+                                difficultCounts++;
+                                break;
+                        }
+                    });
+
+                    document.getElementById(section + '-easy-count').textContent = easyCounts;
+                    document.getElementById(section + '-moderate-count').textContent = moderateCounts;
+                    document.getElementById(section + '-difficult-count').textContent = difficultCounts;
                 }
             }
 
@@ -574,15 +670,29 @@ def test_page():
                         content.style.display = "none";
                     } else {
                         content.style.display = "block";
+                        updateQuestionCounts(); // Update counts when section is opened
                     }
                 });
             }
+
+            // Call updateQuestionCounts when the page loads
+            window.onload = updateQuestionCounts;
         </script>
         </body>
         </html>
         '''
         
         return render_template_string(html_template, questions_by_section=questions_by_section, enumerate=enumerate)
+
+def determine_difficulty(question):
+    # Example logic to determine difficulty
+    # This should be replaced with actual logic based on your criteria
+    if 'easy' in question.lower():
+        return 'Easy'
+    elif 'moderate' in question.lower():
+        return 'Moderate'
+    else:
+        return 'Difficult'
 
 if __name__ == "__main__":
     app.run(debug=True)
