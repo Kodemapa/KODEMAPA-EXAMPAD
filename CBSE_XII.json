@@ -3,7 +3,7 @@
         "data": {
             "exam_calender": [],
             "students": 24296,
-            "image": "/static/media/wl_client/251995/l2_exam_images/7158483a0f0146a384fa0970e31a2b86.jpg",
+            "image": "https://kodemapa.com/static/media/wl_client/251995/l2_exam_images/7158483a0f0146a384fa0970e31a2b86.jpg",
             "l0_image": "/static/images/L0_Images/529.png",
             "quizes": [],
             "total_users_count": 4000,
