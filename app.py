@@ -3,11 +3,16 @@ import random
 import re
 from flask import Flask, jsonify, render_template_string, request, redirect, url_for
 import json
+import pypandoc
 import requests
 import urllib.parse
 import subprocess
 from docx import Document
 from pdf2docx import Converter
+from html import unescape
+import os
+import subprocess
+from docx import Document
 
 app = Flask(__name__)
 
@@ -672,10 +677,6 @@ function selectRandomQuestions(section) {
         
         return render_template_string(html_template, questions_by_section=questions_by_section, enumerate=enumerate)
 
-import os
-import subprocess
-from docx import Document
-
 def compile_latex_to_pdf(template_filename):
     # Compile LaTeX to PDF
     subprocess.run(['pdflatex', '-interaction=nonstopmode', template_filename])
@@ -717,10 +718,42 @@ def export_to_docx(selected_questions,test_name):
     # convert_pdf_to_docx(pdf_filename, docx_filename)
     convert_latex_to_docx(template_filename, docx_filename)
 
+def html_table_to_latex(html):
+    """Convert HTML table to LaTeX tabular environment."""
+    html = unescape(html)
 
+    # Remove any attributes from the tags
+    html = re.sub(r'<table[^>]*>', '<table>', html)
+    html = re.sub(r'<tr[^>]*>', '<tr>', html)
+    html = re.sub(r'<td[^>]*>', '<td>', html)
+    html = re.sub(r'<th[^>]*>', '<th>', html)
 
-from html import unescape
-import re
+    # Initialize LaTeX table
+    latex_table = '\\begin{tabular}{|' + 'c|' * html.count('<tr>') + '}\n\\hline\n'
+
+    # Process table rows and cells
+    html = html.replace('<table>', '')
+    html = html.replace('</table>', '')
+    html = html.replace('<tbody>', '')
+    html = html.replace('</tbody>', '')
+    rows = html.split('</tr>')
+
+    for row in rows:
+        if '<tr>' in row:
+            row = row.replace('<tr>', '')
+            cells = row.split('</td>')
+            for cell in cells:
+                if '<td>' in cell:
+                    cell = cell.replace('<td>', '').strip()
+                    latex_table += cell + ' & '
+                elif '<th>' in cell:
+                    cell = cell.replace('<th>', '').strip()
+                    latex_table += '\\textbf{' + cell + '} & '
+            latex_table = latex_table.rstrip(' & ')
+            latex_table += ' \\\\\n\\hline\n'
+
+    latex_table += '\\end{tabular}\n'
+    return latex_table
 
 def html_to_latex(html):
     """Converts HTML content to LaTeX."""
@@ -760,20 +793,24 @@ def html_to_latex(html):
             src = src_match.group(1)
             latex_img = r'\includegraphics[width=\textwidth]{%s}' % src
             html = html.replace(img_tag, latex_img)
-    
+
+    # Convert <table> tags to LaTeX tabular environment
+    html = re.sub(r'<table[^>]*>.*?</table>', lambda x: html_table_to_latex(x.group()), html, flags=re.DOTALL)
+
     return html
 
 def generate_latex_content(selected_questions, test_name):
     # Start the LaTeX document
     latex_content = r'''\documentclass{article}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{graphicx}
-\usepackage{enumitem}
-\title{%s}
-\begin{document}
-\maketitle
-''' % test_name
+                    \usepackage{amsmath}
+                    \usepackage{amssymb}
+                    \usepackage{graphicx}
+                    \usepackage{enumitem}
+                    \usepackage{longtable}
+                    \title{%s}
+                    \begin{document}
+                    \maketitle
+                    ''' % test_name
 
     # Generate LaTeX content from selected_questions
     for index, question in enumerate(selected_questions, start=1):
@@ -792,13 +829,9 @@ def generate_latex_content(selected_questions, test_name):
     latex_content += r'\end{document}'
     return latex_content
 
-
-
-
-import subprocess
-
 def convert_latex_to_docx(latex_filename, docx_filename):
-    subprocess.run(['pandoc', latex_filename, '-o', docx_filename])
+    # Convert LaTeX to DOCX using pypandoc
+    pypandoc.convert_file(latex_filename, 'docx', outputfile=docx_filename)
 
 def determine_difficulty(question):
     # Example logic to determine difficulty
