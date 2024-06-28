@@ -5,6 +5,9 @@ from flask import Flask, jsonify, render_template_string, request, redirect, url
 import json
 import requests
 import urllib.parse
+import subprocess
+from docx import Document
+from pdf2docx import Converter
 
 app = Flask(__name__)
 
@@ -335,7 +338,7 @@ def test_page():
 
         test_name = request.form.get('test_name')
         test_time = request.form.get('test_time')
-
+        export_to_docx(selected_questions,test_name)
         html_template = '''
         <!DOCTYPE html>
         <html lang="en">
@@ -378,11 +381,12 @@ def test_page():
                 }
             </style>
         </head>
-        <body>
+        
         <div class="container">
             <div class="header">
                 <h1>{{ test_name }}</h1>
                 <p>Time: {{ test_time }} minutes</p>
+                
             </div>
             <div class="question-list">
                 {% for index, question in enumerate(selected_questions) %}
@@ -667,6 +671,134 @@ function selectRandomQuestions(section) {
         '''
         
         return render_template_string(html_template, questions_by_section=questions_by_section, enumerate=enumerate)
+
+import os
+import subprocess
+from docx import Document
+
+def compile_latex_to_pdf(template_filename):
+    # Compile LaTeX to PDF
+    subprocess.run(['pdflatex', '-interaction=nonstopmode', template_filename])
+
+def convert_pdf_to_docx(pdf_filename, docx_filename):
+    # Convert PDF to DOCX using python-docx library
+    cv = Converter(pdf_filename)
+    cv.convert(docx_filename, start=0, end=None)
+    cv.close()
+
+    # document = Document()
+    # with open(pdf_filename, 'rb') as pdf_file:
+    #     pdf_content = pdf_file.read()
+    # document.add_paragraph(pdf_content.decode('utf-8'))
+    # document.save(docx_filename)
+
+# @app.route('/export-docx', methods=['POST'])
+def export_to_docx(selected_questions,test_name):
+    # template_filename = 'template.tex'
+    # pdf_filename = 'output.pdf'
+    # docx_filename = request.form.get('test_name') + '.docx'
+    template_filename = test_name+'.tex'
+    pdf_filename = 'output.pdf'
+    docx_filename = test_name + '.docx'
+
+    # selected_questions = request.form.getlist('selected_questions[]')
+    # test_name = request.form.get('test_name')
+    # Generate LaTeX content from selected_questions
+    latex_content = generate_latex_content(selected_questions,test_name)
+
+    # Write LaTeX content to template.tex
+    with open(template_filename, 'w', encoding='utf-8') as f:
+        f.write(latex_content)
+
+    # # Compile LaTeX to PDF
+    # compile_latex_to_pdf(template_filename)
+
+    # # # Convert PDF to DOCX
+    # convert_pdf_to_docx(pdf_filename, docx_filename)
+    convert_latex_to_docx(template_filename, docx_filename)
+
+
+
+from html import unescape
+import re
+
+def html_to_latex(html):
+    """Converts HTML content to LaTeX."""
+    # Unescape HTML entities
+    html = unescape(html)
+
+    # Replace HTML tags with LaTeX equivalents
+    replacements = [
+        (r"<p>", r""),
+        (r"</p>", r""),
+        (r"<sup>", r"$^{"),
+        (r"</sup>", r"}$"),
+        (r"<sub>", r"$_{"),
+        (r"</sub>", r"}$"),
+        (r"<b>", r"\\textbf{"),
+        (r"</b>", r"}"),
+        (r"<i>", r"\\textit{"),
+        (r"</i>", r"}"),
+        (r"&nbsp;", r"~"),
+        (r"&gt;", r">"),
+        (r"&lt;", r"<"),
+        (r"&amp;", r"&"),
+        (r'<br\s*/?>', r"\\newline"),
+        (r'<span[^>]*>', r""),
+        (r'</span>', r""),
+        (r'<div[^>]*>', r""),
+        (r'</div>', r"")
+    ]
+    for old, new in replacements:
+        html = re.sub(old, new, html, flags=re.IGNORECASE)
+
+    # Convert <img> tags to LaTeX \includegraphics
+    img_tags = re.findall(r'<img[^>]+>', html, flags=re.IGNORECASE)
+    for img_tag in img_tags:
+        src_match = re.search(r'src="([^"]+)"', img_tag)
+        if src_match:
+            src = src_match.group(1)
+            latex_img = r'\includegraphics[width=\textwidth]{%s}' % src
+            html = html.replace(img_tag, latex_img)
+    
+    return html
+
+def generate_latex_content(selected_questions, test_name):
+    # Start the LaTeX document
+    latex_content = r'''\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\title{%s}
+\begin{document}
+\maketitle
+''' % test_name
+
+    # Generate LaTeX content from selected_questions
+    for index, question in enumerate(selected_questions, start=1):
+        q_string = html_to_latex(question['que']['1']['q_string'])
+        q_options = [html_to_latex(opt) for opt in question['que']['1']['q_option']]
+
+        latex_content += r'\section*{Question %d}' % index + '\n'
+        latex_content += q_string + '\n'
+        latex_content += r'\begin{enumerate}[label=(\alph*)]' + '\n'
+        for option in q_options:
+            latex_content += r'\item ' + option + '\n'
+        latex_content += r'\end{enumerate}' + '\n'
+        latex_content += r'\newpage' + '\n'
+
+    # End the LaTeX document
+    latex_content += r'\end{document}'
+    return latex_content
+
+
+
+
+import subprocess
+
+def convert_latex_to_docx(latex_filename, docx_filename):
+    subprocess.run(['pandoc', latex_filename, '-o', docx_filename])
 
 def determine_difficulty(question):
     # Example logic to determine difficulty
