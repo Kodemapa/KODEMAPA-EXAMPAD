@@ -94,7 +94,7 @@
             "tests_available": 486,
             "l0_image": "/static/images/L0_Images/520.png",
             "quizes": [],
-            "image": "/static/media/wl_client/251995/l2_exam_images/43ec86b12250451b96dd8dc7d049b5e9.jpg",
+            "image": "https://kodemapa.com/static/media/wl_client/251995/l2_exam_images/43ec86b12250451b96dd8dc7d049b5e9.jpg",
             "total_users_count": 4000,
             "exam_calender": [],
             "students": 94412,
