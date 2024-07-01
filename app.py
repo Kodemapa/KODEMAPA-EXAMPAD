@@ -4,6 +4,7 @@ import re
 from flask import Flask, jsonify, render_template_string, request, redirect, url_for , send_file
 import json
 import pypandoc
+pypandoc.download_pandoc()
 import requests
 import urllib.parse
 import subprocess
