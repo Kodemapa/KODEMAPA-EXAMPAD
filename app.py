@@ -1,10 +1,20 @@
 import ast
 import random
 import re
-from flask import Flask, jsonify, render_template_string, request, redirect, url_for
+from flask import Flask, jsonify, render_template_string, request, redirect, url_for , send_file
 import json
+import pypandoc
 import requests
 import urllib.parse
+import subprocess
+from docx import Document
+from pdf2docx import Converter
+from html import unescape
+import os
+import subprocess
+from docx import Document
+import webview
+import tempfile
 
 app = Flask(__name__)
 
@@ -255,7 +265,7 @@ def l4_l5_screen(class_selection, l3_id):
                         <div class="button-group">
                             {% for test in section['L5'] %}
                                 <div>
-                                    <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}" value="{{ test[10] }}">
+                                    <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}" value="{{ test[11] }}">
                                     <label for="{{ test[10] }}">{{ test[0] }}</label>
                                 </div>
                             {% endfor %}
@@ -282,7 +292,7 @@ def test_page():
         test_urls_by_category[category] = test_urls_by_category[category][0].split(',')
     
     questions_by_section = {}
-    
+    selected_questions_ids = set()
     try:
         for category, test_urls in test_urls_by_category.items():
             questions_by_section[category] = []
@@ -294,27 +304,36 @@ def test_page():
                 with open(json_file, 'r') as file:
                     data = json.load(file)['result']['data']
 
+                
                 for test_info in data:
                     if 'sec_details' in test_info:
                         for sec_detail in test_info['sec_details']:
                             for question in sec_detail.get('sec_questions', []):
-                                # Determine difficulty level if not provided
-                                if 'difficulty_level' not in question:
-                                    question['difficulty_level'] = determine_difficulty(json_file)
+                                qid = question["qid"]
+                                if qid not in selected_questions_ids:
+                                    selected_questions_ids.add(qid)
+                                    # Determine difficulty level if not provided
+                                    if 'difficulty_level' not in question:
+                                        question['difficulty_level'] = determine_difficulty(json_file)
+                                    else:
+                                        # Ensure difficulty_level is lowercase
+                                        question['difficulty_level'] = question['difficulty_level'].lower()
+                                    
+                                    
+                                    
+                                    # Clean the q_string field
+                                    q_string = question['que']['1']['q_string']
+                                    
+                                    # Remove content inside <b> tags
+                                    q_string = re.sub(r'<b>.*?</b>', '', q_string)
+                                    
+                                    question['que']['1']['q_string'] = q_string
+
+                                    questions_by_section[category].append(question)
+                                    # Add the question to the category
                                 else:
-                                    # Ensure difficulty_level is lowercase
-                                    question['difficulty_level'] = question['difficulty_level'].lower()
+                                    continue
                                 
-                                # Clean the q_string field
-                                q_string = question['que']['1']['q_string']
-                                
-                                # Remove content inside <b> tags
-                                q_string = re.sub(r'<b>.*?</b>', '', q_string)
-                                
-                                question['que']['1']['q_string'] = q_string
-                                
-                                # Add the question to the category
-                                questions_by_section[category].append(question)
                     else:
                         print(f"Warning: 'sec_details' not found in test_info: {test_info}")
 
@@ -327,15 +346,15 @@ def test_page():
     if request.method == 'POST':
         selected_questions_indices = request.form.getlist('question')
         selected_questions = []
-
+        selected_questions_ids=[]
         for idx in selected_questions_indices:
             section_name, question_index = idx.split('-')
             question_index = int(question_index)
-            selected_questions.append(questions_by_section[section_name][question_index])
+            question = questions_by_section[section_name][question_index]
+            selected_questions.append(question)
 
         test_name = request.form.get('test_name')
         test_time = request.form.get('test_time')
-
         html_template = '''
         <!DOCTYPE html>
         <html lang="en">
@@ -378,34 +397,70 @@ def test_page():
                 }
             </style>
         </head>
-        <body>
-        <div class="container">
-            <div class="header">
-                <h1>{{ test_name }}</h1>
-                <p>Time: {{ test_time }} minutes</p>
-            </div>
-            <div class="question-list">
-                {% for index, question in enumerate(selected_questions) %}
-                    <div class="question">
-                        <p><strong>Question {{ index + 1 }}:</strong> {{ question['que']['1']['q_string'] | safe }}</p>
-                        <div class="question-options">
-                            <ol>
-                                {% for option in question['que']['1']['q_option'] %}
-                                    <li>{{ option | safe }}</li>
-                                {% endfor %}
-                            </ol>
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
+            <body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ test_name }}</h1>
+            <p>Time: {{ test_time }} minutes</p>
         </div>
-        </body>
+        <div class="question-list">
+            {% for index, question in enumerate(selected_questions) %}
+                <div class="question">
+                    <p><strong>Question {{ index + 1 }}:</strong> {{ question['que']['1']['q_string'] | safe }}</p>
+                    <div class="question-options">
+                        <ol>
+                            {% for option in question['que']['1']['q_option'] %}
+                                <li>{{ option | safe }}</li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <button onclick="submitData()">Export Selected Questions to DOCX</button>
+    </div>
+
+    <script>
+        function submitData() {
+            const testName = "{{ test_name }}";
+            const testTime = "{{ test_time }}";
+            const selectedQuestions = {{ selected_questions | tojson | safe }};
+
+            const data = {
+                test_name: testName,
+                test_time: testTime,
+                selected_questions: selectedQuestions
+            };
+
+            fetch('/export_to_docx', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = testName + '.docx';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script>
+
         </html>
         '''
         
         return render_template_string(html_template, selected_questions=selected_questions, enumerate=enumerate, test_name=test_name, test_time=test_time)
 
     else:
+
         html_template = '''
         <!DOCTYPE html>
         <html lang="en">
@@ -540,6 +595,7 @@ def test_page():
                                 </tr>
                                 {% for index, question in enumerate(questions) %}
                                 <tr>
+                                    
                                     <td><input type="checkbox" name="question" value="{{ section }}-{{ index }}" data-difficulty="{{ question['difficulty_level'] }}"></td>
                                     <td>
                                         <p><strong>Question {{ index + 1 }}:</strong> {{ question['que']['1']['q_string'] | safe }}</p>
@@ -572,7 +628,7 @@ def test_page():
                     }
                 }
             }
-function selectRandomQuestions(section) {
+            function selectRandomQuestions(section) {
                 var numQuestions = document.getElementById('num_questions_' + section).value;
                 var checkboxes = document.querySelectorAll('.content input[type="checkbox"][name="question"][value^="' + section + '-"]');
                 var checkboxesArray = Array.from(checkboxes);
@@ -668,6 +724,327 @@ function selectRandomQuestions(section) {
         
         return render_template_string(html_template, questions_by_section=questions_by_section, enumerate=enumerate)
 
+def compile_latex_to_pdf(template_filename):
+    # Compile LaTeX to PDF
+    subprocess.run(['pdflatex', '-interaction=nonstopmode', template_filename])
+
+def convert_pdf_to_docx(pdf_filename, docx_filename):
+    # Convert PDF to DOCX using python-docx library
+    cv = Converter(pdf_filename)
+    cv.convert(docx_filename, start=0, end=None)
+    cv.close()
+
+    # document = Document()
+    # with open(pdf_filename, 'rb') as pdf_file:
+    #     pdf_content = pdf_file.read()
+    # document.add_paragraph(pdf_content.decode('utf-8'))
+    # document.save(docx_filename)
+
+@app.route('/export_to_docx', methods=['Post'])
+def export_to_docx():
+    # template_filename = 'template.tex'
+    # pdf_filename = 'output.pdf'
+    # test_name = request.form.get('test_name')
+    data = request.get_json()
+    test_name = data['test_name']
+    selected_questions = data['selected_questions']
+    template_filename = test_name+'.tex'
+    pdf_filename = 'output.pdf'
+    docx_filename = test_name + '.docx'
+
+    # selected_questions = request.form.getlist('selected_questions')
+    # test_name = request.form.get('test_name')
+    # Generate LaTeX content from selected_questions
+    latex_content = generate_latex_content(selected_questions,test_name)
+
+    # Write LaTeX content to template.tex
+    with open(template_filename, 'w', encoding='utf-8') as f:
+        f.write(latex_content)
+
+    # # Compile LaTeX to PDF
+    # compile_latex_to_pdf(template_filename)
+
+    # # # Convert PDF to DOCX
+    # convert_pdf_to_docx(pdf_filename, docx_filename)
+    convert_latex_to_docx(template_filename, docx_filename)
+    return send_file(docx_filename, as_attachment=True, download_name=test_name + '.docx')
+
+
+def html_table_to_latex(html):
+    """Convert HTML table to LaTeX tabular environment."""
+    html = unescape(html)
+
+    # Remove any attributes from the tags
+    html = re.sub(r'<table[^>]*>', '<table>', html)
+    html = re.sub(r'<tr[^>]*>', '<tr>', html)
+    html = re.sub(r'<td[^>]*>', '<td>', html)
+    html = re.sub(r'<th[^>]*>', '<th>', html)
+
+    # Initialize LaTeX table
+    latex_table = '\\begin{tabular}{|' + 'c|' * html.count('<tr>') + '}\n\\hline\n'
+
+    # Process table rows and cells
+    html = html.replace('<table>', '')
+    html = html.replace('</table>', '')
+    html = html.replace('<tbody>', '')
+    html = html.replace('</tbody>', '')
+    rows = html.split('</tr>')
+
+    for row in rows:
+        if '<tr>' in row:
+            row = row.replace('<tr>', '')
+            cells = row.split('</td>')
+            for cell in cells:
+                if '<td>' in cell:
+                    cell = cell.replace('<td>', '').strip()
+                    latex_table += cell + ' & '
+                elif '<th>' in cell:
+                    cell = cell.replace('<th>', '').strip()
+                    latex_table += '\\textbf{' + cell + '} & '
+            latex_table = latex_table.rstrip(' & ')
+            latex_table += ' \\\\\n\\hline\n'
+
+    latex_table += '\\end{tabular}\n'
+    return latex_table
+
+def html_to_latex(html):
+    """Converts HTML content to LaTeX."""
+    # Unescape HTML entities
+    html = unescape(html)
+
+    # Replace HTML tags with LaTeX equivalents
+    replacements = [
+        (r"<p>", r""),
+        (r"</p>", r""),
+        (r"<sup>", r"$^{"),
+        (r"</sup>", r"}$"),
+        (r"<sub>", r"$_{"),
+        (r"</sub>", r"}$"),
+        (r"<b>", r"\\textbf{"),
+        (r"</b>", r"}"),
+        (r"<i>", r"\\textit{"),
+        (r"</i>", r"}"),
+        (r"&nbsp;", r"~"),
+        (r"&gt;", r">"),
+        (r"&lt;", r"<"),
+        (r"&amp;", r"&"),
+        (r'<br\s*/?>', r"\\newline"),
+        (r'<span[^>]*>', r""),
+        (r'</span>', r""),
+        (r'<div[^>]*>', r""),
+        (r'</div>', r"")
+    ]
+    for old, new in replacements:
+        html = re.sub(old, new, html, flags=re.IGNORECASE)
+
+    # Convert <img> tags to LaTeX \includegraphics
+    img_tags = re.findall(r'<img[^>]+>', html, flags=re.IGNORECASE)
+    for img_tag in img_tags:
+        src_match = re.search(r'src="([^"]+)"', img_tag)
+        if src_match:
+            src = src_match.group(1)
+            latex_img = r'\includegraphics[width=\textwidth]{%s}' % src
+            html = html.replace(img_tag, latex_img)
+
+    # Convert <table> tags to LaTeX tabular environment
+    html = re.sub(r'<table[^>]*>.*?</table>', lambda x: html_table_to_latex(x.group()), html, flags=re.DOTALL)
+
+    return html
+
+# def generate_latex_content(selected_questions, test_name):
+#     # Start the LaTeX document
+#     latex_content = r'''\documentclass{article}
+#                     \usepackage{amsmath}
+#                     \usepackage{amssymb}
+#                     \usepackage{graphicx}
+#                     \usepackage{enumitem}
+#                     \usepackage{longtable}
+#                     \title{%s}
+#                     \begin{document}
+#                     \maketitle
+#                     ''' % test_name
+
+#     # Generate LaTeX content from selected_questions
+#     for index, question in enumerate(selected_questions, start=1):
+#         q_string = html_to_latex(question['que']['1']['q_string'])
+#         q_options = [html_to_latex(opt) for opt in question['que']['1']['q_option']]
+
+#         latex_content += r'\section*{Question %d}' % index + '\n'
+#         latex_content += q_string + '\n'
+#         latex_content += r'\begin{enumerate}[label=(\alph*)]' + '\n'
+#         for option in q_options:
+#             latex_content += r'\item ' + option + '\n'
+#         latex_content += r'\end{enumerate}' + '\n'
+#         latex_content += r'\newpage' + '\n'
+
+#     # End the LaTeX document
+#     latex_content += r'\end{document}'
+#     return latex_content
+
+# def convert_latex_to_docx(latex_filename, docx_filename):
+#     # Convert LaTeX to DOCX using pypandoc
+#     pypandoc.convert_file(latex_filename, 'docx', outputfile=docx_filename)
+
+# import time 
+# @app.route('/export_to_docx', methods=['POST'])
+# def export_to_docx(selected_questions, test_name):
+#     # Generate LaTeX content from selected_questions
+#     latex_content = generate_latex_content(selected_questions, test_name)
+
+#     temp_dir = tempfile.mkdtemp()
+
+#     try:
+#         # Convert LaTeX content directly to DOCX in a temporary file
+#         temp_latex_filename = os.path.join(temp_dir, test_name + '.tex')
+#         with open(temp_latex_filename, 'w', encoding='utf-8') as temp_latex_file:
+#             temp_latex_file.write(latex_content)
+
+#         temp_docx_filename = os.path.join(temp_dir, test_name + '.docx')
+
+#         # Convert LaTeX to DOCX using pypandoc
+#         convert_latex_to_docx(temp_latex_filename, temp_docx_filename)
+
+#         # Check if the DOCX file was created successfully
+#         if os.path.exists(temp_docx_filename):
+#             # Send the file as a download
+#             return send_file(temp_docx_filename, as_attachment=True, download_name=test_name + '.docx')
+#         else:
+#             # Handle case where the file was not created
+#             return jsonify({'error': 'Failed to generate DOCX file'}), 500
+
+#     finally:
+#         # Clean up temporary files
+#         if os.path.exists(temp_latex_filename):
+#             os.remove(temp_latex_filename)
+#         if os.path.exists(temp_docx_filename):
+#             try:
+#                 os.remove(temp_docx_filename)
+#             except PermissionError:
+#                 # Handle PermissionError if the file is still in use
+#                 pass
+
+#         # Clean up the temporary directory
+#         try:
+#             os.rmdir(temp_dir)
+#         except OSError as e:
+#             print(f"Error removing temporary directory {temp_dir}: {e}")
+
+# def html_table_to_latex(html):
+#     """Convert HTML table to LaTeX tabular environment."""
+#     html = unescape(html)
+
+#     # Remove any attributes from the tags
+#     html = re.sub(r'<table[^>]*>', '<table>', html)
+#     html = re.sub(r'<tr[^>]*>', '<tr>', html)
+#     html = re.sub(r'<td[^>]*>', '<td>', html)
+#     html = re.sub(r'<th[^>]*>', '<th>', html)
+
+#     # Initialize LaTeX table
+#     latex_table = '\\begin{tabular}{|' + 'c|' * html.count('<tr>') + '}\n\\hline\n'
+
+#     # Process table rows and cells
+#     html = html.replace('<table>', '')
+#     html = html.replace('</table>', '')
+#     html = html.replace('<tbody>', '')
+#     html = html.replace('</tbody>', '')
+#     rows = html.split('</tr>')
+
+#     for row in rows:
+#         if '<tr>' in row:
+#             row = row.replace('<tr>', '')
+#             cells = row.split('</td>')
+#             for cell in cells:
+#                 if '<td>' in cell:
+#                     cell = cell.replace('<td>', '').strip()
+#                     latex_table += cell + ' & '
+#                 elif '<th>' in cell:
+#                     cell = cell.replace('<th>', '').strip()
+#                     latex_table += '\\textbf{' + cell + '} & '
+#             latex_table = latex_table.rstrip(' & ')
+#             latex_table += ' \\\\\n\\hline\n'
+
+#     latex_table += '\\end{tabular}\n'
+#     return latex_table
+
+def html_to_latex(html):
+    """Converts HTML content to LaTeX."""
+    # Unescape HTML entities
+    html = unescape(html)
+
+    # Replace HTML tags with LaTeX equivalents
+    replacements = [
+        (r"<p>", r""),
+        (r"</p>", r""),
+        (r"<sup>", r"$^{"),
+        (r"</sup>", r"}$"),
+        (r"<sub>", r"$_{"),
+        (r"</sub>", r"}$"),
+        (r"<b>", r"\\textbf{"),
+        (r"</b>", r"}"),
+        (r"<i>", r"\\textit{"),
+        (r"</i>", r"}"),
+        (r"&nbsp;", r"~"),
+        (r"&gt;", r">"),
+        (r"&lt;", r"<"),
+        (r"&amp;", r"&"),
+        (r'<br\s*/?>', r"\\newline"),
+        (r'<span[^>]*>', r""),
+        (r'</span>', r""),
+        (r'<div[^>]*>', r""),
+        (r'</div>', r"")
+    ]
+    for old, new in replacements:
+        html = re.sub(old, new, html, flags=re.IGNORECASE)
+
+    # Convert <img> tags to LaTeX \includegraphics
+    img_tags = re.findall(r'<img[^>]+>', html, flags=re.IGNORECASE)
+    for img_tag in img_tags:
+        src_match = re.search(r'src="([^"]+)"', img_tag)
+        if src_match:
+            src = src_match.group(1)
+            latex_img = r'\includegraphics[width=\textwidth]{%s}' % src
+            html = html.replace(img_tag, latex_img)
+
+    # Convert <table> tags to LaTeX tabular environment
+    html = re.sub(r'<table[^>]*>.*?</table>', lambda x: html_table_to_latex(x.group()), html, flags=re.DOTALL)
+
+    return html
+
+def generate_latex_content(selected_questions, test_name):
+    # Start the LaTeX document
+    latex_content = r'''\documentclass{article}
+                    \usepackage{amsmath}
+                    \usepackage{amssymb}
+                    \usepackage{graphicx}
+                    \usepackage{enumitem}
+                    \usepackage{longtable}
+                    \title{%s}
+                    \begin{document}
+                    \maketitle
+                    ''' % test_name
+
+    # Generate LaTeX content from selected_questions
+    for index, question in enumerate(selected_questions, start=1):
+        q_string = html_to_latex(question['que']['1']['q_string'])
+        q_options = [html_to_latex(opt) for opt in question['que']['1']['q_option']]
+
+        latex_content += r'\section*{Question %d}' % index + '\n'
+        latex_content += q_string + '\n'
+        latex_content += r'\begin{enumerate}[label=(\alph*)]' + '\n'
+        for option in q_options:
+            latex_content += r'\item ' + option + '\n'
+        latex_content += r'\end{enumerate}' + '\n'
+        latex_content += r'\newpage' + '\n'
+
+    # End the LaTeX document
+    latex_content += r'\end{document}'
+    return latex_content
+
+def convert_latex_to_docx(latex_filename, docx_filename):
+    # Convert LaTeX to DOCX using pypandoc
+    pypandoc.convert_file(latex_filename, 'docx', outputfile=docx_filename)
+
+
 def determine_difficulty(question):
     # Example logic to determine difficulty
     # This should be replaced with actual logic based on your criteria
@@ -678,5 +1055,8 @@ def determine_difficulty(question):
     else:
         return 'Difficult'
 
+
+webview.create_window('KodeMapa-Exampad', app)
 if __name__ == "__main__":
     app.run(debug=True)
+    # webview.start()

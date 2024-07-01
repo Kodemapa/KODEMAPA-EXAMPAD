@@ -2404,7 +2404,7 @@
             "students": 5152,
             "exam_calender": [],
             "quizes": [],
-            "image": "/static/media/wl_client/251995/l2_exam_images/af672236a177468aaa434daab4a59ed6.png",
+            "image": "https://kodemapa.com/static/media/wl_client/251995/l2_exam_images/af672236a177468aaa434daab4a59ed6.png",
             "l0_image": "/static/images/L0_Images/949.png",
             "name": "Karnataka Board Class XII"
         }

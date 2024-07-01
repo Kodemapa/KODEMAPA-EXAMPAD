@@ -4,7 +4,7 @@
             "exam_calender": [],
             "tests_available": 170,
             "disallow_reattempt": null,
-            "image": "/static/media/wl_client/251995/l2_exam_images/a68247cc55784a93ab579b13c199d5ad.png",
+            "image": "https://kodemapa.com/static/media/wl_client/251995/l2_exam_images/a68247cc55784a93ab579b13c199d5ad.png",
             "quizes": [],
             "total_users_count": 4000,
             "L3": [
