@@ -4,7 +4,7 @@ import re
 from flask import Flask, jsonify, render_template_string, request, redirect, url_for , send_file
 import json
 import pypandoc
-pypandoc.download_pandoc()
+# pypandoc.download_pandoc()
 import requests
 import urllib.parse
 import subprocess
@@ -419,9 +419,42 @@ def test_page():
             {% endfor %}
         </div>
         <button onclick="submitData()">Export Selected Questions to DOCX</button>
+        <button type="button" onclick="downloadSolutions()">Download Solutions</button>
     </div>
 
     <script>
+    function downloadSolutions() {
+    const selectedQuestions = Array.from(document.querySelectorAll('input[name="question"]:checked'))
+        .map(checkbox => {
+            const [section, index] = checkbox.value.split('-');
+            return questions_by_section[section][parseInt(index)].qid;
+        });
+    
+    const data = {
+        test_name: document.getElementById('test_name').value,
+        question_ids: selectedQuestions
+    };
+
+    fetch('/download_solutions', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.blob())
+    .then(blob => {
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.style.display = 'none';
+        a.href = url;
+        a.download = 'solutions.docx';
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+    })
+    .catch(error => console.error('Error:', error));
+}
         function submitData() {
             const testName = "{{ test_name }}";
             const testTime = "{{ test_time }}";
@@ -725,6 +758,64 @@ def test_page():
         
         return render_template_string(html_template, questions_by_section=questions_by_section, enumerate=enumerate)
 
+@app.route('/download_solutions', methods=['POST'])
+def download_solutions():
+    data = request.json
+    test_name = data['test_name']
+    question_ids = data['question_ids']
+    
+    # Load the solutions from the JSON file
+    with open('Answers/solutions.json', 'r') as f:
+        solutions = json.load(f)
+    
+    # Generate LaTeX content for solutions
+    latex_content = generate_solutions_latex(test_name, question_ids, solutions)
+    
+    # Write LaTeX content to a temporary file
+    temp_latex_file = f'{test_name}_solutions.tex'
+    with open(temp_latex_file, 'w', encoding='utf-8') as f:
+        f.write(latex_content)
+    
+    # Convert LaTeX to DOCX
+    docx_filename = f'{test_name}_solutions.docx'
+    convert_latex_to_docx(temp_latex_file, docx_filename)
+    
+    # Clean up the temporary LaTeX file
+    os.remove(temp_latex_file)
+    
+    return send_file(docx_filename, as_attachment=True, download_name=f'{test_name}_solutions.docx')
+
+def generate_solutions_latex(test_name, question_ids, solutions):
+    latex_content = r'''\documentclass{article}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{graphicx}
+    \usepackage{enumitem}
+    \usepackage{longtable}
+    \usepackage{color}
+    \title{Solutions for %s}
+    \begin{document}
+    \maketitle
+    ''' % test_name
+
+    for index, qid in enumerate(question_ids, start=1):
+        if qid in solutions:
+            correct_answers = solutions[qid]['correct_answers']
+            explanation = solutions[qid]['explanation']
+            
+            latex_content += r'\section*{Question %d}' % index + '\n'
+            latex_content += r'\textbf{Correct Answer(s):} ' + ', '.join(map(str, correct_answers)) + '\n\n'
+            latex_content += r'\textbf{Explanation:}' + '\n'
+            latex_content += html_to_latex(explanation) + '\n'
+            latex_content += r'\newpage' + '\n'
+        else:
+            latex_content += r'\section*{Question %d}' % index + '\n'
+            latex_content += r'No solution found for this question.' + '\n'
+            latex_content += r'\newpage' + '\n'
+
+    latex_content += r'\end{document}'
+    return latex_content
+
 def compile_latex_to_pdf(template_filename):
     # Compile LaTeX to PDF
     subprocess.run(['pdflatex', '-interaction=nonstopmode', template_filename])
@@ -741,310 +832,352 @@ def convert_pdf_to_docx(pdf_filename, docx_filename):
     # document.add_paragraph(pdf_content.decode('utf-8'))
     # document.save(docx_filename)
 
-@app.route('/export_to_docx', methods=['Post'])
-def export_to_docx():
-    # template_filename = 'template.tex'
-    # pdf_filename = 'output.pdf'
-    # test_name = request.form.get('test_name')
-    data = request.get_json()
-    test_name = data['test_name']
-    selected_questions = data['selected_questions']
-    template_filename = test_name+'.tex'
-    pdf_filename = 'output.pdf'
-    docx_filename = test_name + '.docx'
+# @app.route('/export_to_docx', methods=['POST'])
+# def export_to_docx():
+#     try:
+#         data = request.get_json()
+#         test_name = data['test_name']
+#         selected_questions = data['selected_questions']
+#         template_filename = test_name + '.tex'
+#         docx_filename = test_name + '.docx'
 
-    # selected_questions = request.form.getlist('selected_questions')
-    # test_name = request.form.get('test_name')
-    # Generate LaTeX content from selected_questions
-    latex_content = generate_latex_content(selected_questions,test_name)
+#         latex_content = generate_latex_content(selected_questions, test_name)
 
-    # Write LaTeX content to template.tex
-    with open(template_filename, 'w', encoding='utf-8') as f:
-        f.write(latex_content)
+#         print("Generated LaTeX content:")
+#         print(latex_content)
 
-    # # Compile LaTeX to PDF
-    # compile_latex_to_pdf(template_filename)
+#         with open(template_filename, 'w', encoding='utf-8') as f:
+#             f.write(latex_content)
 
-    # # # Convert PDF to DOCX
-    # convert_pdf_to_docx(pdf_filename, docx_filename)
-    convert_latex_to_docx(template_filename, docx_filename)
-    return send_file(docx_filename, as_attachment=True, download_name=test_name + '.docx')
+#         convert_latex_to_docx(template_filename, docx_filename)
+#         return send_file(docx_filename, as_attachment=True, download_name=test_name + '.docx')
+#     except Exception as e:
+#         print(f"Error in export_to_docx: {str(e)}")
+#         return jsonify({"error": str(e)}), 500
+   
+
+# def html_table_to_latex(html_table):
+#     # Remove any attributes from the tags
+#     html_table = re.sub(r'<(\w+)[^>]*>', r'<\1>', html_table)
+    
+#     # Find all rows
+#     rows = re.findall(r'<tr>(.*?)</tr>', html_table, re.DOTALL)
+#     if not rows:
+#         return "% Error: No table rows found"
+
+#     # Determine the number of columns
+#     first_row = re.findall(r'<t[dh]>(.*?)</t[dh]>', rows[0], re.DOTALL)
+#     num_cols = len(first_row)
+    
+#     if num_cols == 0:
+#         return "% Error: No table cells found"
+
+#     # Start the LaTeX table
+#     latex_table = '\\begin{tabular}{|' + 'c|' * num_cols + '}\n\\hline\n'
+
+#     for row in rows:
+#         cells = re.findall(r'<t[dh]>(.*?)</t[dh]>', row, re.DOTALL)
+#         cells += [''] * (num_cols - len(cells))  # Pad if necessary
+#         latex_table += ' & '.join(cells) + ' \\\\\n\\hline\n'
+
+#     latex_table += '\\end{tabular}'
+#     return latex_table
 
 
-def html_table_to_latex(html):
-    """Convert HTML table to LaTeX tabular environment."""
-    html = unescape(html)
+# def convert_math(text):
+#     # Convert inline math
+#     text = re.sub(r'\$(.+?)\$', r'$\1$', text)
+    
+#     # Convert specific mathematical symbols and expressions
+#     math_replacements = [
+#         ('in', r'\in'),
+#         ('leq', r'\leq'),
+#         ('geq', r'\geq'),
+#         ('subset', r'\subset'),
+#         ('cup', r'\cup'),
+#         ('cap', r'\cap'),
+#         ('emptyset', r'\emptyset'),
+#         (r'left\(', r'\left('),
+#         (r'right\)', r'\right)'),
+#         (r'left\{', r'\left\{'),
+#         (r'right\}', r'\right\}'),
+#         (r'left\|', r'\left|'),
+#         (r'right\|', r'\right|'),
+#         (r'(\d+)\^(\w+)', r'$\1^{\2}$'),  # Handle superscripts
+#         (r'\\{', r'\{'),
+#         (r'\\}', r'\}'),
+#         ('PAc', r'P(A^c)'),
+#         ('PB', r'P(B)'),
+#         ('PA ∩ Bc', r'P(A \cap B^c)'),
+#         ('PBA ∩ Bc', r'P(B|A \cap B^c)'),
+#         ('P(Ac)', r'P(A^c)'),
+#         ('P(Bc)', r'P(B^c)'),
+#         ('P(A ∩ Bc)', r'P(A \cap B^c)'),
+#         ('P[(B)/(A∩Bc)]', r'P\left[\frac{B}{A \cap B^c}\right]'),
+#         ('∩', r'\cap'),
+#         ('∪', r'\cup'),
+#         ('≤', r'\leq'),
+#         ('≥', r'\geq'),
+#     ]
+    
+#     for old, new in math_replacements:
+#         text = re.sub(r'\b' + old + r'\b', new, text)
+    
+#     # Handle more complex expressions
+#     text = re.sub(r'\((.+?)\)', lambda m: r'$(' + m.group(1) + r')$', text)
+    
+#     # Convert fractions
+#     text = re.sub(r'(\d+)/(\d+)', r'\\frac{\1}{\2}', text)
+    
+#     return text
 
-    # Remove any attributes from the tags
-    html = re.sub(r'<table[^>]*>', '<table>', html)
-    html = re.sub(r'<tr[^>]*>', '<tr>', html)
-    html = re.sub(r'<td[^>]*>', '<td>', html)
-    html = re.sub(r'<th[^>]*>', '<th>', html)
+# def html_to_latex(html):
+#     try:
+#         html = unescape(html)
+        
+#         # Handle tables
+#         html = re.sub(r'<table.*?>(.*?)</table>', lambda m: html_table_to_latex(m.group(0)), html, flags=re.DOTALL)
+        
+#         # Handle math content
+#         html = re.sub(r'<span class="mathMlContainer".*?>(.*?)</span>', lambda m: '$' + m.group(1) + '$', html, flags=re.DOTALL)
+        
+#         # Handle paragraphs
+#         html = re.sub(r'<p.*?>(.*?)</p>', r'\n\1\n', html, flags=re.DOTALL)
+        
+#         # Handle line breaks
+#         html = re.sub(r'<br.*?>', r'\\\\', html)
+        
+#         # Remove other HTML tags
+#         html = re.sub(r'<.*?>', '', html)
+        
+#         # Convert mathematical content
+#         html = convert_math(html)
+        
+#         return html.strip()
+    
+#     except Exception as e:
+#         print(f"Error in html_to_latex: {str(e)}")
+#         return html
 
-    # Initialize LaTeX table
-    latex_table = '\\begin{tabular}{|' + 'c|' * html.count('<tr>') + '}\n\\hline\n'
 
-    # Process table rows and cells
-    html = html.replace('<table>', '')
-    html = html.replace('</table>', '')
-    html = html.replace('<tbody>', '')
-    html = html.replace('</tbody>', '')
-    rows = html.split('</tr>')
-
-    for row in rows:
-        if '<tr>' in row:
-            row = row.replace('<tr>', '')
-            cells = row.split('</td>')
-            for cell in cells:
-                if '<td>' in cell:
-                    cell = cell.replace('<td>', '').strip()
-                    latex_table += cell + ' & '
-                elif '<th>' in cell:
-                    cell = cell.replace('<th>', '').strip()
-                    latex_table += '\\textbf{' + cell + '} & '
-            latex_table = latex_table.rstrip(' & ')
-            latex_table += ' \\\\\n\\hline\n'
-
-    latex_table += '\\end{tabular}\n'
-    return latex_table
-
-def html_to_latex(html):
-    """Converts HTML content to LaTeX."""
-    # Unescape HTML entities
-    html = unescape(html)
-
-    # Replace HTML tags with LaTeX equivalents
-    replacements = [
-        (r"<p>", r""),
-        (r"</p>", r""),
-        (r"<sup>", r"$^{"),
-        (r"</sup>", r"}$"),
-        (r"<sub>", r"$_{"),
-        (r"</sub>", r"}$"),
-        (r"<b>", r"\\textbf{"),
-        (r"</b>", r"}"),
-        (r"<i>", r"\\textit{"),
-        (r"</i>", r"}"),
-        (r"&nbsp;", r"~"),
-        (r"&gt;", r">"),
-        (r"&lt;", r"<"),
-        (r"&amp;", r"&"),
-        (r'<br\s*/?>', r"\\newline"),
-        (r'<span[^>]*>', r""),
-        (r'</span>', r""),
-        (r'<div[^>]*>', r""),
-        (r'</div>', r"")
-    ]
-    for old, new in replacements:
-        html = re.sub(old, new, html, flags=re.IGNORECASE)
-
-    # Convert <img> tags to LaTeX \includegraphics
-    img_tags = re.findall(r'<img[^>]+>', html, flags=re.IGNORECASE)
-    for img_tag in img_tags:
-        src_match = re.search(r'src="([^"]+)"', img_tag)
-        if src_match:
-            src = src_match.group(1)
-            latex_img = r'\includegraphics[width=\textwidth]{%s}' % src
-            html = html.replace(img_tag, latex_img)
-
-    # Convert <table> tags to LaTeX tabular environment
-    html = re.sub(r'<table[^>]*>.*?</table>', lambda x: html_table_to_latex(x.group()), html, flags=re.DOTALL)
-
-    return html
 
 # def generate_latex_content(selected_questions, test_name):
-#     # Start the LaTeX document
 #     latex_content = r'''\documentclass{article}
-#                     \usepackage{amsmath}
-#                     \usepackage{amssymb}
-#                     \usepackage{graphicx}
-#                     \usepackage{enumitem}
-#                     \usepackage{longtable}
-#                     \title{%s}
-#                     \begin{document}
-#                     \maketitle
-#                     ''' % test_name
+# \usepackage{amsmath}
+# \usepackage{amssymb}
+# \usepackage{graphicx}
+# \usepackage{enumitem}
+# \usepackage{longtable}
+# \usepackage{geometry}
+# \geometry{margin=1in}
+# \title{%s}
+# \begin{document}
+# \maketitle
+# ''' % test_name
 
-#     # Generate LaTeX content from selected_questions
 #     for index, question in enumerate(selected_questions, start=1):
 #         q_string = html_to_latex(question['que']['1']['q_string'])
 #         q_options = [html_to_latex(opt) for opt in question['que']['1']['q_option']]
 
 #         latex_content += r'\section*{Question %d}' % index + '\n'
-#         latex_content += q_string + '\n'
+#         latex_content += q_string + '\n\n'
 #         latex_content += r'\begin{enumerate}[label=(\alph*)]' + '\n'
 #         for option in q_options:
-#             latex_content += r'\item ' + option + '\n'
-#         latex_content += r'\end{enumerate}' + '\n'
-#         latex_content += r'\newpage' + '\n'
+#             latex_content += r'\item $' + option + '$\n'
+#         latex_content += r'\end{enumerate}' + '\n\n'
+        
+#         if index < len(selected_questions):
+#             latex_content += r'\newpage' + '\n'
 
-#     # End the LaTeX document
 #     latex_content += r'\end{document}'
 #     return latex_content
 
+# def escape_latex(text):
+#     special_chars = ['\\', '_', '%', '&', '#', '$', '{', '}', '^', '~']
+#     for char in special_chars:
+#         text = text.replace(char, '\\' + char)
+#     return text
+
+# def cleanup_latex(content):
+#     # Remove any trailing \newpage commands
+#     content = re.sub(r'\n*\\newpage\s*$', '', content)
+    
+#     # Ensure all environments are closed
+#     open_envs = re.findall(r'\\begin\{(\w+)\}', content)
+#     for env in reversed(open_envs):
+#         if f'\\end{{{env}}}' not in content:
+#             content += f'\n\\end{{{env}}}'
+    
+#     return content
+
+
 # def convert_latex_to_docx(latex_filename, docx_filename):
-#     # Convert LaTeX to DOCX using pypandoc
-#     pypandoc.convert_file(latex_filename, 'docx', outputfile=docx_filename)
-
-# import time 
-# @app.route('/export_to_docx', methods=['POST'])
-# def export_to_docx(selected_questions, test_name):
-#     # Generate LaTeX content from selected_questions
-#     latex_content = generate_latex_content(selected_questions, test_name)
-
-#     temp_dir = tempfile.mkdtemp()
-
 #     try:
-#         # Convert LaTeX content directly to DOCX in a temporary file
-#         temp_latex_filename = os.path.join(temp_dir, test_name + '.tex')
-#         with open(temp_latex_filename, 'w', encoding='utf-8') as temp_latex_file:
-#             temp_latex_file.write(latex_content)
+#         print(f"Converting {latex_filename} to {docx_filename}")
+#         result = subprocess.run(['pandoc', latex_filename, '-o', docx_filename], 
+#                                 capture_output=True, text=True, check=True)
+#         print("Conversion successful")
+#         print("Pandoc output:", result.stdout)
+#     except subprocess.CalledProcessError as e:
+#         print(f"Error in convert_latex_to_docx: {e}")
+#         print("Pandoc error output:", e.stderr)
+#         raise
 
-#         temp_docx_filename = os.path.join(temp_dir, test_name + '.docx')
 
-#         # Convert LaTeX to DOCX using pypandoc
-#         convert_latex_to_docx(temp_latex_filename, temp_docx_filename)
+from flask import Flask, request, send_file, jsonify
+import subprocess
+import re
+from html import unescape
+from pylatexenc.latexencode import unicode_to_latex
+from html2text import html2text
+from sympy import latex as sympy_latex
+from sympy.parsing.latex import parse_latex
 
-#         # Check if the DOCX file was created successfully
-#         if os.path.exists(temp_docx_filename):
-#             # Send the file as a download
-#             return send_file(temp_docx_filename, as_attachment=True, download_name=test_name + '.docx')
-#         else:
-#             # Handle case where the file was not created
-#             return jsonify({'error': 'Failed to generate DOCX file'}), 500
+@app.route('/export_to_docx', methods=['POST'])
+def export_to_docx():
+    try:
+        data = request.get_json()
+        test_name = data['test_name']
+        selected_questions = data['selected_questions']
+        template_filename = test_name + '.tex'
+        docx_filename = test_name + '.docx'
 
-#     finally:
-#         # Clean up temporary files
-#         if os.path.exists(temp_latex_filename):
-#             os.remove(temp_latex_filename)
-#         if os.path.exists(temp_docx_filename):
-#             try:
-#                 os.remove(temp_docx_filename)
-#             except PermissionError:
-#                 # Handle PermissionError if the file is still in use
-#                 pass
+        latex_content = generate_latex_content(selected_questions, test_name)
 
-#         # Clean up the temporary directory
-#         try:
-#             os.rmdir(temp_dir)
-#         except OSError as e:
-#             print(f"Error removing temporary directory {temp_dir}: {e}")
+        print("Generated LaTeX content:")
+        print(latex_content)
 
-# def html_table_to_latex(html):
-#     """Convert HTML table to LaTeX tabular environment."""
-#     html = unescape(html)
+        with open(template_filename, 'w', encoding='utf-8') as f:
+            f.write(latex_content)
 
-#     # Remove any attributes from the tags
-#     html = re.sub(r'<table[^>]*>', '<table>', html)
-#     html = re.sub(r'<tr[^>]*>', '<tr>', html)
-#     html = re.sub(r'<td[^>]*>', '<td>', html)
-#     html = re.sub(r'<th[^>]*>', '<th>', html)
+        convert_latex_to_docx(template_filename, docx_filename)
+        return send_file(docx_filename, as_attachment=True, download_name=test_name + '.docx')
+    except Exception as e:
+        print(f"Error in export_to_docx: {str(e)}")
+        return jsonify({"error": str(e)}), 500
 
-#     # Initialize LaTeX table
-#     latex_table = '\\begin{tabular}{|' + 'c|' * html.count('<tr>') + '}\n\\hline\n'
+def html_table_to_latex(html_table):
+    html_table = re.sub(r'<(\w+)[^>]*>', r'<\1>', html_table)
+    rows = re.findall(r'<tr>(.*?)</tr>', html_table, re.DOTALL)
+    if not rows:
+        return "% Error: No table rows found"
 
-#     # Process table rows and cells
-#     html = html.replace('<table>', '')
-#     html = html.replace('</table>', '')
-#     html = html.replace('<tbody>', '')
-#     html = html.replace('</tbody>', '')
-#     rows = html.split('</tr>')
+    first_row = re.findall(r'<t[dh]>(.*?)</t[dh]>', rows[0], re.DOTALL)
+    num_cols = len(first_row)
+    if num_cols == 0:
+        return "% Error: No table cells found"
 
-#     for row in rows:
-#         if '<tr>' in row:
-#             row = row.replace('<tr>', '')
-#             cells = row.split('</td>')
-#             for cell in cells:
-#                 if '<td>' in cell:
-#                     cell = cell.replace('<td>', '').strip()
-#                     latex_table += cell + ' & '
-#                 elif '<th>' in cell:
-#                     cell = cell.replace('<th>', '').strip()
-#                     latex_table += '\\textbf{' + cell + '} & '
-#             latex_table = latex_table.rstrip(' & ')
-#             latex_table += ' \\\\\n\\hline\n'
+    latex_table = '\\begin{tabular}{|' + 'c|' * num_cols + '}\n\\hline\n'
 
-#     latex_table += '\\end{tabular}\n'
-#     return latex_table
+    for row in rows:
+        cells = re.findall(r'<t[dh]>(.*?)</t[dh]>', row, re.DOTALL)
+        cells += [''] * (num_cols - len(cells))
+        latex_table += ' & '.join(cells) + ' \\\\\n\\hline\n'
+
+    latex_table += '\\end{tabular}'
+    return latex_table
+
+def convert_math(text):
+    text = re.sub(r'\$(.+?)\$', r'$\1$', text)
+    math_replacements = [
+        ('in', r'\in'),
+        ('leq', r'\leq'),
+        ('geq', r'\geq'),
+        ('subset', r'\subset'),
+        ('cup', r'\cup'),
+        ('cap', r'\cap'),
+        ('emptyset', r'\emptyset'),
+        (r'left\(', r'\left('),
+        (r'right\)', r'\right)'),
+        (r'left\{', r'\left\{'),
+        (r'right\}', r'\right\}'),
+        (r'left\|', r'\left|'),
+        (r'right\|', r'\right|'),
+        (r'(\d+)\^(\w+)', r'$\1^{\2}$'),
+        (r'\\{', r'\{'),
+        (r'\\}', r'\}'),
+        ('PAc', r'P(A^c)'),
+        ('PB', r'P(B)'),
+        ('PA ∩ Bc', r'P(A \cap B^c)'),
+        ('PBA ∩ Bc', r'P(B|A \cap B^c)'),
+        ('P(Ac)', r'P(A^c)'),
+        ('P(Bc)', r'P(B^c)'),
+        ('P(A ∩ Bc)', r'P(A \cap B^c)'),
+        ('P[(B)/(A∩Bc)]', r'P\left[\frac{B}{A \cap B^c}\right]'),
+        ('∩', r'\cap'),
+        ('∪', r'\cup'),
+        ('≤', r'\leq'),
+        ('≥', r'\geq'),
+    ]
+    for old, new in math_replacements:
+        text = re.sub(r'\b' + old + r'\b', new, text)
+    text = re.sub(r'\((.+?)\)', lambda m: r'$(' + m.group(1) + r')$', text)
+    text = re.sub(r'(\d+)/(\d+)', r'\\frac{\1}{\2}', text)
+    return text
 
 def html_to_latex(html):
-    """Converts HTML content to LaTeX."""
-    # Unescape HTML entities
-    html = unescape(html)
-
-    # Replace HTML tags with LaTeX equivalents
-    replacements = [
-        (r"<p>", r""),
-        (r"</p>", r""),
-        (r"<sup>", r"$^{"),
-        (r"</sup>", r"}$"),
-        (r"<sub>", r"$_{"),
-        (r"</sub>", r"}$"),
-        (r"<b>", r"\\textbf{"),
-        (r"</b>", r"}"),
-        (r"<i>", r"\\textit{"),
-        (r"</i>", r"}"),
-        (r"&nbsp;", r"~"),
-        (r"&gt;", r">"),
-        (r"&lt;", r"<"),
-        (r"&amp;", r"&"),
-        (r'<br\s*/?>', r"\\newline"),
-        (r'<span[^>]*>', r""),
-        (r'</span>', r""),
-        (r'<div[^>]*>', r""),
-        (r'</div>', r"")
-    ]
-    for old, new in replacements:
-        html = re.sub(old, new, html, flags=re.IGNORECASE)
-
-    # Convert <img> tags to LaTeX \includegraphics
-    img_tags = re.findall(r'<img[^>]+>', html, flags=re.IGNORECASE)
-    for img_tag in img_tags:
-        src_match = re.search(r'src="([^"]+)"', img_tag)
-        if src_match:
-            src = src_match.group(1)
-            latex_img = r'\includegraphics[width=\textwidth]{%s}' % src
-            html = html.replace(img_tag, latex_img)
-
-    # Convert <table> tags to LaTeX tabular environment
-    html = re.sub(r'<table[^>]*>.*?</table>', lambda x: html_table_to_latex(x.group()), html, flags=re.DOTALL)
-
-    return html
+    try:
+        html = unescape(html)
+        html = html2text(html)
+        html = unicode_to_latex(html)
+        
+        # Handle images
+        html = re.sub(r'<img\s+.*?src="(.*?)".*?>', r'\\includegraphics[width=\\linewidth]{\1}', html, flags=re.DOTALL)
+        
+        # Handle tables
+        html = re.sub(r'<table.*?>(.*?)</table>', lambda m: html_table_to_latex(m.group(0)), html, flags=re.DOTALL)
+        
+        # Convert mathematical expressions
+        html = re.sub(r'\$(.*?)\$', lambda m: sympy_latex(parse_latex(m.group(1))), html)
+        
+        return html.strip()
+    
+    except Exception as e:
+        print(f"Error in html_to_latex: {str(e)}")
+        return html
 
 def generate_latex_content(selected_questions, test_name):
-    # Start the LaTeX document
     latex_content = r'''\documentclass{article}
-                    \usepackage{amsmath}
-                    \usepackage{amssymb}
-                    \usepackage{graphicx}
-                    \usepackage{enumitem}
-                    \usepackage{longtable}
-                    \title{%s}
-                    \begin{document}
-                    \maketitle
-                    ''' % test_name
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{margin=1in}
+\title{%s}
+\begin{document}
+\maketitle
+''' % test_name
 
-    # Generate LaTeX content from selected_questions
     for index, question in enumerate(selected_questions, start=1):
         q_string = html_to_latex(question['que']['1']['q_string'])
         q_options = [html_to_latex(opt) for opt in question['que']['1']['q_option']]
 
         latex_content += r'\section*{Question %d}' % index + '\n'
-        latex_content += q_string + '\n'
+        latex_content += q_string + '\n\n'
         latex_content += r'\begin{enumerate}[label=(\alph*)]' + '\n'
         for option in q_options:
             latex_content += r'\item ' + option + '\n'
-        latex_content += r'\end{enumerate}' + '\n'
-        latex_content += r'\newpage' + '\n'
+        latex_content += r'\end{enumerate}' + '\n\n'
+        
+        if index < len(selected_questions):
+            latex_content += r'\newpage' + '\n'
 
-    # End the LaTeX document
     latex_content += r'\end{document}'
     return latex_content
 
 def convert_latex_to_docx(latex_filename, docx_filename):
-    # Convert LaTeX to DOCX using pypandoc
-    pypandoc.convert_file(latex_filename, 'docx', outputfile=docx_filename)
-
+    try:
+        print(f"Converting {latex_filename} to {docx_filename}")
+        result = subprocess.run(['pandoc', latex_filename, '-o', docx_filename], 
+                                capture_output=True, text=True, check=True)
+        print("Conversion successful")
+        print("Pandoc output:", result.stdout)
+    except subprocess.CalledProcessError as e:
+        print(f"Error in convert_latex_to_docx: {e}")
+        print("Pandoc error output:", e.stderr)
+        raise
 
 def determine_difficulty(question):
     # Example logic to determine difficulty
@@ -1061,3 +1194,125 @@ webview.create_window('KodeMapa-Exampad', app)
 if __name__ == "__main__":
     app.run(debug=True)
     # webview.start()
+
+
+
+    # def convert_math(text):
+#     # Convert inline math
+#     text = re.sub(r'\$(.+?)\$', r'$\1$', text)
+    
+#     # Convert specific mathematical symbols and expressions
+#     math_replacements = [
+#         ('in', r'\in'),
+#         ('leq', r'\leq'),
+#         ('geq', r'\geq'),
+#         ('subset', r'\subset'),
+#         ('cup', r'\cup'),
+#         ('cap', r'\cap'),
+#         ('emptyset', r'\emptyset'),
+#         (r'left\(', r'\left('),
+#         (r'right\)', r'\right)'),
+#         (r'left\{', r'\left\{'),
+#         (r'right\}', r'\right\}'),
+#         (r'left\|', r'\left|'),
+#         (r'right\|', r'\right|'),
+#         (r'(\d+)\^(\w+)', r'$\1^{\2}$'),  # Handle superscripts
+#         (r'\\{', r'\{'),
+#         (r'\\}', r'\}'),
+#     ]
+    
+#     for old, new in math_replacements:
+#         text = re.sub(r'\b' + old + r'\b', new, text)
+    
+#     # Handle more complex expressions
+#     text = re.sub(r'\((.+?)\)', lambda m: r'$(' + m.group(1) + r')$', text)
+    
+#     return text
+
+# def html_to_latex(html):
+#     try:
+#         html = unescape(html)
+        
+#         # Handle tables
+#         html = re.sub(r'<table.*?>(.*?)</table>', lambda m: html_table_to_latex(m.group(0)), html, flags=re.DOTALL)
+        
+#         # Handle math content
+#         html = re.sub(r'<span class="mathMlContainer".*?>(.*?)</span>', lambda m: '$' + m.group(1) + '$', html, flags=re.DOTALL)
+        
+#         # Handle paragraphs
+#         html = re.sub(r'<p.*?>(.*?)</p>', r'\n\1\n', html, flags=re.DOTALL)
+        
+#         # Handle line breaks
+#         html = re.sub(r'<br.*?>', r'\\\\', html)
+        
+#         # Remove other HTML tags
+#         html = re.sub(r'<.*?>', '', html)
+        
+#         # Convert mathematical content
+#         html = convert_math(html)
+        
+#         return html.strip()
+    
+#     except Exception as e:
+#         print(f"Error in html_to_latex: {str(e)}")
+#         return html
+
+# def generate_latex_content(selected_questions, test_name):
+#     latex_content = r'''\documentclass{article}
+# \usepackage{amsmath}
+# \usepackage{amssymb}
+# \usepackage{graphicx}
+# \usepackage{enumitem}
+# \usepackage{longtable}
+# \usepackage{geometry}
+# \geometry{margin=1in}
+# \title{%s}
+# \begin{document}
+# \maketitle
+# ''' % test_name
+
+#     for index, question in enumerate(selected_questions, start=1):
+#         q_string = html_to_latex(question['que']['1']['q_string'])
+#         q_options = [html_to_latex(opt) for opt in question['que']['1']['q_option']]
+
+#         latex_content += r'\section*{Question %d}' % index + '\n'
+#         latex_content += q_string + '\n\n'
+#         latex_content += r'\begin{enumerate}[label=(\alph*)]' + '\n'
+#         for option in q_options:
+#             latex_content += r'\item ' + option + '\n'
+#         latex_content += r'\end{enumerate}' + '\n\n'
+        
+#         if index < len(selected_questions):
+#             latex_content += r'\newpage' + '\n'
+
+#     latex_content += r'\end{document}'
+#     return latex_content
+
+
+# def html_table_to_latex(html_table):
+#     # Remove any attributes from the tags
+#     html_table = re.sub(r'<(\w+)[^>]*>', r'<\1>', html_table)
+    
+#     # Find all rows
+#     rows = re.findall(r'<tr>(.*?)</tr>', html_table, re.DOTALL)
+#     if not rows:
+#         return "% Error: No table rows found"
+
+#     # Determine the number of columns
+#     first_row = re.findall(r'<t[dh]>(.*?)</t[dh]>', rows[0], re.DOTALL)
+#     num_cols = len(first_row)
+    
+#     if num_cols == 0:
+#         return "% Error: No table cells found"
+
+#     # Start the LaTeX table
+#     latex_table = '\\begin{tabular}{|' + 'c|' * num_cols + '}\n\\hline\n'
+
+#     for row in rows:
+#         cells = re.findall(r'<t[dh]>(.*?)</t[dh]>', row, re.DOTALL)
+#         cells += [''] * (num_cols - len(cells))  # Pad if necessary
+#         cells = [convert_math(cell) for cell in cells]  # Convert math in cells
+#         latex_table += ' & '.join(cells) + ' \\\\\n\\hline\n'
+
+#     latex_table += '\\end{tabular}'
+#     return latex_table
