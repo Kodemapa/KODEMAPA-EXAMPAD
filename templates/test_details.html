@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Details</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        .form-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .form-container button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            align-self: center;
+        }
+        .collapsible {
+            background-color: #f2f2f2;
+            color: #444;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+        }
+        .content table {
+            width: 100%;
+        }
+        .section-summary {
+            margin-bottom: 20px;
+        }
+        .summary-table {
+            width: auto;
+            margin-bottom: 10px;
+        }
+        .random-selection {
+            margin-bottom: 20px;
+        }
+        .random-input {
+            width: 50px;
+        }
+        .test-info, .section-info, .question-list {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .question {
+            width: 45%;
+            margin: 2.5%;
+        }
+        .question p {
+            margin: 5px 0;
+        }
+        .question-options ol {
+            margin-left: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>{{ test_name }}</h1>
+            <p>Time: {{ test_time }} minutes</p>
+        </div>
+        <div class="question-list">
+            {% for index, question in enumerate(selected_questions) %}
+                <div class="question">
+                    <p><strong>Question {{ index + 1 }}:</strong> {{ question['que']['1']['q_string'] | safe }}</p>
+                    <div class="question-options">
+                        <ol>
+                            {% for option in question['que']['1']['q_option'] %}
+                                <li>{{ option | safe }}</li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <button onclick="submitData()">Export Selected Questions to DOCX</button>
+    </div>
+
+    <script>
+        const testName = "{{ test_name }}";
+        const testTime = "{{ test_time }}";
+        const selectedQuestions = JSON.parse('{{ selected_questions | tojson | safe }}');
+    </script>
+    <script src="/static/js/export.js"></script>
+</body>
+</html>

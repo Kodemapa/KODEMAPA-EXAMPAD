@@ -1,0 +1,169 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.form-container button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    align-self: center;
+}
+
+input[type="text"], input[type="number"], select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.collapsible {
+    background-color: #f2f2f2;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.content table {
+    width: 100%;
+}
+
+.section-summary {
+    margin-bottom: 20px;
+}
+
+.summary-table {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.random-selection {
+    margin-bottom: 20px;
+}
+
+.random-input {
+    width: 50px;
+}
+
+/* Additional styles */
+.section-container {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button-group div {
+    margin: 5px;
+}
+
+.question-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.question {
+    width: 45%;
+    margin: 2.5%;
+}
+
+.question p {
+    margin: 5px 0;
+}
+
+.question-options ol {
+    margin-left: 20px;
+}
+
+/* New additions based on typical requirements */
+.question-list .question {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.question-list .question:hover {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    background-color: #f9f9f9;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.summary-table th, .summary-table td {
+    text-align: center;
+}
+
+

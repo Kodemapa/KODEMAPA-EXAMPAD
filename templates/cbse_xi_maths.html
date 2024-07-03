@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CBSE XI MATHS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CBSE XI MATHS</h1>
+        </div>
+        <div class="form-container">
+            <form method="POST">
+                {% for section in l4_data %}
+                <div class="section-container">
+                    <h3>{{ section['name'] }}</h3>
+                    <div class="button-group">
+                        {% for test in section['L5'] %}
+                        <div>
+                            <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}"
+                                value="{{ test[11] }}">
+                            <label for="{{ test[10] }}">{{ test[0] }}</label>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endfor %}
+                <button type="submit">Proceed</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

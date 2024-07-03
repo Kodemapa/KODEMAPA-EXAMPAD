@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select Class</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Select Class</h1>
+        </div>
+        <div class="form-container">
+            <form method="POST">
+                <div class="button-group">
+                    <div>
+                        <input type="radio" id="class_xi" name="class_selection" value="XI" required>
+                        <label for="class_xi">Class XI</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="class_xii" name="class_selection" value="XII" required>
+                        <label for="class_xii">Class XII</label>
+                    </div>
+                </div>
+                <button type="submit">Proceed</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
