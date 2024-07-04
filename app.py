@@ -4,7 +4,6 @@ import re
 from flask import Flask, jsonify, render_template_string, request, redirect, url_for , send_file
 import json
 import pypandoc
-# pypandoc.download_pandoc()
 import requests
 import urllib.parse
 import subprocess
@@ -23,6 +22,7 @@ from docx.shared import Inches
 from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
+pypandoc.download_pandoc()
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
