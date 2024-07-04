@@ -822,37 +822,6 @@ def determine_difficulty(question):
         return 'Difficult'
 
 
-def generate_solutions_latex(test_name, question_ids, solutions):
-    latex_content = r'''\documentclass{article}
-    \usepackage{amsmath}
-    \usepackage{amssymb}
-    \usepackage{graphicx}
-    \usepackage{enumitem}
-    \usepackage{longtable}
-    \usepackage{color}
-    \title{Solutions for %s}
-    \begin{document}
-    \maketitle
-    ''' % test_name
-
-    for index, qid in enumerate(question_ids, start=1):
-        if qid in solutions:
-            correct_answers = solutions[qid]['correct_answers']
-            explanation = solutions[qid]['explanation']
-            
-            latex_content += r'\section*{Question %d}' % index + '\n'
-            latex_content += r'\textbf{Correct Answer(s):} ' + ', '.join(map(str, correct_answers)) + '\n\n'
-            latex_content += r'\textbf{Explanation:}' + '\n'
-            latex_content += html_to_latex(explanation) + '\n'
-            latex_content += r'\newpage' + '\n'
-        else:
-            latex_content += r'\section*{Question %d}' % index + '\n'
-            latex_content += r'No solution found for this question.' + '\n'
-            latex_content += r'\newpage' + '\n'
-
-    latex_content += r'\end{document}'
-    return latex_content
-
 @app.route('/export_to_docx', methods=['POST'])
 def export_to_docx():
     try:
