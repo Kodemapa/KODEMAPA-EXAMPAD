@@ -403,7 +403,7 @@
                         0
                     ],
                     null,
-                    "<p>Given that, walk \\(8 \\mathrm{~m}\\) east then walk \\(6 \\mathrm{~m}\\) north.<\/p><p>We know that angle between north and east \\(=90^{\\circ}\\).<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/658edde8cc88eaacec73423e53b422cc.png\"/><br/><\/p><p>So, apply Pythagoras theorem:<\/p><p>\\(d^2=a^2+b^2\\)<\/p><p>So,<\/p><p>\\(d^2=8^2+6^2=64+36=100 \\)<\/p><p>\\(d=10\\) meter<\/p>",
+                    "<p>Given that, walk \\(8 \\mathrm{~m}\\) east then walk \\(6 \\mathrm{~m}\\) north.<\/p><p>We know that angle between north and east \\(=90^{\\circ}\\).<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/658edde8cc88eaacec73423e53b422cc.png\"/><br/><\/p><p>So, apply Pythagoras theorem:<\/p><p>\\(d^2=a^2+b^2\\)<\/p><p>So,<\/p><p>\\(d^2=8^2+6^2=64+36=100 \\)<\/p><p>\\(d=10\\) meter<\/p>",
                     "e7ddd0bf50faa018a8274055475c8c6b",
                     null,
                     [
@@ -531,7 +531,7 @@
                         0
                     ],
                     null,
-                    "<img alt=\"\" data-book_with_2_col=\"[251,234]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4b63def490086dc510b0bc2950eaa026.png\" style=\"width: 251px; max-width: 251px; height: 234px; max-height: 234px;\"/><br/><p>Let the initial position of the boy is considered as the origin.<\/p><p>So the initial position vector of the boy is,<\/p><p>\\(\\Rightarrow \\overrightarrow{d_1}=0 \\hat{i}+0 \\hat{j}+0 \\hat{k}\\)<\/p><p>So according to the diagram, the final position vector of the boy is given as,<\/p><p>\\(\\Rightarrow \\overrightarrow{d_2}=4 \\hat{i}+3 \\hat{j}+12 \\hat{k}\\)<\/p><p>By equation 1 and 2 the resultant displacement of the boy is given as,<\/p><p>\\(\\Rightarrow d=\\sqrt{\\left[\\left(x_2-x_1\\right)^2+\\left(y_2-y_1\\right)^2+\\left(z_2-z_1\\right)^2\\right]} \\)<\/p><p>\\(\\Rightarrow d=\\sqrt{\\left[(4-0)^2+(3-0)^2+(12-0)^2\\right]} \\)<\/p><p>\\(\\Rightarrow d=13 \\mathrm{~m}\\)<\/p>",
+                    "<img alt=\"\" data-book_with_2_col=\"[251,234]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4b63def490086dc510b0bc2950eaa026.png\" style=\"width: 251px; max-width: 251px; height: 234px; max-height: 234px;\"/><br/><p>Let the initial position of the boy is considered as the origin.<\/p><p>So the initial position vector of the boy is,<\/p><p>\\(\\Rightarrow \\overrightarrow{d_1}=0 \\hat{i}+0 \\hat{j}+0 \\hat{k}\\)<\/p><p>So according to the diagram, the final position vector of the boy is given as,<\/p><p>\\(\\Rightarrow \\overrightarrow{d_2}=4 \\hat{i}+3 \\hat{j}+12 \\hat{k}\\)<\/p><p>By equation 1 and 2 the resultant displacement of the boy is given as,<\/p><p>\\(\\Rightarrow d=\\sqrt{\\left[\\left(x_2-x_1\\right)^2+\\left(y_2-y_1\\right)^2+\\left(z_2-z_1\\right)^2\\right]} \\)<\/p><p>\\(\\Rightarrow d=\\sqrt{\\left[(4-0)^2+(3-0)^2+(12-0)^2\\right]} \\)<\/p><p>\\(\\Rightarrow d=13 \\mathrm{~m}\\)<\/p>",
                     null,
                     null,
                     [
@@ -595,7 +595,7 @@
                         3
                     ],
                     null,
-                    "<p>The vector has two components: 1. Vertical component and 2. Horizontal component<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/cadf4e57125ba60a25b474a64041bd67.png\" title=\"Current dimension: 157 X 160\"/><br/><\/p><p>Vertical component \\(\\left(F_y\\right)=F \\operatorname{Sin} \\theta\\)<\/p><p>Horizontal component \\(\\left(F_x\\right)=F \\operatorname{Cos} \\theta\\)<\/p><p>The horizontal component is responsible to move the stone along the ground.<\/p><p>\\(\\vec{F}=F_x=F \\cos \\theta \\)<\/p><p>\\({F}_{{X}}=60 \\cos 60^{\\circ}=30 \\mathrm{~N}\\)<\/p><p>So, the effective value of the pull tending to move the stone on the ground is \\(30 \\mathrm{~N}\\).<\/p>",
+                    "<p>The vector has two components: 1. Vertical component and 2. Horizontal component<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/cadf4e57125ba60a25b474a64041bd67.png\" title=\"Current dimension: 157 X 160\"/><br/><\/p><p>Vertical component \\(\\left(F_y\\right)=F \\operatorname{Sin} \\theta\\)<\/p><p>Horizontal component \\(\\left(F_x\\right)=F \\operatorname{Cos} \\theta\\)<\/p><p>The horizontal component is responsible to move the stone along the ground.<\/p><p>\\(\\vec{F}=F_x=F \\cos \\theta \\)<\/p><p>\\({F}_{{X}}=60 \\cos 60^{\\circ}=30 \\mathrm{~N}\\)<\/p><p>So, the effective value of the pull tending to move the stone on the ground is \\(30 \\mathrm{~N}\\).<\/p>",
                     null,
                     null,
                     [
@@ -616,7 +616,7 @@
                 [
                     20,
                     null,
-                    "<p>Three kids \\(A, B\\) and \\(C\\) are pulling a rope as shown in the figure. What are the magnitudes of force with which \\(B\\) and \\(C\\) must pull in order to keep this system in equilibrium?<\/p><p><img alt=\"\" data-book_with_2_col=\"[199,150]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9ca53afce6f9caf86a91fec393cdf5a2.png\" style=\"width: 199px; max-width: 199px; height: 150px; max-height: 150px;\"/><br/><\/p>",
+                    "<p>Three kids \\(A, B\\) and \\(C\\) are pulling a rope as shown in the figure. What are the magnitudes of force with which \\(B\\) and \\(C\\) must pull in order to keep this system in equilibrium?<\/p><p><img alt=\"\" data-book_with_2_col=\"[199,150]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9ca53afce6f9caf86a91fec393cdf5a2.png\" style=\"width: 199px; max-width: 199px; height: 150px; max-height: 150px;\"/><br/><\/p>",
                     [
                         "<p>\\(20 \\sqrt{3} \\mathrm{~N}, 15 \\mathrm{~N}\\)<\/p>",
                         "<p>\\(20 \\mathrm{~N}, 15 \\mathrm{~N}\\)<\/p>",
@@ -627,7 +627,7 @@
                         2
                     ],
                     null,
-                    "<p>Equilibrium of the system is achieved when the net force acting on the system is zero i.e. the sum of the horizontal component of forces must be zero and the sum vertical components of the force must be zero.<\/p><p>\\(\\Rightarrow \\Sigma F_x=0\\) and \\(\\Sigma F_y=0\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[230,178]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/827bc032804dbe02d7965c81ef7dcc06.png\" style=\"width: 230px; max-width: 230px; height: 178px; max-height: 178px;\"/><br/><\/p><p>Therefore, for equilibrium \\(\\mathrm{A} \\sin 30^{\\circ}=\\mathrm{B}\\) and \\(\\mathrm{A} \\cos 30^{\\circ}=\\mathrm{C}\\)<\/p><p>\\(\\Rightarrow B=20 \\cos 30^{\\circ}=10 \\sqrt{3} \\mathrm{~N} \\)<\/p><p>\\(\\Rightarrow C=20 \\sin 30^{\\circ}=10 \\mathrm{~N}\\)<\/p>",
+                    "<p>Equilibrium of the system is achieved when the net force acting on the system is zero i.e. the sum of the horizontal component of forces must be zero and the sum vertical components of the force must be zero.<\/p><p>\\(\\Rightarrow \\Sigma F_x=0\\) and \\(\\Sigma F_y=0\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[230,178]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/827bc032804dbe02d7965c81ef7dcc06.png\" style=\"width: 230px; max-width: 230px; height: 178px; max-height: 178px;\"/><br/><\/p><p>Therefore, for equilibrium \\(\\mathrm{A} \\sin 30^{\\circ}=\\mathrm{B}\\) and \\(\\mathrm{A} \\cos 30^{\\circ}=\\mathrm{C}\\)<\/p><p>\\(\\Rightarrow B=20 \\cos 30^{\\circ}=10 \\sqrt{3} \\mathrm{~N} \\)<\/p><p>\\(\\Rightarrow C=20 \\sin 30^{\\circ}=10 \\mathrm{~N}\\)<\/p>",
                     null,
                     null,
                     [
@@ -723,7 +723,7 @@
                         0
                     ],
                     null,
-                    "<p>In a circular motion, the component of the acceleration directed along the radius of the circle is called centripetal acceleration.\u00a0It is responsible for the change in direction of velocity.\u00a0<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9035c1975d6a5f0aafee473b7a81fbad.png\"/><br/><\/p><p>\\(\\Rightarrow a_c=\\frac{v^2}{r}=\\omega^2 r\\)<br/><\/p><p>Where \\(v=\\) velocity, \\(r=\\) radius, \\(a_c=\\) Centripetal acceleration, \\(\\omega=\\) angular velocity<br/><\/p><p>Here \\({r}=2 \\mathrm{m}\\) and \\(\\omega=10 \\mathrm{~rad}/\\mathrm{sec}\\)<\/p><p>\\(\\Rightarrow a_c=10^2 \\times 2=200 \\mathrm{~m} / \\mathrm{s}^2\\)<\/p>",
+                    "<p>In a circular motion, the component of the acceleration directed along the radius of the circle is called centripetal acceleration.\u00a0It is responsible for the change in direction of velocity.\u00a0<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9035c1975d6a5f0aafee473b7a81fbad.png\"/><br/><\/p><p>\\(\\Rightarrow a_c=\\frac{v^2}{r}=\\omega^2 r\\)<br/><\/p><p>Where \\(v=\\) velocity, \\(r=\\) radius, \\(a_c=\\) Centripetal acceleration, \\(\\omega=\\) angular velocity<br/><\/p><p>Here \\({r}=2 \\mathrm{m}\\) and \\(\\omega=10 \\mathrm{~rad}/\\mathrm{sec}\\)<\/p><p>\\(\\Rightarrow a_c=10^2 \\times 2=200 \\mathrm{~m} / \\mathrm{s}^2\\)<\/p>",
                     null,
                     null,
                     [
@@ -819,7 +819,7 @@
                         1
                     ],
                     null,
-                    "<p>The velocity of an object is the rate of change of its position with respect to a frame of reference, and is a function of time.\u00a0Velocity has two components: horizontal component \\({v}_{{x}}\\), vertical component \\({v}_{{y}}\\).<\/p><p>\\(\\Rightarrow {v}^2={v}_{{x}}^2+{v}_{{y}}^2\\)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/a41d3379e0504c27b73b3e61c6a1736e.png\"/><br/><\/p><p>As \\({x}=\\mathrm{at}^3\\)<\/p><p>\\(\\therefore v_x=\\frac{d x}{d t}=3 \\alpha t^2\\)<\/p><p>Also, \\(y=\\beta t^3\\)<\/p><p>\\(\\therefore v_y=\\frac{d y}{d t}=3 \\beta t^2 \\)<\/p>\n<p>\\(\\Rightarrow v=\\sqrt{v_x^2+\\nu_y^2}=3 t^2 \\sqrt{\\alpha^2+\\beta^2}\\)<\/p>",
+                    "<p>The velocity of an object is the rate of change of its position with respect to a frame of reference, and is a function of time.\u00a0Velocity has two components: horizontal component \\({v}_{{x}}\\), vertical component \\({v}_{{y}}\\).<\/p><p>\\(\\Rightarrow {v}^2={v}_{{x}}^2+{v}_{{y}}^2\\)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/a41d3379e0504c27b73b3e61c6a1736e.png\"/><br/><\/p><p>As \\({x}=\\mathrm{at}^3\\)<\/p><p>\\(\\therefore v_x=\\frac{d x}{d t}=3 \\alpha t^2\\)<\/p><p>Also, \\(y=\\beta t^3\\)<\/p><p>\\(\\therefore v_y=\\frac{d y}{d t}=3 \\beta t^2 \\)<\/p>\n<p>\\(\\Rightarrow v=\\sqrt{v_x^2+\\nu_y^2}=3 t^2 \\sqrt{\\alpha^2+\\beta^2}\\)<\/p>",
                     null,
                     null,
                     [
@@ -2259,7 +2259,7 @@
                         2
                     ],
                     null,
-                    "<p><span>A heat engine is a device which converts continuously heat energy to mechanical energy in a cyclic Process.\u00a0<\/span><span>The main parts of a heat engine are:<\/span><br/><\/p><ul><li>Source: It is a heat reservoir at a higher temperature\u00a0 T<sub>1<\/sub>.<\/li><li>Sink: It is a reservoir at a lower temperature T<sub>2<\/sub>.\u00a0<\/li><li>Working Substance: Working substance is any gaseous or liquid substance that performs a mechanical work when heat supplied to it.<\/li><li>The diagram below shows the essential components of a heat engine.<\/li><\/ul><p><img alt=\"\" data-book_with_3_col=\"[60,110]\" src=\"static/media/wl_client/1/qdump/76db3f2436b3cb69cbd19f81a461e010/e3f5263a27c1678d90cdbec99d155482.png\" style=\"\"/><br/><\/p><p>Where,<\/p><p>HE\u00a0= Heat Engine<br/><\/p><p>T<sub>H<\/sub> = Temperature of Source / Hot reservoir<br/><\/p><p>T<sub>L<\/sub> = Temperature of Sink / Cold Reservoir<br/><\/p><p>Q<sub>1<\/sub> = Heat absorbed from Source<\/p><p>Q<sub>2<\/sub> = Heat rejected to Sink<\/p><p>The efficiency(\u03b7) of a heat engine is defined as:<\/p><p>\\(\\therefore \\eta=\\frac{W}{Q_{1}}=\\frac{Q_{1}-Q_{2}}{Q_{1}}=1-\\frac{Q_{2}}{Q_{1}}\\)<br/><\/p><p>Now, W = Q<sub>1<\/sub>\u00a0 - Q<sub>2<\/sub><br/><\/p><p><span>The efficiency of the heat engine is always less than 1.\u00a0\u00a0<\/span>This is because in reality none of the engines can convert absorbed heat completely into work, as some of the heat will always be dissipated during the process.\u00a0Also stated, according to the second Law no heat engine can have 100% efficiency<\/p>",
+                    "<p><span>A heat engine is a device which converts continuously heat energy to mechanical energy in a cyclic Process.\u00a0<\/span><span>The main parts of a heat engine are:<\/span><br/><\/p><ul><li>Source: It is a heat reservoir at a higher temperature\u00a0 T<sub>1<\/sub>.<\/li><li>Sink: It is a reservoir at a lower temperature T<sub>2<\/sub>.\u00a0<\/li><li>Working Substance: Working substance is any gaseous or liquid substance that performs a mechanical work when heat supplied to it.<\/li><li>The diagram below shows the essential components of a heat engine.<\/li><\/ul><p><img alt=\"\" data-book_with_3_col=\"[60,110]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/76db3f2436b3cb69cbd19f81a461e010/e3f5263a27c1678d90cdbec99d155482.png\" style=\"\"/><br/><\/p><p>Where,<\/p><p>HE\u00a0= Heat Engine<br/><\/p><p>T<sub>H<\/sub> = Temperature of Source / Hot reservoir<br/><\/p><p>T<sub>L<\/sub> = Temperature of Sink / Cold Reservoir<br/><\/p><p>Q<sub>1<\/sub> = Heat absorbed from Source<\/p><p>Q<sub>2<\/sub> = Heat rejected to Sink<\/p><p>The efficiency(\u03b7) of a heat engine is defined as:<\/p><p>\\(\\therefore \\eta=\\frac{W}{Q_{1}}=\\frac{Q_{1}-Q_{2}}{Q_{1}}=1-\\frac{Q_{2}}{Q_{1}}\\)<br/><\/p><p>Now, W = Q<sub>1<\/sub>\u00a0 - Q<sub>2<\/sub><br/><\/p><p><span>The efficiency of the heat engine is always less than 1.\u00a0\u00a0<\/span>This is because in reality none of the engines can convert absorbed heat completely into work, as some of the heat will always be dissipated during the process.\u00a0Also stated, according to the second Law no heat engine can have 100% efficiency<\/p>",
                     null,
                     null,
                     [
@@ -2632,7 +2632,7 @@
                 [
                     83,
                     null,
-                    "<p>A thermodynamic system is taken through the cycle ABCD as shown in\r\nfigure. Heat rejected by the gas during the cycle is:\u00a0<\/p><p><img src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/20e791d66f85df6ddd75f1f1e494e041.png\" style=\"width: 100%; max-width: 149px; height: auto; max-height: 143px;\"/><br/><\/p>",
+                    "<p>A thermodynamic system is taken through the cycle ABCD as shown in\r\nfigure. Heat rejected by the gas during the cycle is:\u00a0<\/p><p><img src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/20e791d66f85df6ddd75f1f1e494e041.png\" style=\"width: 100%; max-width: 149px; height: auto; max-height: 143px;\"/><br/><\/p>",
                     [
                         "<p>PV<\/p>",
                         "<p>2PV<\/p>",
@@ -2643,7 +2643,7 @@
                         1
                     ],
                     null,
-                    "<p>Given: Cyclic process ABCDA<\/p><img src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/20e791d66f85df6ddd75f1f1e494e041.png\"/><br/><br/><p>We know that,<\/p><p>In cyclic process<\/p><p>\u0394U=0<\/p><p>So, from the first law of the thermodynamics,<\/p><p>\u0394Q=\u0394W= area under the PV curve.<\/p><p>\u0394W=(2P\u2212P)(3V\u2212V)=2PV<\/p><p>\u2234 Heat rejected=2 PV<\/p>",
+                    "<p>Given: Cyclic process ABCDA<\/p><img src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/20e791d66f85df6ddd75f1f1e494e041.png\"/><br/><br/><p>We know that,<\/p><p>In cyclic process<\/p><p>\u0394U=0<\/p><p>So, from the first law of the thermodynamics,<\/p><p>\u0394Q=\u0394W= area under the PV curve.<\/p><p>\u0394W=(2P\u2212P)(3V\u2212V)=2PV<\/p><p>\u2234 Heat rejected=2 PV<\/p>",
                     null,
                     null,
                     [
@@ -3251,7 +3251,7 @@
                         0
                     ],
                     null,
-                    "<ul><\/ul><p>Consider a capillary tube of radius r dipped in a liquid of density \\(\\rho\\). Let us assume that the liquid rises to a height of \\(h\\) in the tube due to the surface tension \\(\\sigma\\) and g is acceleration due to gravity.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2ba58d30e2ca40dc27b7c2bd62a0aa3f.jpeg\"/><br/><\/p><p>\\(\\theta\\) is the contact angle made by the liquid meniscus with the capillary tube's surface.<\/p><p>On balancing the forces in the liquid column of height \\(h\\),<\/p><p>Weight of the water in column = Upwards force due to surface tension<\/p><p>Mass of water \\(\\times g =\\sigma \\cos \\theta \\times\\) perimeter<\/p><p>Density \\(\\times\\) volume \\(\\times g=\\sigma \\cos \\theta \\times 2 \\pi r\\)<\/p><p>\\(\\rho \\times \\pi r^{2} h \\times g=\\sigma \\cos \\theta \\times 2 \\pi r\\)<\/p><p>Capillary rise, \\(h=\\frac{2 \\sigma \\cos \\theta}{\\rho g r}\\)<\/p><p>Capillary rise is dependent on \\(\\theta\\). Therefore capillary rise depends on the values of \\(\\cos \\theta\\).<\/p><p>For a rise in the liquid column, the value of capillary rise 'h' must be positive. This is possible when \\(\\cos \\theta\\) is positive i.e., \\(0^{\\circ}&lt;\\theta&lt;90^{\\circ}\\)<\/p>",
+                    "<ul><\/ul><p>Consider a capillary tube of radius r dipped in a liquid of density \\(\\rho\\). Let us assume that the liquid rises to a height of \\(h\\) in the tube due to the surface tension \\(\\sigma\\) and g is acceleration due to gravity.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2ba58d30e2ca40dc27b7c2bd62a0aa3f.jpeg\"/><br/><\/p><p>\\(\\theta\\) is the contact angle made by the liquid meniscus with the capillary tube's surface.<\/p><p>On balancing the forces in the liquid column of height \\(h\\),<\/p><p>Weight of the water in column = Upwards force due to surface tension<\/p><p>Mass of water \\(\\times g =\\sigma \\cos \\theta \\times\\) perimeter<\/p><p>Density \\(\\times\\) volume \\(\\times g=\\sigma \\cos \\theta \\times 2 \\pi r\\)<\/p><p>\\(\\rho \\times \\pi r^{2} h \\times g=\\sigma \\cos \\theta \\times 2 \\pi r\\)<\/p><p>Capillary rise, \\(h=\\frac{2 \\sigma \\cos \\theta}{\\rho g r}\\)<\/p><p>Capillary rise is dependent on \\(\\theta\\). Therefore capillary rise depends on the values of \\(\\cos \\theta\\).<\/p><p>For a rise in the liquid column, the value of capillary rise 'h' must be positive. This is possible when \\(\\cos \\theta\\) is positive i.e., \\(0^{\\circ}&lt;\\theta&lt;90^{\\circ}\\)<\/p>",
                     null,
                     null,
                     [
@@ -4947,7 +4947,7 @@
                         3
                     ],
                     null,
-                    "<p>Apparent frequency \\(\\left(f^{\\prime}\\right)=f\\left(\\frac{V \\pm V_o}{V \\pm V_s}\\right)\\)<\/p><ul><li>The apparent\u00a0<span>frequency will be maximum<\/span>\u00a0when the\u00a0<span>denominator is minimum<\/span>\u00a0and\u00a0<span>numerator of the above formula is maximum.<\/span><\/li><li>The\u00a0<span>numerato<\/span>r of the formula\u00a0<span>will be maximum<\/span>\u00a0when\u00a0<span>sign between V and V<span>S<\/span>\u00a0is positive<\/span>, means both\u00a0<span>sound and the observer moves in opposite direction<\/span>.<\/li><li>The\u00a0<span>denominator will be minimum<\/span>\u00a0when the\u00a0<span>sign between V and V<span><sub>O<\/sub><\/span>\u00a0is negative<\/span>, means both the\u00a0<span>sound and source move in same direction<\/span>.<\/li><\/ul><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7a821f719b6bfad35e1376a6397550f3.jpeg\"/><br/><p>Apparent frequency \\(\\left(f^{\\prime}\\right)=f\\left(\\frac{V+V_O}{V-V_s}\\right)\\)<\/p><p><span>Above these two conditions are only valid when\u00a0<\/span><span>both the source and observer moves towards each other<\/span><span>. In this case the, the sound and observer will move in opposite direction and the sound and source move in same direction.<\/span><br/><\/p>",
+                    "<p>Apparent frequency \\(\\left(f^{\\prime}\\right)=f\\left(\\frac{V \\pm V_o}{V \\pm V_s}\\right)\\)<\/p><ul><li>The apparent\u00a0<span>frequency will be maximum<\/span>\u00a0when the\u00a0<span>denominator is minimum<\/span>\u00a0and\u00a0<span>numerator of the above formula is maximum.<\/span><\/li><li>The\u00a0<span>numerato<\/span>r of the formula\u00a0<span>will be maximum<\/span>\u00a0when\u00a0<span>sign between V and V<span>S<\/span>\u00a0is positive<\/span>, means both\u00a0<span>sound and the observer moves in opposite direction<\/span>.<\/li><li>The\u00a0<span>denominator will be minimum<\/span>\u00a0when the\u00a0<span>sign between V and V<span><sub>O<\/sub><\/span>\u00a0is negative<\/span>, means both the\u00a0<span>sound and source move in same direction<\/span>.<\/li><\/ul><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7a821f719b6bfad35e1376a6397550f3.jpeg\"/><br/><p>Apparent frequency \\(\\left(f^{\\prime}\\right)=f\\left(\\frac{V+V_O}{V-V_s}\\right)\\)<\/p><p><span>Above these two conditions are only valid when\u00a0<\/span><span>both the source and observer moves towards each other<\/span><span>. In this case the, the sound and observer will move in opposite direction and the sound and source move in same direction.<\/span><br/><\/p>",
                     null,
                     null,
                     [
@@ -5427,7 +5427,7 @@
                         2
                     ],
                     null,
-                    "<p>Beats:\u00a0When two sound waves of slightly different frequencies interfere, a repeating sound is heard known as beats.<\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7559840a7d342fa08e7b0e4cd69e6b45.jpeg\"/><span style=\"\"><br/><\/span><ul><li>The above diagram shows the\u00a0<span>interference of two\u00a0sound waves of slightly different frequencies and<\/span>\u00a0<span>resulting beat from zero to high amplitude.<\/span>\u00a0In the diagram, C.I. means points of constructive interference and D.I. destructive interference.<\/li><li><span>A loud voice is heard or a peak<\/span>\u00a0in the beat pattern in the diagram, when constructive interference occurs.<\/li><li><span>When destructive interference occurs, no sound is heard<\/span>\u00a0as in the diagram no displacement on the beat pattern.<\/li><\/ul>",
+                    "<p>Beats:\u00a0When two sound waves of slightly different frequencies interfere, a repeating sound is heard known as beats.<\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7559840a7d342fa08e7b0e4cd69e6b45.jpeg\"/><span style=\"\"><br/><\/span><ul><li>The above diagram shows the\u00a0<span>interference of two\u00a0sound waves of slightly different frequencies and<\/span>\u00a0<span>resulting beat from zero to high amplitude.<\/span>\u00a0In the diagram, C.I. means points of constructive interference and D.I. destructive interference.<\/li><li><span>A loud voice is heard or a peak<\/span>\u00a0in the beat pattern in the diagram, when constructive interference occurs.<\/li><li><span>When destructive interference occurs, no sound is heard<\/span>\u00a0as in the diagram no displacement on the beat pattern.<\/li><\/ul>",
                     null,
                     null,
                     [
@@ -6090,10 +6090,10 @@
                     null,
                     "<p>Which of the following best represents the relationship between internal energy '\\(U\\)' of an ideal gas and its absolute temperature '\\(T\\)'?<\/p>",
                     [
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/212e6ad0f5b6796b2e03a1b513803df8.png\"/>",
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4100c746c0f961459765c5ae1b4b574d.png\"/>",
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/1e605f46168857b6a9018a67e56c207f.png\" style=\"width: 100%; max-width: 133px; height: auto; max-height: 114px;\"/>",
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7978cd843c260e953e34824017a77160.png\"/>"
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/212e6ad0f5b6796b2e03a1b513803df8.png\"/>",
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4100c746c0f961459765c5ae1b4b574d.png\"/>",
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/1e605f46168857b6a9018a67e56c207f.png\" style=\"width: 100%; max-width: 133px; height: auto; max-height: 114px;\"/>",
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7978cd843c260e953e34824017a77160.png\"/>"
                     ],
                     [
                         1
@@ -8723,7 +8723,7 @@
                         3
                     ],
                     null,
-                    "<p>Let the body start from \\(\\mathrm{O}\\), as shown in figure<\/p><img alt=\"\" data-book_with_2_col=\"[238,207]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6386c926689486a25e9d025ff5a3f93d.png\" style=\"width: 238px; max-width: 238px; height: 207px; max-height: 207px;\"/><br/><p>\\(\\vec{V}_A=\\overrightarrow{O A}=30 {~m}/{s}\\), due East<\/p><p>\\(\\vec{V}_B=\\overrightarrow{A B}=40 {~m}/{s}\\), due north<\/p><p>According to the parallelogram, \\(\\overrightarrow{O B}\\) is the resultant velocity.<\/p><p>To find the resultant velocity of its magnitude is given by:<\/p><p>\\( R=\\sqrt{A^2+B^2} \\)<\/p><p>\\(v=\\sqrt{v_A^2+v_B^2}=\\sqrt{30^2+40^2}=50 {~m}/{s}\\)<\/p>",
+                    "<p>Let the body start from \\(\\mathrm{O}\\), as shown in figure<\/p><img alt=\"\" data-book_with_2_col=\"[238,207]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6386c926689486a25e9d025ff5a3f93d.png\" style=\"width: 238px; max-width: 238px; height: 207px; max-height: 207px;\"/><br/><p>\\(\\vec{V}_A=\\overrightarrow{O A}=30 {~m}/{s}\\), due East<\/p><p>\\(\\vec{V}_B=\\overrightarrow{A B}=40 {~m}/{s}\\), due north<\/p><p>According to the parallelogram, \\(\\overrightarrow{O B}\\) is the resultant velocity.<\/p><p>To find the resultant velocity of its magnitude is given by:<\/p><p>\\( R=\\sqrt{A^2+B^2} \\)<\/p><p>\\(v=\\sqrt{v_A^2+v_B^2}=\\sqrt{30^2+40^2}=50 {~m}/{s}\\)<\/p>",
                     "1231fa8a88d1131a465009abc2f8dade",
                     null,
                     [
@@ -8755,7 +8755,7 @@
                         2
                     ],
                     null,
-                    "<p>If a projectile is launched with an initial velocity \\({v}_0\\), at an angle \\(\\theta\\) from the horizontal plane, then its vertical position can be found from its horizontal position and is given by:<\/p><p>\\(y=x\\) \\(\\tan \\theta-\\frac{g x^2}{2 v_0^2 \\cos ^2 \\theta} \\)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9ddd4df1ce5c083cdfd3291456a68b90.png\"/><br/><\/p><p>\\( y=\\) vertical position \\(({m}) \\),\u00a0\\(x=\\) horizontal position \\(({m}) \\)<\/p><p>\\({v}_0=\\) initial velocity (combined components, \\(({m} / {s})\\)<\/p><p>\\({g}=\\) acceleration due to gravity (\\(9.80 \\mathrm{~m} / \\mathrm{s}^2)\\)<\/p><p>\\(\\theta=\\) angle of the initial velocity from the horizontal plane (radians or degrees)\u00a0<\/p><p>Here \\({u}_{{ox}}={u} \\cos \\theta, {a}_{{x}}=0, {t}={t}\\) and \\({v}_{{ox}}=?\\)<\/p><p>According to Kinematic equations for uniformly accelerated motion,<\/p><p>\\({v}_{{x}}={u}_{{x}}+{a}_{{x}} {t} \\)<\/p><p>\\({v}_{{x}}={u} \\cos \\theta\\)<\/p><p>Similarly, \\({u}_{{oy}}={u} \\sin \\theta, {a}_{{x}}=-{g},{t}={t}\\) and \\({v}_{{y}}=\\) ?<\/p><p>\\(\\Rightarrow v_y=u_{0 y}-g t \\)<\/p><p>\\(\\Rightarrow v_y=u \\sin \\theta-g t\\)<\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/5e9db6ecc6bc0c2661a5597c61bfa9e0.png\"/><br/><p>Now, let PR make an angle \\(\\beta\\) with the horizontal direction.<\/p><p>In \\(\\triangle {RPL}\\),<\/p><p>\\( \\tan \\beta=\\frac{R L}{P L}=\\frac{v_y}{v_z} \\)<\/p><p>\\(\\Rightarrow \\tan \\beta=\\frac{R L}{P L}=\\frac{u \\sin \\theta-g t}{u \\cos \\theta} \\)<\/p><p>\\(\\Rightarrow \\tan \\beta=\\frac{u_{v y} g t}{u_{v x}} \\)<\/p><p>\\(\\Rightarrow \\beta=\\tan ^{-1}\\left(\\frac{u_{o y}-g t}{u_{o x}}\\right)\\)<\/p>",
+                    "<p>If a projectile is launched with an initial velocity \\({v}_0\\), at an angle \\(\\theta\\) from the horizontal plane, then its vertical position can be found from its horizontal position and is given by:<\/p><p>\\(y=x\\) \\(\\tan \\theta-\\frac{g x^2}{2 v_0^2 \\cos ^2 \\theta} \\)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9ddd4df1ce5c083cdfd3291456a68b90.png\"/><br/><\/p><p>\\( y=\\) vertical position \\(({m}) \\),\u00a0\\(x=\\) horizontal position \\(({m}) \\)<\/p><p>\\({v}_0=\\) initial velocity (combined components, \\(({m} / {s})\\)<\/p><p>\\({g}=\\) acceleration due to gravity (\\(9.80 \\mathrm{~m} / \\mathrm{s}^2)\\)<\/p><p>\\(\\theta=\\) angle of the initial velocity from the horizontal plane (radians or degrees)\u00a0<\/p><p>Here \\({u}_{{ox}}={u} \\cos \\theta, {a}_{{x}}=0, {t}={t}\\) and \\({v}_{{ox}}=?\\)<\/p><p>According to Kinematic equations for uniformly accelerated motion,<\/p><p>\\({v}_{{x}}={u}_{{x}}+{a}_{{x}} {t} \\)<\/p><p>\\({v}_{{x}}={u} \\cos \\theta\\)<\/p><p>Similarly, \\({u}_{{oy}}={u} \\sin \\theta, {a}_{{x}}=-{g},{t}={t}\\) and \\({v}_{{y}}=\\) ?<\/p><p>\\(\\Rightarrow v_y=u_{0 y}-g t \\)<\/p><p>\\(\\Rightarrow v_y=u \\sin \\theta-g t\\)<\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/5e9db6ecc6bc0c2661a5597c61bfa9e0.png\"/><br/><p>Now, let PR make an angle \\(\\beta\\) with the horizontal direction.<\/p><p>In \\(\\triangle {RPL}\\),<\/p><p>\\( \\tan \\beta=\\frac{R L}{P L}=\\frac{v_y}{v_z} \\)<\/p><p>\\(\\Rightarrow \\tan \\beta=\\frac{R L}{P L}=\\frac{u \\sin \\theta-g t}{u \\cos \\theta} \\)<\/p><p>\\(\\Rightarrow \\tan \\beta=\\frac{u_{v y} g t}{u_{v x}} \\)<\/p><p>\\(\\Rightarrow \\beta=\\tan ^{-1}\\left(\\frac{u_{o y}-g t}{u_{o x}}\\right)\\)<\/p>",
                     "54952200afdf778f50ce9b4988b91178",
                     null,
                     [
@@ -9512,7 +9512,7 @@
                 [
                     298,
                     null,
-                    "<p>A body moves along the circumference of a circular track of radius \\(\\mathrm{R}\\). What is the displacement of the body when it covers \\(\\frac{3}{4}\\) the of its circumference?<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/23a68d70cd6ae7f0f539980a003230ce.png\"/><br/><\/p>",
+                    "<p>A body moves along the circumference of a circular track of radius \\(\\mathrm{R}\\). What is the displacement of the body when it covers \\(\\frac{3}{4}\\) the of its circumference?<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/23a68d70cd6ae7f0f539980a003230ce.png\"/><br/><\/p>",
                     [
                         "<p>\\(3{R}\\)<\/p>",
                         "<p>\\(\\frac{3}{4} \\pi R\\)<\/p>",
@@ -9523,7 +9523,7 @@
                         3
                     ],
                     null,
-                    "<p>Let us assume that the body starts the journey from point \\(Q\\) and reaches point \\(T\\) after completing \\(3 / 4\\) of the circumference.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/a2f0c01c336be418f046a2368ad18335.png\"/><br/><\/p><p>Now, the initial point is \\(\\mathrm{P}\\) and the final point is \\(\\mathrm{T}\\). Hence, displacement is equal to the distance QT.<\/p><p>From the figure,<\/p><p>\\({OT}={R} , {OQ}={R}\\)<\/p><p>Therefore,<\/p><p>\\(\\Rightarrow Q T=\\sqrt{O Q^2+O T^2}\\)<\/p><p>\\(=\\sqrt{R^2+R^2}=\\sqrt{2 R^2}=R \\sqrt{2}\\)<\/p>",
+                    "<p>Let us assume that the body starts the journey from point \\(Q\\) and reaches point \\(T\\) after completing \\(3 / 4\\) of the circumference.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/a2f0c01c336be418f046a2368ad18335.png\"/><br/><\/p><p>Now, the initial point is \\(\\mathrm{P}\\) and the final point is \\(\\mathrm{T}\\). Hence, displacement is equal to the distance QT.<\/p><p>From the figure,<\/p><p>\\({OT}={R} , {OQ}={R}\\)<\/p><p>Therefore,<\/p><p>\\(\\Rightarrow Q T=\\sqrt{O Q^2+O T^2}\\)<\/p><p>\\(=\\sqrt{R^2+R^2}=\\sqrt{2 R^2}=R \\sqrt{2}\\)<\/p>",
                     null,
                     null,
                     [
@@ -9544,7 +9544,7 @@
                 [
                     299,
                     null,
-                    "<p>If three students traveled from point A to B but took different paths, which one of the following have highest displacement?<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/15bbc44e3a86c2e924be81cc914bb2ac.png\"/><br/><\/p>",
+                    "<p>If three students traveled from point A to B but took different paths, which one of the following have highest displacement?<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/15bbc44e3a86c2e924be81cc914bb2ac.png\"/><br/><\/p>",
                     [
                         "<p>Student 1 will have highest displacement<\/p>",
                         "<p>Student 2 will have highest displacement<\/p>",
@@ -10408,7 +10408,7 @@
                 [
                     326,
                     null,
-                    "<p>What will be wavelength of a wave given below?<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/96bbd7c4c678e7e6e474c42df28e8f27.jpeg\"/><br/><\/p>",
+                    "<p>What will be wavelength of a wave given below?<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/96bbd7c4c678e7e6e474c42df28e8f27.jpeg\"/><br/><\/p>",
                     [
                         "<p>2<\/p>",
                         "<p>4<\/p>",
@@ -10451,7 +10451,7 @@
                         0
                     ],
                     null,
-                    "<p>Wavelength (\u03bb): It is equal to the distance travelled by the wave during the time in which anyone particle of the medium completes one vibration about its mean position.<\/p><p>Or distance travelled by the wave in one time period is known as wavelength.<\/p><p>Or is the distance between the two successive points with the same phase.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ef8bfd0d6f8d1a6cafdb8bfdc1a6021d.jpeg\"/><br/><\/p><p>A sine wave has both maxima and minima. The speed at the maximum and the minimum points are the same whereas the direction of motions is different.\u00a0A sine wave is travelling in a medium, the minimum distance between the two particles always having the same speed is\u00a0\\(\\frac{\\lambda}{2}\\).<br/><\/p>",
+                    "<p>Wavelength (\u03bb): It is equal to the distance travelled by the wave during the time in which anyone particle of the medium completes one vibration about its mean position.<\/p><p>Or distance travelled by the wave in one time period is known as wavelength.<\/p><p>Or is the distance between the two successive points with the same phase.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ef8bfd0d6f8d1a6cafdb8bfdc1a6021d.jpeg\"/><br/><\/p><p>A sine wave has both maxima and minima. The speed at the maximum and the minimum points are the same whereas the direction of motions is different.\u00a0A sine wave is travelling in a medium, the minimum distance between the two particles always having the same speed is\u00a0\\(\\frac{\\lambda}{2}\\).<br/><\/p>",
                     null,
                     null,
                     [
@@ -12563,7 +12563,7 @@
                         0
                     ],
                     null,
-                    "<p>In the circular motion of a particle with constant speed,<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/17142553fdcdb79697b091cc8d1e8f77.jpeg\"/><br/><\/p><p>The particle repeats its motion after a regular interval of time so it is a periodic motion.<\/p><p>But particle does not oscillate about a fixed point. So, the motion is not simple harmonic.<\/p><p>The circular motion of a particle with constant speed is periodic but not SHM.<\/p>",
+                    "<p>In the circular motion of a particle with constant speed,<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/17142553fdcdb79697b091cc8d1e8f77.jpeg\"/><br/><\/p><p>The particle repeats its motion after a regular interval of time so it is a periodic motion.<\/p><p>But particle does not oscillate about a fixed point. So, the motion is not simple harmonic.<\/p><p>The circular motion of a particle with constant speed is periodic but not SHM.<\/p>",
                     null,
                     null,
                     [
@@ -12874,9 +12874,9 @@
                     null,
                     "<p>Which of the following is correct acceleration versus displacement graph for a particle executing SHM?<\/p>",
                     [
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4e94acc2a76d714160d26b84c3a8fbee.png\"/>",
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/c766469fda7138d7955b55bda5376896.png\"/>",
-                        "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6cb8ef2669e72ae5288b1f8cab45d3b9.png\"/>",
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4e94acc2a76d714160d26b84c3a8fbee.png\"/>",
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/c766469fda7138d7955b55bda5376896.png\"/>",
+                        "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6cb8ef2669e72ae5288b1f8cab45d3b9.png\"/>",
                         "<p>None of the above<\/p>"
                     ],
                     [
@@ -15123,7 +15123,7 @@
                         3
                     ],
                     null,
-                    "<p>Energy form of Bernoulli's principle, It is the sum of Pressure Energy, Kinetic energy\u00a0and\u00a0<span>Potential energy.<\/span><\/p><p>Bernoulli's Principle states that the sum of the pressure energy, kinetic energy, and potential energy per unit volume of an incompressible, non-viscous fluid in a streamlined flow remains constant.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9065591fa1964088625a5ab8ab7305ec.jpeg\"/><br/><\/p><p>It can be expressed as Mathematically<\/p><p>\\(P+\\frac{1}{2} \\rho v^2+\\rho g h=\\) constant where \\(P\\) is pressure in the fluid, \\(\\rho\\) is the density of the fluid, \\(h\\) is the mean height, \\(g\\) is the acceleration due to gravity.<\/p>\n<p>The above formula is based on the law of Conservation of Energy.<\/p>",
+                    "<p>Energy form of Bernoulli's principle, It is the sum of Pressure Energy, Kinetic energy\u00a0and\u00a0<span>Potential energy.<\/span><\/p><p>Bernoulli's Principle states that the sum of the pressure energy, kinetic energy, and potential energy per unit volume of an incompressible, non-viscous fluid in a streamlined flow remains constant.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9065591fa1964088625a5ab8ab7305ec.jpeg\"/><br/><\/p><p>It can be expressed as Mathematically<\/p><p>\\(P+\\frac{1}{2} \\rho v^2+\\rho g h=\\) constant where \\(P\\) is pressure in the fluid, \\(\\rho\\) is the density of the fluid, \\(h\\) is the mean height, \\(g\\) is the acceleration due to gravity.<\/p>\n<p>The above formula is based on the law of Conservation of Energy.<\/p>",
                     null,
                     null,
                     [
@@ -15144,7 +15144,7 @@
                 [
                     474,
                     null,
-                    "<p>Find the height \\(H\\) to which water will rise if \\(v =4 m / s\\). (Pressure at \\(A\\) and \\(B\\) is atmospheric pressure)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3d25815c14e6675371e1fc9f2de75c73.jpeg\"/><br/><\/p>",
+                    "<p>Find the height \\(H\\) to which water will rise if \\(v =4 m / s\\). (Pressure at \\(A\\) and \\(B\\) is atmospheric pressure)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3d25815c14e6675371e1fc9f2de75c73.jpeg\"/><br/><\/p>",
                     [
                         "<p>\\(0.5 m\\)<\/p>",
                         "<p>\\(0.4 m\\)<\/p>",
@@ -15240,7 +15240,7 @@
                 [
                     477,
                     null,
-                    "<p>In a container, water is filled up to height \\(H\\). If we make a hole opening at height \\(h\\) (as shown in the figure), find the velocity of water coming out from this hole.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9f968fc97f28ea65bef33cb8b752e18b.jpeg\"/><br/><\/p>",
+                    "<p>In a container, water is filled up to height \\(H\\). If we make a hole opening at height \\(h\\) (as shown in the figure), find the velocity of water coming out from this hole.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9f968fc97f28ea65bef33cb8b752e18b.jpeg\"/><br/><\/p>",
                     [
                         "<p>\\(\\sqrt{2 g h}\\)<\/p>",
                         "<p>\\(\\sqrt{2 g H}\\)<\/p>",
@@ -15315,7 +15315,7 @@
                         0
                     ],
                     null,
-                    "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b344396af844d299d39e89e33788c6fb.jpeg\"/><br/><p>Now the rate of flow \\((Q)\\) can be given as<\/p><p>\\( Q=A \\times v=A \\sqrt{2 g h}\\)<\/p><p>\\( =2 \\times 10^{-6} \\times \\sqrt{2 \\times 10 \\times 2}\\)<\/p><p>Rate of flow \\(Q=12.6 \\times 10^{-6} m ^3 / s\\)<\/p>",
+                    "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b344396af844d299d39e89e33788c6fb.jpeg\"/><br/><p>Now the rate of flow \\((Q)\\) can be given as<\/p><p>\\( Q=A \\times v=A \\sqrt{2 g h}\\)<\/p><p>\\( =2 \\times 10^{-6} \\times \\sqrt{2 \\times 10 \\times 2}\\)<\/p><p>Rate of flow \\(Q=12.6 \\times 10^{-6} m ^3 / s\\)<\/p>",
                     null,
                     null,
                     [
@@ -15507,7 +15507,7 @@
                         3
                     ],
                     null,
-                    "<p>The four spheres of diameter \\(2 a\\) or radius \\(a\\) are placed at the corners of the square of side \\(b\\).<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[154,190]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/21dd36ad81067778593597d30d7779c5.png\"/><br/><\/p><p>Let us consider the first sphere which is the one at the top left corner. The moment of inertia of the sphere about the axis \\(A_1\\) is given by \\(I_{1}^{'}=\\frac{2}{5} M a^2\\).\u00a0<\/p><p>According to parallel axis theorem, the moment of inertia of an object about an axis is equal to the sum of moment of inertia about a parallel axis passing through the centre of mass of the object and the product of mass of the object and square of the distance between the parallel axes.\u00a0<\/p><p>\\(I=I_{c m}+M d^2\\).\u00a0<\/p><p>The moment of inertia of the sphere about the \\((A_2)\\) axis \\((I_1)=I_1{ }^{'}+M d^2 \\)<\/p><p>\\(\\Rightarrow I_1=\\frac{2}{5} M a^2+M b^2\\)<\/p><p>Similarly, as the bottom left sphere is identical to sphere both physically and according to position, the moment of inertia of the bottom left sphere \\((I_2)=\\frac{2}{5} M a^2+M b^2\\)<\/p><p>Now, for the spheres on the right side of the square, the moment of inertia of both will be same and will be equal to \\(I_3=I_4=\\frac{2}{5} M a^2\\).<\/p><p>Now, the moment of inertia of the system will be the sum of all the moment of inertias, that is:<\/p><p>\\(I_{\\text {system }}=I_1+I_2+I_3+I_4 \\)<\/p><p>\\(\\Rightarrow I_{\\text {system }}=\\frac{2}{5} M a^2+M b^2+\\frac{2}{5} M a^2+M b^2+\\frac{2}{5} M a^2+\\frac{2}{5} M a^2 \\)<\/p><p>\\(\\therefore I_{\\text {system }}=\\frac{8}{5} M a^2+2 M b^2\\)<\/p><p>Therefore, the moment of inertia of the system about an axis about one of the sides of the square is \\(\\frac{8}{5} M a^2+2 M b^2\\).<\/p>",
+                    "<p>The four spheres of diameter \\(2 a\\) or radius \\(a\\) are placed at the corners of the square of side \\(b\\).<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[154,190]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/21dd36ad81067778593597d30d7779c5.png\"/><br/><\/p><p>Let us consider the first sphere which is the one at the top left corner. The moment of inertia of the sphere about the axis \\(A_1\\) is given by \\(I_{1}^{'}=\\frac{2}{5} M a^2\\).\u00a0<\/p><p>According to parallel axis theorem, the moment of inertia of an object about an axis is equal to the sum of moment of inertia about a parallel axis passing through the centre of mass of the object and the product of mass of the object and square of the distance between the parallel axes.\u00a0<\/p><p>\\(I=I_{c m}+M d^2\\).\u00a0<\/p><p>The moment of inertia of the sphere about the \\((A_2)\\) axis \\((I_1)=I_1{ }^{'}+M d^2 \\)<\/p><p>\\(\\Rightarrow I_1=\\frac{2}{5} M a^2+M b^2\\)<\/p><p>Similarly, as the bottom left sphere is identical to sphere both physically and according to position, the moment of inertia of the bottom left sphere \\((I_2)=\\frac{2}{5} M a^2+M b^2\\)<\/p><p>Now, for the spheres on the right side of the square, the moment of inertia of both will be same and will be equal to \\(I_3=I_4=\\frac{2}{5} M a^2\\).<\/p><p>Now, the moment of inertia of the system will be the sum of all the moment of inertias, that is:<\/p><p>\\(I_{\\text {system }}=I_1+I_2+I_3+I_4 \\)<\/p><p>\\(\\Rightarrow I_{\\text {system }}=\\frac{2}{5} M a^2+M b^2+\\frac{2}{5} M a^2+M b^2+\\frac{2}{5} M a^2+\\frac{2}{5} M a^2 \\)<\/p><p>\\(\\therefore I_{\\text {system }}=\\frac{8}{5} M a^2+2 M b^2\\)<\/p><p>Therefore, the moment of inertia of the system about an axis about one of the sides of the square is \\(\\frac{8}{5} M a^2+2 M b^2\\).<\/p>",
                     "1cc9748d217f263190db883b96edfd73",
                     null,
                     [
@@ -15763,7 +15763,7 @@
                         1
                     ],
                     null,
-                    "<p>An ideal lever is essentially a light (i.e. of negligible mass) rod pivoted at a point along its length. This point is called the fulcrum.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/0c2721ffdf10ceba02c62f8d872b086f.png\"/><br/><\/p><p>If two forces \\(F_1\\) and \\(F_2\\) are acting on the lever as shown in the figure at distances \\(d_1\\) and \\(d_2\\) respectively from the fulcrum, then from the rotational equilibrium,<\/p><p>\\({F}_1 {~d}_1={F}_2 {~d}_2 \\)<\/p><p>Load arm \\(\\times\\) Load \\(=\\) Effort arm \\(\\times\\) Effort\u00a0<\/p>",
+                    "<p>An ideal lever is essentially a light (i.e. of negligible mass) rod pivoted at a point along its length. This point is called the fulcrum.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/0c2721ffdf10ceba02c62f8d872b086f.png\"/><br/><\/p><p>If two forces \\(F_1\\) and \\(F_2\\) are acting on the lever as shown in the figure at distances \\(d_1\\) and \\(d_2\\) respectively from the fulcrum, then from the rotational equilibrium,<\/p><p>\\({F}_1 {~d}_1={F}_2 {~d}_2 \\)<\/p><p>Load arm \\(\\times\\) Load \\(=\\) Effort arm \\(\\times\\) Effort\u00a0<\/p>",
                     "afbbb6ff632d360a4a8f1c873bdb70d9",
                     null,
                     [
@@ -15923,7 +15923,7 @@
                         1
                     ],
                     null,
-                    "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b69a63df8fc6987074808c6739b5f28c.png\"/><br/><p>The moment of inertia of the circular disc about the central axis (AB), \\({I}_{{z}}=\\frac{M R^2}{2}\\)<\/p><p>From parallel axis theorem, the moment of inertia about an axis passing from the edge of the disc, \\({I}={I}_{{C}}+{Mh}^2\\)<\/p><p>From the figure, \\({h}={R}\\)<\/p><p>\\(\\Rightarrow I_Z+M R^2=\\frac{M R^2}{2}+M R^2=\\frac{3}{2} M R^2\\)<\/p>",
+                    "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b69a63df8fc6987074808c6739b5f28c.png\"/><br/><p>The moment of inertia of the circular disc about the central axis (AB), \\({I}_{{z}}=\\frac{M R^2}{2}\\)<\/p><p>From parallel axis theorem, the moment of inertia about an axis passing from the edge of the disc, \\({I}={I}_{{C}}+{Mh}^2\\)<\/p><p>From the figure, \\({h}={R}\\)<\/p><p>\\(\\Rightarrow I_Z+M R^2=\\frac{M R^2}{2}+M R^2=\\frac{3}{2} M R^2\\)<\/p>",
                     null,
                     null,
                     [
@@ -15955,7 +15955,7 @@
                         1
                     ],
                     null,
-                    "<p>Mass of the sphere, \\(M=10 {~kg}\\)<\/p><p>The radius of the sphere, \\(R=0.5 {~m}\\)<\/p><p>Consider a point \\({P}\\) on the surface of the sphere and a tangent passing through it as shown. Let the moment of inertia about this tangent be \\({I}\\).<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/423a7745a61bac5511f615c379a52104.png\"/><br/><\/p><p>We know, the moment of inertia about the central axis of a sphere,<\/p><p>\\(I_C=\\frac{2}{5} M R^2\\)<\/p><p>Using the parallel axis theorem,<\/p><p>\\({I}=\\mathrm{I}_{{C}}+{Mh}^2\\)<\/p><p>From the figure, \\(h=R\\)<\/p><p>\\(\\Rightarrow I=I_C+M R^2 \\)<\/p><p>\\(\\Rightarrow I=\\frac{2}{5} M R^2+M R^2=\\frac{7}{5} M R^2=\\frac{7}{5} \\times 10 \\times(0.5)^2 \\)<\/p><p>\\( \\Rightarrow I=3.5 {~kg-m}^2\\)<\/p>",
+                    "<p>Mass of the sphere, \\(M=10 {~kg}\\)<\/p><p>The radius of the sphere, \\(R=0.5 {~m}\\)<\/p><p>Consider a point \\({P}\\) on the surface of the sphere and a tangent passing through it as shown. Let the moment of inertia about this tangent be \\({I}\\).<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/423a7745a61bac5511f615c379a52104.png\"/><br/><\/p><p>We know, the moment of inertia about the central axis of a sphere,<\/p><p>\\(I_C=\\frac{2}{5} M R^2\\)<\/p><p>Using the parallel axis theorem,<\/p><p>\\({I}=\\mathrm{I}_{{C}}+{Mh}^2\\)<\/p><p>From the figure, \\(h=R\\)<\/p><p>\\(\\Rightarrow I=I_C+M R^2 \\)<\/p><p>\\(\\Rightarrow I=\\frac{2}{5} M R^2+M R^2=\\frac{7}{5} M R^2=\\frac{7}{5} \\times 10 \\times(0.5)^2 \\)<\/p><p>\\( \\Rightarrow I=3.5 {~kg-m}^2\\)<\/p>",
                     null,
                     null,
                     [
@@ -16424,7 +16424,7 @@
                 [
                     514,
                     null,
-                    "<p>A body travelling in a clockwise direction, moves uniformly with a speed of \\(5 \\mathrm{~m} \\mathrm{~s}^{-1}\\) in a circle of radius \\(25 \\mathrm{~m}\\).<\/p><p><img alt=\"\" data-book_with_2_col=\"[114,114]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f837cbf1d696b8dcf7eda8c5714b9dd6.png\"/><br/><\/p><p>From the given figure the angular velocity at point \\(B\\) and \\(C\\) are ____________ if man starts from point \\(A\\).<br/><\/p>",
+                    "<p>A body travelling in a clockwise direction, moves uniformly with a speed of \\(5 \\mathrm{~m} \\mathrm{~s}^{-1}\\) in a circle of radius \\(25 \\mathrm{~m}\\).<\/p><p><img alt=\"\" data-book_with_2_col=\"[114,114]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f837cbf1d696b8dcf7eda8c5714b9dd6.png\"/><br/><\/p><p>From the given figure the angular velocity at point \\(B\\) and \\(C\\) are ____________ if man starts from point \\(A\\).<br/><\/p>",
                     [
                         "<p>\\(0.1 \\mathrm{rad} / \\mathrm{sec}\\) when at \\(\\mathrm{B}\\) and \\(0.5 \\mathrm{rad} / \\mathrm{sec}\\) when at \\(\\mathrm{C}\\)<\/p>",
                         "<p>\\(0.2 \\mathrm{rad} / \\mathrm{sec}\\) when at \\(\\mathrm{B}\\) and \\(0.5 \\mathrm{rad} / \\mathrm{sec}\\) when at \\(\\mathrm{C}\\)<\/p>",
@@ -16467,7 +16467,7 @@
                         1
                     ],
                     null,
-                    "<p>Horizontal range is the horizontal distance travelled by a body during the time of flight.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/67bc6e63aa4a297e914b7cd4d86a05cf.png\"/><br/><\/p><p>\\(\\Rightarrow R=\\frac{u^2 \\sin 2 \\theta}{g}\\)<\/p><p>As we know that \\(\\sin \\theta\\) is maximum at \\(90^{\\circ}\\). Therefore horizontal range will maximum at \\(45^{\\circ}\\).<\/p><p>\\(\\Rightarrow R=\\frac{u^2 \\sin 2 \\times 45^{\\circ}}{g}=\\frac{u^2 \\sin 90^{\\circ}}{g}=\\frac{u^2}{g}\\)<\/p><p>When \\(\\theta=90^{\\circ}\\), then the horizontal range will be<\/p><p>\\(\\Rightarrow R=\\frac{u^2 \\sin 2 \\times 90^{\\circ}}{g}=\\frac{u^2 \\sin 180^{\\circ}}{g}=\\frac{u^2 \\sin \\left(90^{\\circ}+90^{\\circ}\\right)}{g}=\\frac{u^2 \\cos 90^{\\circ}}{g}=0 \\quad\\) [As, \\(\\left.\\cos 90^{\\circ}=0\\right]\\)<\/p><p>The horizontal range will be minimum if the angle of projection is \\(90^{\\circ}\\).\u00a0<\/p>",
+                    "<p>Horizontal range is the horizontal distance travelled by a body during the time of flight.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/67bc6e63aa4a297e914b7cd4d86a05cf.png\"/><br/><\/p><p>\\(\\Rightarrow R=\\frac{u^2 \\sin 2 \\theta}{g}\\)<\/p><p>As we know that \\(\\sin \\theta\\) is maximum at \\(90^{\\circ}\\). Therefore horizontal range will maximum at \\(45^{\\circ}\\).<\/p><p>\\(\\Rightarrow R=\\frac{u^2 \\sin 2 \\times 45^{\\circ}}{g}=\\frac{u^2 \\sin 90^{\\circ}}{g}=\\frac{u^2}{g}\\)<\/p><p>When \\(\\theta=90^{\\circ}\\), then the horizontal range will be<\/p><p>\\(\\Rightarrow R=\\frac{u^2 \\sin 2 \\times 90^{\\circ}}{g}=\\frac{u^2 \\sin 180^{\\circ}}{g}=\\frac{u^2 \\sin \\left(90^{\\circ}+90^{\\circ}\\right)}{g}=\\frac{u^2 \\cos 90^{\\circ}}{g}=0 \\quad\\) [As, \\(\\left.\\cos 90^{\\circ}=0\\right]\\)<\/p><p>The horizontal range will be minimum if the angle of projection is \\(90^{\\circ}\\).\u00a0<\/p>",
                     "1642b32c5a5f4c4c400ab28dedfe937e",
                     null,
                     [
@@ -16531,7 +16531,7 @@
                         1
                     ],
                     null,
-                    "<p>If the two opposing forces act on an object, the net force acting on it is the difference between two forces.\u00a0<\/p><p>The net force is the vector sum of the forces acting on an object. The net force is always directed in the direction of the larger force among the forces acting on an object.<\/p><p>Let the two opposing forces acting on an object \\(B\\) be \\(F_1\\) and \\(F_2\\).<\/p><p><img alt=\"\" data-book_with_2_col=\"[90,152]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/89db8c54e2ef57b57d89f668ef5004f5.png\" style=\"width: 90px; max-width: 90px; height: 152px; max-height: 152px;\"/><br/><\/p><p>Consider the forces to the upward direction as positive and that to the downward direction as negative.\u00a0<span>From the diagram, the net force \\(=\\left(+F_1\\right)+\\left(-F_2\\right)=F_1-F_2 \\Rightarrow\\) difference between the forces.<\/span><\/p>",
+                    "<p>If the two opposing forces act on an object, the net force acting on it is the difference between two forces.\u00a0<\/p><p>The net force is the vector sum of the forces acting on an object. The net force is always directed in the direction of the larger force among the forces acting on an object.<\/p><p>Let the two opposing forces acting on an object \\(B\\) be \\(F_1\\) and \\(F_2\\).<\/p><p><img alt=\"\" data-book_with_2_col=\"[90,152]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/89db8c54e2ef57b57d89f668ef5004f5.png\" style=\"width: 90px; max-width: 90px; height: 152px; max-height: 152px;\"/><br/><\/p><p>Consider the forces to the upward direction as positive and that to the downward direction as negative.\u00a0<span>From the diagram, the net force \\(=\\left(+F_1\\right)+\\left(-F_2\\right)=F_1-F_2 \\Rightarrow\\) difference between the forces.<\/span><\/p>",
                     "4ea709a6daaaa122a16b6d11083f6c27",
                     null,
                     [
@@ -17011,7 +17011,7 @@
                         2
                     ],
                     null,
-                    "<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/5a04c74a6c98dfe88d6c17c1a5356747.png\"/><br/><p>According to vector law of addition,<\/p><p>\\(\\vec{R}=\\vec{A}+\\vec{B} \\)<\/p><p>\\(R=\\sqrt{A^2+B^2+2 A B \\cos \\theta}\\)<\/p><p>\\(R=\\sqrt{P^2+Q^2+2 P Q \\cos \\theta}\\)<\/p><p>Greatest Resultant \\(=P+Q=29 \\mathrm{~N}\\)<\/p><p>Least Resultant \\(=P-Q=5 \\mathrm{~N}\\)<\/p><p>\\(2 \\mathrm{P}=34, \\mathrm{P}=17 \\mathrm{~N}, \\mathrm{Q}=12 \\mathrm{~N}\\)<\/p><p>When each force is increased by \\(3 \\mathrm{~N}\\), new forces are:<\/p><p>\\(p=P+3=17+3=20 N, q=Q+3=12+3=15 N\\)<\/p><p>As the new force act at a right angle to each other, their Resultant:<\/p><p>\\( R=\\sqrt{P^2+Q^2+2 P Q \\cos \\theta} \\)<\/p><p>\\(\\theta=90^{\\circ} \\)<\/p><p>\\(R=\\sqrt{20^2+15^2}=\\sqrt{625}=25<span>N\\)<\/span><\/p>",
+                    "<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/5a04c74a6c98dfe88d6c17c1a5356747.png\"/><br/><p>According to vector law of addition,<\/p><p>\\(\\vec{R}=\\vec{A}+\\vec{B} \\)<\/p><p>\\(R=\\sqrt{A^2+B^2+2 A B \\cos \\theta}\\)<\/p><p>\\(R=\\sqrt{P^2+Q^2+2 P Q \\cos \\theta}\\)<\/p><p>Greatest Resultant \\(=P+Q=29 \\mathrm{~N}\\)<\/p><p>Least Resultant \\(=P-Q=5 \\mathrm{~N}\\)<\/p><p>\\(2 \\mathrm{P}=34, \\mathrm{P}=17 \\mathrm{~N}, \\mathrm{Q}=12 \\mathrm{~N}\\)<\/p><p>When each force is increased by \\(3 \\mathrm{~N}\\), new forces are:<\/p><p>\\(p=P+3=17+3=20 N, q=Q+3=12+3=15 N\\)<\/p><p>As the new force act at a right angle to each other, their Resultant:<\/p><p>\\( R=\\sqrt{P^2+Q^2+2 P Q \\cos \\theta} \\)<\/p><p>\\(\\theta=90^{\\circ} \\)<\/p><p>\\(R=\\sqrt{20^2+15^2}=\\sqrt{625}=25<span>N\\)<\/span><\/p>",
                     null,
                     null,
                     [
@@ -17075,7 +17075,7 @@
                         1
                     ],
                     null,
-                    "<p>The initial velocity of the car is \\(\\overrightarrow{O A}=20 \\mathrm{~m/s}\\) due to North<\/p><p>The final velocity of the car is \\(\\overrightarrow{O B}=15 \\mathrm{~m/s}\\), due to East<\/p><img alt=\"\" data-book_with_2_col=\"[247,216]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/11997b5889d55a49b650db10037bd0da.png\" style=\"width: 247px; max-width: 247px; height: 216px; max-height: 216px;\"/><br/><p>\\(\\overrightarrow{O A}+\\overrightarrow{A B}=\\overrightarrow{O B}, \\overrightarrow{A B}=\\overrightarrow{O B}-\\overrightarrow{O A}\\)<\/p><p>\\({v}_2-{v}_1=\\) Change in velocity<\/p><p>\\(\\left|{v}_2-{v}_1\\right|=\\mathrm{AB}=\\sqrt{O A^2+O B^2}=\\sqrt{20^2+15^2}=\\sqrt{625}=25 \\mathrm{~m} / \\mathrm{s}\\)<\/p><p>Average Acceleration is the rate of change of velocity per unit of time.<\/p><p>\\(\\frac{\\left|\\overrightarrow{v_2}-\\overrightarrow{v_1}\\right|}{t}=\\frac{25}{50}=0.5 \\mathrm{~m} / \\mathrm{s}\\)<\/p><p>So, the magnitude of average acceleration over the \\(50 \\mathrm{~s}\\) interval is \\(0.5\\mathrm{~m} / \\mathrm{s}\\)<\/p>",
+                    "<p>The initial velocity of the car is \\(\\overrightarrow{O A}=20 \\mathrm{~m/s}\\) due to North<\/p><p>The final velocity of the car is \\(\\overrightarrow{O B}=15 \\mathrm{~m/s}\\), due to East<\/p><img alt=\"\" data-book_with_2_col=\"[247,216]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/11997b5889d55a49b650db10037bd0da.png\" style=\"width: 247px; max-width: 247px; height: 216px; max-height: 216px;\"/><br/><p>\\(\\overrightarrow{O A}+\\overrightarrow{A B}=\\overrightarrow{O B}, \\overrightarrow{A B}=\\overrightarrow{O B}-\\overrightarrow{O A}\\)<\/p><p>\\({v}_2-{v}_1=\\) Change in velocity<\/p><p>\\(\\left|{v}_2-{v}_1\\right|=\\mathrm{AB}=\\sqrt{O A^2+O B^2}=\\sqrt{20^2+15^2}=\\sqrt{625}=25 \\mathrm{~m} / \\mathrm{s}\\)<\/p><p>Average Acceleration is the rate of change of velocity per unit of time.<\/p><p>\\(\\frac{\\left|\\overrightarrow{v_2}-\\overrightarrow{v_1}\\right|}{t}=\\frac{25}{50}=0.5 \\mathrm{~m} / \\mathrm{s}\\)<\/p><p>So, the magnitude of average acceleration over the \\(50 \\mathrm{~s}\\) interval is \\(0.5\\mathrm{~m} / \\mathrm{s}\\)<\/p>",
                     null,
                     null,
                     [
@@ -17267,7 +17267,7 @@
                         0
                     ],
                     null,
-                    "<img alt=\"\" data-book_with_2_col=\"[316,167]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/faa4b8e2aa85a3688584fc9655d487de.png\" style=\"width: 316px; max-width: 316px; height: 167px; max-height: 167px;\"/><br/><p>The above figure shows a body projected with an initial velocity \\({v}\\), making an angle \\(\\theta\\) with the horizontal direction.\u00a0 The horizontal component of velocity is \\(v \\operatorname{cos} \\theta\\) and vertical component of velocity is \\(v \\sin \\theta\\).<\/p><p>The equation of motion connecting final velocity \\((\\mathrm{V})\\), Initial velocity(u) is given by:<\/p><p>\\(\\Rightarrow {v}={u}+{at}\\cdots(1)\\)<\/p><p>Under the influence of gravity Equation1 Changes to<\/p><p>\\(\\Rightarrow {v}={u}-{gt}\\cdots(2)\\)<\/p><p>Equation \\(2\\) in the case of \\({Y}\\)-axis is given by<\/p><p>\\(\\Rightarrow {v}_{{y}}={v}_{{o}} \\sin \\theta-{gt}\\)<\/p>",
+                    "<img alt=\"\" data-book_with_2_col=\"[316,167]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/faa4b8e2aa85a3688584fc9655d487de.png\" style=\"width: 316px; max-width: 316px; height: 167px; max-height: 167px;\"/><br/><p>The above figure shows a body projected with an initial velocity \\({v}\\), making an angle \\(\\theta\\) with the horizontal direction.\u00a0 The horizontal component of velocity is \\(v \\operatorname{cos} \\theta\\) and vertical component of velocity is \\(v \\sin \\theta\\).<\/p><p>The equation of motion connecting final velocity \\((\\mathrm{V})\\), Initial velocity(u) is given by:<\/p><p>\\(\\Rightarrow {v}={u}+{at}\\cdots(1)\\)<\/p><p>Under the influence of gravity Equation1 Changes to<\/p><p>\\(\\Rightarrow {v}={u}-{gt}\\cdots(2)\\)<\/p><p>Equation \\(2\\) in the case of \\({Y}\\)-axis is given by<\/p><p>\\(\\Rightarrow {v}_{{y}}={v}_{{o}} \\sin \\theta-{gt}\\)<\/p>",
                     null,
                     null,
                     [
@@ -17299,7 +17299,7 @@
                         3
                     ],
                     null,
-                    "<p>Since due to tensile stress and compressive stress, there is a change in length or in the longitudinal direction. (as shown in the figure) These both stress are known as longitudinal stress.<\/p><p>These both stress are known as longitudinal stress.<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3ec929e07b9ed830522634a005811261.jpeg\"/><br/><\/p>",
+                    "<p>Since due to tensile stress and compressive stress, there is a change in length or in the longitudinal direction. (as shown in the figure) These both stress are known as longitudinal stress.<\/p><p>These both stress are known as longitudinal stress.<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3ec929e07b9ed830522634a005811261.jpeg\"/><br/><\/p>",
                     null,
                     null,
                     [
@@ -20264,7 +20264,7 @@
                 [
                     634,
                     null,
-                    "<p>A wheel is rolling on a plane surface as shown. The centre of the wheel moves with a speed \\(v_{0}\\). Then the speed of the particle at \\(P\\) is:<\/p><p><img alt=\"\" data-book_with_2_col=\"[203,172]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/32db87bb1faa002e7448390e05ee8f7d.png\" style=\"width: 203px; max-width: 203px; height: 172px; max-height: 172px;\"/><br/><\/p>",
+                    "<p>A wheel is rolling on a plane surface as shown. The centre of the wheel moves with a speed \\(v_{0}\\). Then the speed of the particle at \\(P\\) is:<\/p><p><img alt=\"\" data-book_with_2_col=\"[203,172]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/32db87bb1faa002e7448390e05ee8f7d.png\" style=\"width: 203px; max-width: 203px; height: 172px; max-height: 172px;\"/><br/><\/p>",
                     [
                         "<p>\\({v}_{0}\\)<\/p>",
                         "<p>\\(\\sqrt{2} v_{0}\\)<\/p>",
@@ -20275,7 +20275,7 @@
                         1
                     ],
                     null,
-                    "<p>The motion of the wheel is combined with rolling and translation.\u00a0<\/p><p>The speed of the center of the wheel \\(=v_{0}\\)<\/p><p>Since the point \\({P}\\) is on the rim of the wheel, \\({v}_{0}={R} \\omega\\)<\/p><p>Thus, the speed of the particle at \\({P}, {v}={r} \\omega\\)<\/p><p>Where, \\({v}\\) is velocity, \\({r}\\) is radius, \\(\\omega\\) is angular velocity<\/p><img alt=\"\" data-book_with_2_col=\"[174,174]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f6c5914130cc52e7d3c7af7e70dc9ddd.png\" style=\"width: 174px; max-width: 174px; height: 174px; max-height: 174px;\"/><br/><p>Using Pythagoras theorem, \\(r=\\sqrt{R^{2}+R^{2}}=\\sqrt{2} R\\)\u00a0<\/p><p>Therefore, speed at \\({P}={r} \\omega=\\sqrt{2} {R} \\omega=\\sqrt{{2}} {v}_{0}\\)<\/p>",
+                    "<p>The motion of the wheel is combined with rolling and translation.\u00a0<\/p><p>The speed of the center of the wheel \\(=v_{0}\\)<\/p><p>Since the point \\({P}\\) is on the rim of the wheel, \\({v}_{0}={R} \\omega\\)<\/p><p>Thus, the speed of the particle at \\({P}, {v}={r} \\omega\\)<\/p><p>Where, \\({v}\\) is velocity, \\({r}\\) is radius, \\(\\omega\\) is angular velocity<\/p><img alt=\"\" data-book_with_2_col=\"[174,174]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f6c5914130cc52e7d3c7af7e70dc9ddd.png\" style=\"width: 174px; max-width: 174px; height: 174px; max-height: 174px;\"/><br/><p>Using Pythagoras theorem, \\(r=\\sqrt{R^{2}+R^{2}}=\\sqrt{2} R\\)\u00a0<\/p><p>Therefore, speed at \\({P}={r} \\omega=\\sqrt{2} {R} \\omega=\\sqrt{{2}} {v}_{0}\\)<\/p>",
                     null,
                     null,
                     [
@@ -20307,7 +20307,7 @@
                         0
                     ],
                     null,
-                    "<p>Since the circular motion is in the vertical plane, it is the plane of east-west and north-south will be the horizontal plane.<\/p><p>The direction of\u00a0angular velocity\u00a0is perpendicular to the plane of\u00a0rotation. Thus, the angular velocity will be along the north-south direction.<\/p><p><img src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/48c40c6781395e31b0a3c4fd358a3136.png\"/><br/><\/p><p>Given that linear velocity is directed towards the east. So<span>, on using the\u00a0right-hand thumb rule\u00a0for vector product, the direction of angular velocity will be towards the\u00a0north.<\/span><\/p>",
+                    "<p>Since the circular motion is in the vertical plane, it is the plane of east-west and north-south will be the horizontal plane.<\/p><p>The direction of\u00a0angular velocity\u00a0is perpendicular to the plane of\u00a0rotation. Thus, the angular velocity will be along the north-south direction.<\/p><p><img src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/48c40c6781395e31b0a3c4fd358a3136.png\"/><br/><\/p><p>Given that linear velocity is directed towards the east. So<span>, on using the\u00a0right-hand thumb rule\u00a0for vector product, the direction of angular velocity will be towards the\u00a0north.<\/span><\/p>",
                     null,
                     null,
                     [
@@ -20392,7 +20392,7 @@
                 [
                     638,
                     null,
-                    "<p>If a solid disc was rotating along the x-y axis as shown below, in such case the direction of torque will be:<\/p><p><img alt=\"\" data-book_with_2_col=\"[244,192]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ef22e1f9118feade16b2f1828b7379ca.png\" style=\"width: 244px; max-width: 244px; height: 192px; max-height: 192px;\"/><br/><\/p>",
+                    "<p>If a solid disc was rotating along the x-y axis as shown below, in such case the direction of torque will be:<\/p><p><img alt=\"\" data-book_with_2_col=\"[244,192]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ef22e1f9118feade16b2f1828b7379ca.png\" style=\"width: 244px; max-width: 244px; height: 192px; max-height: 192px;\"/><br/><\/p>",
                     [
                         "<p>Along negative x-axis<\/p>",
                         "<p>Along positive x-axis<\/p>",
@@ -20403,7 +20403,7 @@
                         1
                     ],
                     null,
-                    "<p>From the above-given explanation also from the given data, we can express the equation of torque as shown below<\/p><p>Torque,\u00a0\\(\\vec{\\tau}=\\vec{r} \\times \\vec{F}\\)<\/p><p>And the direction of torque can be predicted using right-hand thumb rule, in which curled finger represents the direction of force and thumb represents the direction of torque as shown below,<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[244,192]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ef22e1f9118feade16b2f1828b7379ca.png\" style=\"width: 244px; max-width: 244px; height: 192px; max-height: 192px;\"/><br/><\/p><p>So, from this, we can see that the direction of torque will be along the positive x-axis.<\/p>",
+                    "<p>From the above-given explanation also from the given data, we can express the equation of torque as shown below<\/p><p>Torque,\u00a0\\(\\vec{\\tau}=\\vec{r} \\times \\vec{F}\\)<\/p><p>And the direction of torque can be predicted using right-hand thumb rule, in which curled finger represents the direction of force and thumb represents the direction of torque as shown below,<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[244,192]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ef22e1f9118feade16b2f1828b7379ca.png\" style=\"width: 244px; max-width: 244px; height: 192px; max-height: 192px;\"/><br/><\/p><p>So, from this, we can see that the direction of torque will be along the positive x-axis.<\/p>",
                     null,
                     null,
                     [
@@ -20499,7 +20499,7 @@
                         1
                     ],
                     null,
-                    "<p>The opening of a nut using a spanner works on the principle of\u00a0torque.\u00a0<span>When a force is applied through a spanner, the fixed point lies where the nut is positioned. As a result, a turning effect is produced on the nut which helps in its opening or tightening.<\/span><\/p><p>The angle between force and moment arm is\u00a090<sup>\u2218<\/sup>\u00a0when maximum torque is produced.<\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eae86249ea983c04a7f9969d1e8dadb5.png\"/><br/><p>Length of the spanner \\(=\\) moment arm, \\(r_1=10 {~cm}=0.1 {~m}\\)<\/p><p>Force applied \\(=120 {~N}\\)<\/p><p>We Know that:<\/p><p>\\(\\tau=r_1 \\times F\\)<\/p><p>Where, \\(\\tau\\) is torque, \\(r_1\\) is lenght of spanner and \\(F\\) is Force<\/p><p>\\(\\tau=0.1 \\times 120=12 {~N}-{m}\\)<\/p><p>To open the nut using another spanner, the same torque has to be produced.<\/p><p>Lenght of the second spanner, \\(r_2=6 \\mathrm{~cm}=0.06 \\mathrm{~m}\\)<\/p><p>\\(\\tau=r_2 \\times F \\)<\/p><p>\\(12=0.06 \\times F \\)<\/p><p>\\(\\Rightarrow F=200 {~N}\\)<\/p>",
+                    "<p>The opening of a nut using a spanner works on the principle of\u00a0torque.\u00a0<span>When a force is applied through a spanner, the fixed point lies where the nut is positioned. As a result, a turning effect is produced on the nut which helps in its opening or tightening.<\/span><\/p><p>The angle between force and moment arm is\u00a090<sup>\u2218<\/sup>\u00a0when maximum torque is produced.<\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eae86249ea983c04a7f9969d1e8dadb5.png\"/><br/><p>Length of the spanner \\(=\\) moment arm, \\(r_1=10 {~cm}=0.1 {~m}\\)<\/p><p>Force applied \\(=120 {~N}\\)<\/p><p>We Know that:<\/p><p>\\(\\tau=r_1 \\times F\\)<\/p><p>Where, \\(\\tau\\) is torque, \\(r_1\\) is lenght of spanner and \\(F\\) is Force<\/p><p>\\(\\tau=0.1 \\times 120=12 {~N}-{m}\\)<\/p><p>To open the nut using another spanner, the same torque has to be produced.<\/p><p>Lenght of the second spanner, \\(r_2=6 \\mathrm{~cm}=0.06 \\mathrm{~m}\\)<\/p><p>\\(\\tau=r_2 \\times F \\)<\/p><p>\\(12=0.06 \\times F \\)<\/p><p>\\(\\Rightarrow F=200 {~N}\\)<\/p>",
                     null,
                     null,
                     [
@@ -20563,7 +20563,7 @@
                         0
                     ],
                     null,
-                    "<p>Length of the rod \\({L}=15 \\mathrm{~m}\\)<br/><\/p><p>Linear velocity at \\(\\frac{L }{ 3}\\) is \\((v)=15 {~m} / {s}\\)<\/p><p>Let \\(\\omega\\) is the angular velocity of the rod about the given axis of rotation.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/70c6df85a82862f3d4783223ce81934c.png\"/><br/><\/p><p>We know that:<\/p><p>\\(v=\\omega \\times L\\)<\/p><p>At \\(\\frac{L} { 3}\\),<br/><\/p><p>\\(v=\\omega\\times\\frac{L} { 3}=15\\)<\/p><p>So, \\(\\omega=\\frac{45 } {L}\u00a0 {rad} / {s}\\)<\/p><p>Now for free end:<\/p><p>\\({v}^{\\prime}=\\omega L=(\\frac{45 }{L}) \\times {L}=45 {~m} / {s}\\)<\/p>",
+                    "<p>Length of the rod \\({L}=15 \\mathrm{~m}\\)<br/><\/p><p>Linear velocity at \\(\\frac{L }{ 3}\\) is \\((v)=15 {~m} / {s}\\)<\/p><p>Let \\(\\omega\\) is the angular velocity of the rod about the given axis of rotation.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/70c6df85a82862f3d4783223ce81934c.png\"/><br/><\/p><p>We know that:<\/p><p>\\(v=\\omega \\times L\\)<\/p><p>At \\(\\frac{L} { 3}\\),<br/><\/p><p>\\(v=\\omega\\times\\frac{L} { 3}=15\\)<\/p><p>So, \\(\\omega=\\frac{45 } {L}\u00a0 {rad} / {s}\\)<\/p><p>Now for free end:<\/p><p>\\({v}^{\\prime}=\\omega L=(\\frac{45 }{L}) \\times {L}=45 {~m} / {s}\\)<\/p>",
                     null,
                     null,
                     [
@@ -20659,7 +20659,7 @@
                         0
                     ],
                     null,
-                    "<p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b6ae4692212d43aa57c8bf6716f0e578.png\" title=\"Current dimension: 162 X 163\"/><br/><\/p><p>The radius of full disc \\(={R}\\)<\/p><p>Mass of full disc \\(=9 {M}\\)<\/p><p>The radius of removed disc \\(=\\frac{R }{3}\\)<\/p><p>Mass of removed disc \\(=M\\)<\/p><p>From the formula of moment of Inertia, we get,<\/p><p>\\({I}_{1}=\\frac{1} { 2}{ {M}_{1} {R}_{1}^{2}}=\\frac{1 }{ 2} \\times 9 {M} \\times {R}^{2}=\\frac{9 }{ 2} {MR}^{2}\\) ( Full disc)\u00a0<\/p><p>\\({I}_{2}=\\frac{1 }{ 2}{ {M}_{2} {R}_{2}^{2}}=\\frac{1 }{ 2} \\times \\mathrm{M} \\times(\\frac{R}{ 3})^{2}=\\frac{{MR}^{2} }{ 18}\\)<\/p><p>Therefore, the moment of inertia of the remaining portion of the disc about \\({O}\\) is.<\/p><p>\\({I}={I}_{1}+{I}_{2}={MR}^{2}[\\frac{9} { 2}+\\frac{1 }{ 18}]=\\frac{41}{ 9}{MR}^{2}\\)<\/p>",
+                    "<p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b6ae4692212d43aa57c8bf6716f0e578.png\" title=\"Current dimension: 162 X 163\"/><br/><\/p><p>The radius of full disc \\(={R}\\)<\/p><p>Mass of full disc \\(=9 {M}\\)<\/p><p>The radius of removed disc \\(=\\frac{R }{3}\\)<\/p><p>Mass of removed disc \\(=M\\)<\/p><p>From the formula of moment of Inertia, we get,<\/p><p>\\({I}_{1}=\\frac{1} { 2}{ {M}_{1} {R}_{1}^{2}}=\\frac{1 }{ 2} \\times 9 {M} \\times {R}^{2}=\\frac{9 }{ 2} {MR}^{2}\\) ( Full disc)\u00a0<\/p><p>\\({I}_{2}=\\frac{1 }{ 2}{ {M}_{2} {R}_{2}^{2}}=\\frac{1 }{ 2} \\times \\mathrm{M} \\times(\\frac{R}{ 3})^{2}=\\frac{{MR}^{2} }{ 18}\\)<\/p><p>Therefore, the moment of inertia of the remaining portion of the disc about \\({O}\\) is.<\/p><p>\\({I}={I}_{1}+{I}_{2}={MR}^{2}[\\frac{9} { 2}+\\frac{1 }{ 18}]=\\frac{41}{ 9}{MR}^{2}\\)<\/p>",
                     null,
                     null,
                     [
@@ -20755,7 +20755,7 @@
                         3
                     ],
                     null,
-                    "<p>Mass of each rod \\(=M\\)<br/><\/p><p>Length of each \\({rod}=l\\)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/d219770bc45578c0a2e6cb3759eb6a80.png\"/><br/><\/p><p>Moment of inertia about an axis passing through the center of the rod, \\({I}_{{C}}=\\frac{M l^{2}}{12}\\)<\/p><p>Moment of inertia of the rod about an axis through the center of the square and perpendicular to its plane:<\/p><p>Here, \\(h=\\frac{l}{2}\\)<\/p><p>By using parallel axis theorem, Moment of Inertia \\( I=I_{{C}}+{m}\\left({h}^{2}\\right)\\)<\/p><p>\\(=\\frac{M l^{2}}{12}+M\\left(\\frac{l}{2}\\right)^{2}\\)<\/p><p>\\(=\\frac{M l^{2}}{12}+\\frac{M l^{2}}{4}=\\frac{M l^{2}}{3}\\)<\/p><p>Moment of inertia due to all four rods \\(=4 \\times {I}\u00a0=4 \\times \\frac{M l^{2}}{3}\\)<\/p><p>\\(=(\\frac{4 }{ 3}) {Ml}^{2}\\)<\/p>",
+                    "<p>Mass of each rod \\(=M\\)<br/><\/p><p>Length of each \\({rod}=l\\)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/d219770bc45578c0a2e6cb3759eb6a80.png\"/><br/><\/p><p>Moment of inertia about an axis passing through the center of the rod, \\({I}_{{C}}=\\frac{M l^{2}}{12}\\)<\/p><p>Moment of inertia of the rod about an axis through the center of the square and perpendicular to its plane:<\/p><p>Here, \\(h=\\frac{l}{2}\\)<\/p><p>By using parallel axis theorem, Moment of Inertia \\( I=I_{{C}}+{m}\\left({h}^{2}\\right)\\)<\/p><p>\\(=\\frac{M l^{2}}{12}+M\\left(\\frac{l}{2}\\right)^{2}\\)<\/p><p>\\(=\\frac{M l^{2}}{12}+\\frac{M l^{2}}{4}=\\frac{M l^{2}}{3}\\)<\/p><p>Moment of inertia due to all four rods \\(=4 \\times {I}\u00a0=4 \\times \\frac{M l^{2}}{3}\\)<\/p><p>\\(=(\\frac{4 }{ 3}) {Ml}^{2}\\)<\/p>",
                     null,
                     null,
                     [
@@ -20787,7 +20787,7 @@
                         0
                     ],
                     null,
-                    "<p>Moment of inertia about the axis through the centre of the road, \\({I}_{{C}}=0.084 {~M} {l}^{2}\\)<br/><\/p><p>The distance between the central axis and the axis passing through one of its ends parallelly,\u00a0<\/p><p>\\(h=0.5l\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[213,173]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/c8cb320bd255987cf954a5653666cea1.png\" style=\"width: 213px; max-width: 213px; height: 173px; max-height: 173px;\"/><br/><\/p><p>Using the parallel axis theorem, Moment of Inertia \\(I =I_{C}+M h^{2}=0.084 M l^{2}+M(0.5l)^{2}\\)\u00a0<\/p><p>\\(=(0.084+0.25) {~M} {l}^{2}\\)<\/p><p>\\(=0.334 {~Ml}^{2}\\)<\/p>",
+                    "<p>Moment of inertia about the axis through the centre of the road, \\({I}_{{C}}=0.084 {~M} {l}^{2}\\)<br/><\/p><p>The distance between the central axis and the axis passing through one of its ends parallelly,\u00a0<\/p><p>\\(h=0.5l\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[213,173]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/c8cb320bd255987cf954a5653666cea1.png\" style=\"width: 213px; max-width: 213px; height: 173px; max-height: 173px;\"/><br/><\/p><p>Using the parallel axis theorem, Moment of Inertia \\(I =I_{C}+M h^{2}=0.084 M l^{2}+M(0.5l)^{2}\\)\u00a0<\/p><p>\\(=(0.084+0.25) {~M} {l}^{2}\\)<\/p><p>\\(=0.334 {~Ml}^{2}\\)<\/p>",
                     null,
                     null,
                     [
@@ -20819,7 +20819,7 @@
                         1
                     ],
                     null,
-                    "<p>From the parallel axis theorem, the moment of inertia about any other parallel axis passing through the axis of the center of mass (Centroidal axis):<\/p><p><img alt=\"\" data-book_with_2_col=\"[229,184]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8efbdff6e736cdddbe762f4ea97b3fda.png\" style=\"width: 229px; max-width: 229px; height: 184px; max-height: 184px;\"/><br/><\/p><p>Moment of inertia about \\(P_{1}\\) axis:<\/p><p>\\(I=I_{c o m}+M x_{1}^{2}\\)<\/p><p>And moment of inertia about \\(\\mathrm{P}_{2}\\)<\/p><p>\\(I=I_{{com}}+{M} {x}_{2}{ }^{2}\\)<\/p><p>Where \\(I\\) is a total moment of inertia of the body, \\({I}_{\\text {com }}\\) is the moment of inertia about the center of mass, \\({M}\\) is mass, \\({x}_{2}\\) is the perpendicular distance from an axis passing from center of mass.<\/p><p>So it is clear that the moment of inertia about any parallel axis from the Centroidal axis is more than the moment of inertia about the Centroidal axis.<\/p>",
+                    "<p>From the parallel axis theorem, the moment of inertia about any other parallel axis passing through the axis of the center of mass (Centroidal axis):<\/p><p><img alt=\"\" data-book_with_2_col=\"[229,184]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8efbdff6e736cdddbe762f4ea97b3fda.png\" style=\"width: 229px; max-width: 229px; height: 184px; max-height: 184px;\"/><br/><\/p><p>Moment of inertia about \\(P_{1}\\) axis:<\/p><p>\\(I=I_{c o m}+M x_{1}^{2}\\)<\/p><p>And moment of inertia about \\(\\mathrm{P}_{2}\\)<\/p><p>\\(I=I_{{com}}+{M} {x}_{2}{ }^{2}\\)<\/p><p>Where \\(I\\) is a total moment of inertia of the body, \\({I}_{\\text {com }}\\) is the moment of inertia about the center of mass, \\({M}\\) is mass, \\({x}_{2}\\) is the perpendicular distance from an axis passing from center of mass.<\/p><p>So it is clear that the moment of inertia about any parallel axis from the Centroidal axis is more than the moment of inertia about the Centroidal axis.<\/p>",
                     null,
                     null,
                     [
@@ -20979,7 +20979,7 @@
                         3
                     ],
                     null,
-                    "<p>When an object is rolling on a plane without slipping, the point of contact of the object with the plane does not move.<\/p><p>A rolling object's velocity \\(V\\) is directly related to its angular velocity \\(\\omega\\).<\/p><p>Mathematically it is expressed as \\({V}=\\omega {R}\\)<\/p><p>Where \\(R=\\) the object's radius and \\(V=\\) its linear velocity.<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/1b9c99f00ee8713918e79f7e9aece6c5.png\"/><br/><\/p><p>In pure rolling motion, the point of contact (bottom-most point) moves with velocity<\/p><p>\\(V_{p}=\\text { velocity of point } P=V\\)<\/p><p>\\(\\Rightarrow V_{p}=\\left(V^{\\prime}-\\omega R\\right)=V\\)<\/p><p>\\(\\Rightarrow V^{\\prime}=V_{p}+\\omega R\\)<\/p><p>Where, \\({V}^{\\prime}=\\) linear velocity of solid sphere<\/p><p>\\({V}=\\) velocity of planck<\/p>",
+                    "<p>When an object is rolling on a plane without slipping, the point of contact of the object with the plane does not move.<\/p><p>A rolling object's velocity \\(V\\) is directly related to its angular velocity \\(\\omega\\).<\/p><p>Mathematically it is expressed as \\({V}=\\omega {R}\\)<\/p><p>Where \\(R=\\) the object's radius and \\(V=\\) its linear velocity.<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/1b9c99f00ee8713918e79f7e9aece6c5.png\"/><br/><\/p><p>In pure rolling motion, the point of contact (bottom-most point) moves with velocity<\/p><p>\\(V_{p}=\\text { velocity of point } P=V\\)<\/p><p>\\(\\Rightarrow V_{p}=\\left(V^{\\prime}-\\omega R\\right)=V\\)<\/p><p>\\(\\Rightarrow V^{\\prime}=V_{p}+\\omega R\\)<\/p><p>Where, \\({V}^{\\prime}=\\) linear velocity of solid sphere<\/p><p>\\({V}=\\) velocity of planck<\/p>",
                     null,
                     null,
                     [
@@ -21107,7 +21107,7 @@
                         1
                     ],
                     null,
-                    "<p>Considering a spherical body of mass \\({M}\\) and radius \\({R}\\) rolling down a plane inclined at an angle \\(\\theta\\) to the horizontal, as shown in the figure having acceleration with which the spherical rolls down.<\/p><p><img alt=\"\" data-book_with_2_col=\"[202,184]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eafeed3250d0ba49ad88fdb62877ecbe.png\"/><br/><\/p><p>\\({a}=\\frac{2}{3} g \\sin \\theta\\)<\/p><p>Where \\({g}\\) is the acceleration due to gravity, \\(\\sin \\theta\\) is the angle by which the body rolls down<\/p><p>Where \\({M}=5 {~kg}, {R}=30{~cm}=0.3 {~m}\\)<\/p><p>By putting the value we get:<\/p><p>\\(a=\\frac{2}{3} g \\sin \\theta \\)<\/p><p>\\(a=\\frac{2}{3} \\times 9.8 \\times(\\frac{1}{\\sqrt{2}})=4.62 {~m/s}^{2}\\)<\/p>",
+                    "<p>Considering a spherical body of mass \\({M}\\) and radius \\({R}\\) rolling down a plane inclined at an angle \\(\\theta\\) to the horizontal, as shown in the figure having acceleration with which the spherical rolls down.<\/p><p><img alt=\"\" data-book_with_2_col=\"[202,184]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eafeed3250d0ba49ad88fdb62877ecbe.png\"/><br/><\/p><p>\\({a}=\\frac{2}{3} g \\sin \\theta\\)<\/p><p>Where \\({g}\\) is the acceleration due to gravity, \\(\\sin \\theta\\) is the angle by which the body rolls down<\/p><p>Where \\({M}=5 {~kg}, {R}=30{~cm}=0.3 {~m}\\)<\/p><p>By putting the value we get:<\/p><p>\\(a=\\frac{2}{3} g \\sin \\theta \\)<\/p><p>\\(a=\\frac{2}{3} \\times 9.8 \\times(\\frac{1}{\\sqrt{2}})=4.62 {~m/s}^{2}\\)<\/p>",
                     null,
                     null,
                     [
@@ -21299,7 +21299,7 @@
                         1
                     ],
                     null,
-                    "<p>Two blocks that are at different temperatures are brought into contact with each other and allowed to reach a final state of thermal equilibrium. The final temperature attained is specified by 'Zeroth law of thermodynamics'.<\/p><p>There are 4 laws to thermodynamics:<\/p><p>1. Zeroth law of thermodynamics:<\/p><p>2. First law of thermodynamics<\/p><p>3. Second law of thermodynamics<\/p><p>4. Third law of Thermodynamics<\/p><p><b>Zeroth law of thermodynamics:<\/b><\/p><p>If two thermodynamic systems are each in thermal equilibrium with a third, then they are in thermal equilibrium with each other.<\/p><p><img class=\"img-responsive\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/d5bf72c4a737dd0c868ac7852bf40650.jpeg\" style=\"\"/><\/p>",
+                    "<p>Two blocks that are at different temperatures are brought into contact with each other and allowed to reach a final state of thermal equilibrium. The final temperature attained is specified by 'Zeroth law of thermodynamics'.<\/p><p>There are 4 laws to thermodynamics:<\/p><p>1. Zeroth law of thermodynamics:<\/p><p>2. First law of thermodynamics<\/p><p>3. Second law of thermodynamics<\/p><p>4. Third law of Thermodynamics<\/p><p><b>Zeroth law of thermodynamics:<\/b><\/p><p>If two thermodynamic systems are each in thermal equilibrium with a third, then they are in thermal equilibrium with each other.<\/p><p><img class=\"img-responsive\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/d5bf72c4a737dd0c868ac7852bf40650.jpeg\" style=\"\"/><\/p>",
                     null,
                     null,
                     [
@@ -21555,7 +21555,7 @@
                         0
                     ],
                     null,
-                    "<p><b>Kelvin-Plank statement<\/b>: It is impossible for a heat engine to produce net work in a complete cycle if it exchanges heat only with bodies at a single fixed temperature.<\/p><p><img alt=\"\" data-book_with_3_col=\"[110,100]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/d9c0ca2942bc1141c560ef8b9e2c0876.png\" style=\"\"/><br/><\/p><p>For heat engine to operate, the working fluid has to exchange heat with a heat sink as well with the heat source.<\/p><p>If \\(\\mathrm{Q}_{\\mathrm{L}}=0\\), then \\(\\eta=1-\\frac{Q_{L}}{Q_{H}}=1\\)<\/p><p>Therefore, the second law claims that no heat engine can be \\(100 \\%\\) efficient. So, \\(\\mathrm{W}=\\mathrm{Q}\\) (is impossible)<\/p><p>There will be always some heat loss to the surrounding. \\(\\mathrm{W}=\\mathrm{Q}_{\\mathrm{H}}-\\mathrm{Q}_{\\mathrm{L}}\\) (is possible)<\/p><p>As \\(\\left(Q_{H}-Q_{L}\\right) \\geq 0\\) so \\(W_{\\text {cycle }} \\geq 0\\)<\/p>",
+                    "<p><b>Kelvin-Plank statement<\/b>: It is impossible for a heat engine to produce net work in a complete cycle if it exchanges heat only with bodies at a single fixed temperature.<\/p><p><img alt=\"\" data-book_with_3_col=\"[110,100]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/d9c0ca2942bc1141c560ef8b9e2c0876.png\" style=\"\"/><br/><\/p><p>For heat engine to operate, the working fluid has to exchange heat with a heat sink as well with the heat source.<\/p><p>If \\(\\mathrm{Q}_{\\mathrm{L}}=0\\), then \\(\\eta=1-\\frac{Q_{L}}{Q_{H}}=1\\)<\/p><p>Therefore, the second law claims that no heat engine can be \\(100 \\%\\) efficient. So, \\(\\mathrm{W}=\\mathrm{Q}\\) (is impossible)<\/p><p>There will be always some heat loss to the surrounding. \\(\\mathrm{W}=\\mathrm{Q}_{\\mathrm{H}}-\\mathrm{Q}_{\\mathrm{L}}\\) (is possible)<\/p><p>As \\(\\left(Q_{H}-Q_{L}\\right) \\geq 0\\) so \\(W_{\\text {cycle }} \\geq 0\\)<\/p>",
                     null,
                     null,
                     [
@@ -23219,7 +23219,7 @@
                         3
                     ],
                     null,
-                    "<p>Time period of simple pendulum in air<\/p><p>\\(T=2 \\pi \\sqrt{\\frac{l}{g}}\\)<\/p>\u00a0<img alt=\"\" data-book_with_2_col=\"[130,94]\" data-book_with_3_col=\"[120,87]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/86e5fe37566cc1a317654cc04f5d9d9c.png\" style=\"width: 130px; max-width: 130px; height: 94px; max-height: 94px;\"/><br/><p>When it is suspended between vertical plates of a charged parallel plate capacitor, then acceleration due to electric field,<\/p><p>\\(a=\\frac{q E}{m}\\)<\/p><p>This acceleration is acting horizontally and acceleration due to gravity is acting vertically. So, effective acceleration<br/><\/p><p>\\(g^{\\prime}=\\sqrt{g^{2}+a^{2}}\\)<\/p><p>\\(=\\sqrt{g^{2}+\\left(\\frac{q E}{m}\\right)^{2}}\\)<\/p><p>Thus, \\(T^{\\prime}=2 \\pi \\sqrt{\\frac{l}{\\sqrt{g^{2}+\\left(\\frac{q E}{m}\\right)^{2}}}}\\)<\/p>",
+                    "<p>Time period of simple pendulum in air<\/p><p>\\(T=2 \\pi \\sqrt{\\frac{l}{g}}\\)<\/p>\u00a0<img alt=\"\" data-book_with_2_col=\"[130,94]\" data-book_with_3_col=\"[120,87]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/86e5fe37566cc1a317654cc04f5d9d9c.png\" style=\"width: 130px; max-width: 130px; height: 94px; max-height: 94px;\"/><br/><p>When it is suspended between vertical plates of a charged parallel plate capacitor, then acceleration due to electric field,<\/p><p>\\(a=\\frac{q E}{m}\\)<\/p><p>This acceleration is acting horizontally and acceleration due to gravity is acting vertically. So, effective acceleration<br/><\/p><p>\\(g^{\\prime}=\\sqrt{g^{2}+a^{2}}\\)<\/p><p>\\(=\\sqrt{g^{2}+\\left(\\frac{q E}{m}\\right)^{2}}\\)<\/p><p>Thus, \\(T^{\\prime}=2 \\pi \\sqrt{\\frac{l}{\\sqrt{g^{2}+\\left(\\frac{q E}{m}\\right)^{2}}}}\\)<\/p>",
                     null,
                     null,
                     [
@@ -23400,7 +23400,7 @@
                 [
                     732,
                     null,
-                    "<p>A body of mass \\(0.01 \\mathrm{~kg}\\) executes SHM about \\(x=0\\), under the influence of force shown in the figure the period of the SHM is:<\/p><p><img data-book_with_2_col=\"[200,115]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/a6fe5880eea5dccde69144197e7a4f85.png\" style=\"width: 200px; max-width: 200px; height: 115px; max-height: 115px;\"/><br/><\/p>",
+                    "<p>A body of mass \\(0.01 \\mathrm{~kg}\\) executes SHM about \\(x=0\\), under the influence of force shown in the figure the period of the SHM is:<\/p><p><img data-book_with_2_col=\"[200,115]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/a6fe5880eea5dccde69144197e7a4f85.png\" style=\"width: 200px; max-width: 200px; height: 115px; max-height: 115px;\"/><br/><\/p>",
                     [
                         "<p>\\(1.05 \\mathrm{~s}\\)<\/p>",
                         "<p>\\(0.52 \\mathrm{~s}\\)<\/p>",
@@ -23464,7 +23464,7 @@
                 [
                     734,
                     null,
-                    "<p>The variation of potential energy of harmonic oscillator is as shown in figure. The spring constant is:<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[193,128]\" data-book_with_3_col=\"[150,100]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/62198d8904cbece109a407e298dcff99.png\" style=\"width: 193px; max-width: 193px; height: 128px; max-height: 128px;\"/><\/p>",
+                    "<p>The variation of potential energy of harmonic oscillator is as shown in figure. The spring constant is:<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[193,128]\" data-book_with_3_col=\"[150,100]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/62198d8904cbece109a407e298dcff99.png\" style=\"width: 193px; max-width: 193px; height: 128px; max-height: 128px;\"/><\/p>",
                     [
                         "<p>\\(1 \\times 10^{2} \\mathrm{~N} / \\mathrm{m}\\)<\/p>",
                         "<p>\\(150 \\mathrm{~N} / \\mathrm{m}\\)<\/p>",
@@ -26920,7 +26920,7 @@
                 [
                     842,
                     null,
-                    "<p>While teaching in a class Mayank ask a question on the equilibrium of particle as shown in the figure and ask the student to find the weight of a body, if T<sub>2 <\/sub>= 100 N. Shreya gives the correct answer. So, what is the answer given by Shreya?\u00a0<\/p><p><img alt=\"\" data-book_with_2_col=\"[214,168]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/62050df801a9ef79ff23d41f65b5bb4b.png\" style=\"width: 214px; max-width: 214px; height: 168px; max-height: 168px;\"/><br/><\/p>",
+                    "<p>While teaching in a class Mayank ask a question on the equilibrium of particle as shown in the figure and ask the student to find the weight of a body, if T<sub>2 <\/sub>= 100 N. Shreya gives the correct answer. So, what is the answer given by Shreya?\u00a0<\/p><p><img alt=\"\" data-book_with_2_col=\"[214,168]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/62050df801a9ef79ff23d41f65b5bb4b.png\" style=\"width: 214px; max-width: 214px; height: 168px; max-height: 168px;\"/><br/><\/p>",
                     [
                         "<p>\\(\\frac{100 }{ \\sqrt{3}} N\\)<\/p>",
                         "<p>\\(200 \\sqrt{3} N\\)<\/p>",
@@ -26931,7 +26931,7 @@
                         2
                     ],
                     null,
-                    "<p><img alt=\"\" data-book_with_2_col=\"[284,190]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/43a918d39b01bae5c884b93c7a6a287b.png\" style=\"width: 284px; max-width: 284px; height: 190px; max-height: 190px;\"/><br/><\/p><p>As we know that\u00a0<span>the value of the horizontal component is always zero irrespective of the inclination of the body.<\/span><\/p><p>So, the Horizontal component will be,<\/p><p>\\(T_{1} \\cos 30^{\\circ}=100 \\cos 60^{\\circ} \\)<\/p><p>\\(\\therefore T_{1}=\\frac{100 }{ \\sqrt{3}} N\\)<\/p><p>Vertical Component will be,<\/p><p>\\(T_{1} \\sin 30^{\\circ}+100 \\sin 60^{\\circ}= W\\)<\/p><p>By putting the value of \\(T_{1}\\) from above we get<\/p><p>\\(\\frac{100}{\\sqrt{3}} \\times \\frac{1}{2}+100 \\times \\frac{\\sqrt{3}}{2}= W \\)<\/p>\n<p>\\( \\therefore W =\\frac{200 }{ \\sqrt{3}} N\\)<\/p>",
+                    "<p><img alt=\"\" data-book_with_2_col=\"[284,190]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/43a918d39b01bae5c884b93c7a6a287b.png\" style=\"width: 284px; max-width: 284px; height: 190px; max-height: 190px;\"/><br/><\/p><p>As we know that\u00a0<span>the value of the horizontal component is always zero irrespective of the inclination of the body.<\/span><\/p><p>So, the Horizontal component will be,<\/p><p>\\(T_{1} \\cos 30^{\\circ}=100 \\cos 60^{\\circ} \\)<\/p><p>\\(\\therefore T_{1}=\\frac{100 }{ \\sqrt{3}} N\\)<\/p><p>Vertical Component will be,<\/p><p>\\(T_{1} \\sin 30^{\\circ}+100 \\sin 60^{\\circ}= W\\)<\/p><p>By putting the value of \\(T_{1}\\) from above we get<\/p><p>\\(\\frac{100}{\\sqrt{3}} \\times \\frac{1}{2}+100 \\times \\frac{\\sqrt{3}}{2}= W \\)<\/p>\n<p>\\( \\therefore W =\\frac{200 }{ \\sqrt{3}} N\\)<\/p>",
                     null,
                     null,
                     [
@@ -26952,7 +26952,7 @@
                 [
                     843,
                     null,
-                    "<p>Mayank is doing an experiment in the lab with a bob of mass 10 Kg and a string of 6 m. He tied a string with the laboratory roof and another end with the bob. He then tied another string at 3 m below the roof with the previous one as shown in the figure. Find the tension T<sub>1<\/sub> in the string? g =10 m/s<sup>2<\/sup><br/><\/p><p><img class=\"img-responsive\" data-book_with_3_col=\"[100,82]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/1b70beb3c55063c95e4fb091a2d8d2b6.jpeg\" style=\"\"/><br/><\/p>",
+                    "<p>Mayank is doing an experiment in the lab with a bob of mass 10 Kg and a string of 6 m. He tied a string with the laboratory roof and another end with the bob. He then tied another string at 3 m below the roof with the previous one as shown in the figure. Find the tension T<sub>1<\/sub> in the string? g =10 m/s<sup>2<\/sup><br/><\/p><p><img class=\"img-responsive\" data-book_with_3_col=\"[100,82]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/1b70beb3c55063c95e4fb091a2d8d2b6.jpeg\" style=\"\"/><br/><\/p>",
                     [
                         "<p>\\(-50 \\sqrt{2} N\\)<\/p>",
                         "<p>\\(-100 \\sqrt{2} N\\)<\/p>",
@@ -26963,7 +26963,7 @@
                         0
                     ],
                     null,
-                    "<p>Given,\u00a0<\/p><p>m = 10 Kg<\/p><p>g = 10 m/s<sup>2<\/sup><\/p><p>First\u00a0draw\u00a0the free body diagram of the given figure,<\/p><p><img class=\"img-responsive\" data-book_with_3_col=\"[80,133]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/556517b42372d5884936811a602a82bc.jpeg\" style=\"\"/><\/p><p>Now resolve all forces into a horizontal and a vertical component.<\/p><p>\u200bHorizontal Component \\(= 100 \\cos45^\\circ\u00a0=100\\times \\frac{1}{\\sqrt{2}}\\)<\/p><p>\\(= 50\\sqrt{2} N\\)<\/p><p>Vertical Component \\(= 100\\sin45^\\circ=100\\times \\frac{1}{\\sqrt{2}}\\)<\/p>\n<p>\\(= 50\\sqrt{2} N\\)<\/p><p><img class=\"img-responsive\" data-book_with_3_col=\"[80,98]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/947c221ff6a9693bd35b1f0be5016629.jpeg\" style=\"\"/><br/><\/p><p>For the system to be in equilibrium \\(T_{1}\\)\u00a0must be equal to the horizontal component but the direction must be opposite.<\/p><p>Here the direction of \\(T_{1}\\)\u00a0is reversed for balancing the horizontal component.<\/p><p>\\( T _{2}=50 \\sqrt{2 } N\\)<\/p><p>\\( T _{1}=-50 \\sqrt{2} N\\)<\/p><p>So, the value of \\(T_{1}\\) is \\(-50 \\sqrt{2} N\\).(Negative sign only show the direction of \\(T_{1}\\).)<\/p>",
+                    "<p>Given,\u00a0<\/p><p>m = 10 Kg<\/p><p>g = 10 m/s<sup>2<\/sup><\/p><p>First\u00a0draw\u00a0the free body diagram of the given figure,<\/p><p><img class=\"img-responsive\" data-book_with_3_col=\"[80,133]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/556517b42372d5884936811a602a82bc.jpeg\" style=\"\"/><\/p><p>Now resolve all forces into a horizontal and a vertical component.<\/p><p>\u200bHorizontal Component \\(= 100 \\cos45^\\circ\u00a0=100\\times \\frac{1}{\\sqrt{2}}\\)<\/p><p>\\(= 50\\sqrt{2} N\\)<\/p><p>Vertical Component \\(= 100\\sin45^\\circ=100\\times \\frac{1}{\\sqrt{2}}\\)<\/p>\n<p>\\(= 50\\sqrt{2} N\\)<\/p><p><img class=\"img-responsive\" data-book_with_3_col=\"[80,98]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/947c221ff6a9693bd35b1f0be5016629.jpeg\" style=\"\"/><br/><\/p><p>For the system to be in equilibrium \\(T_{1}\\)\u00a0must be equal to the horizontal component but the direction must be opposite.<\/p><p>Here the direction of \\(T_{1}\\)\u00a0is reversed for balancing the horizontal component.<\/p><p>\\( T _{2}=50 \\sqrt{2 } N\\)<\/p><p>\\( T _{1}=-50 \\sqrt{2} N\\)<\/p><p>So, the value of \\(T_{1}\\) is \\(-50 \\sqrt{2} N\\).(Negative sign only show the direction of \\(T_{1}\\).)<\/p>",
                     null,
                     null,
                     [
@@ -27059,7 +27059,7 @@
                         2
                     ],
                     null,
-                    "<p>Given,\u00a0<\/p><p>Radius \\((r)=10 m\\),\u00a0Velocity \\((v)=10 m / s \\),\u00a0\\( g =10 m / s ^{2}\\)<\/p><p>Free body diagram of the given condition,<\/p><p><img alt=\"\" data-book_with_3_col=\"[150,132]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/03a12d8b8d1907525052d056ab1c8c62.png\" style=\"\"/><br/><\/p><p>So, \\(F _{\\text {net }}=0\\) <\/p><p>\\(T \\sin \\theta=\\frac{m v^{2} }{ r} \\)...(1)\u00a0<\/p><p>\\(T \\cos \\theta=m g \\)...(2)\u00a0<\/p><p>Dividing the equation (1) and (2), we get<\/p><p>\\(\\frac{T \\sin \\theta}{T \\cos \\theta}=\\frac{v^{2}}{r g}\\)<\/p><p>Substituting all the values in the above equation, we get<\/p><p>\\(\\frac{T \\sin \\theta}{T \\cos \\theta}=\\frac{(10)^2}{10 \\times 10} \\)<\/p><p>\\(\\Rightarrow \\frac{T \\sin \\theta}{T \\cos \\theta}=\\frac{100}{100} \\)<\/p><p>\\(\\Rightarrow \\tan \\theta=1\\)<\/p><p>\\(\\therefore \\theta= 45^\\circ\\)<\/p><p>The angle subtended by the rod from the path is \\(45^{\\circ}\\).<\/p>",
+                    "<p>Given,\u00a0<\/p><p>Radius \\((r)=10 m\\),\u00a0Velocity \\((v)=10 m / s \\),\u00a0\\( g =10 m / s ^{2}\\)<\/p><p>Free body diagram of the given condition,<\/p><p><img alt=\"\" data-book_with_3_col=\"[150,132]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/03a12d8b8d1907525052d056ab1c8c62.png\" style=\"\"/><br/><\/p><p>So, \\(F _{\\text {net }}=0\\) <\/p><p>\\(T \\sin \\theta=\\frac{m v^{2} }{ r} \\)...(1)\u00a0<\/p><p>\\(T \\cos \\theta=m g \\)...(2)\u00a0<\/p><p>Dividing the equation (1) and (2), we get<\/p><p>\\(\\frac{T \\sin \\theta}{T \\cos \\theta}=\\frac{v^{2}}{r g}\\)<\/p><p>Substituting all the values in the above equation, we get<\/p><p>\\(\\frac{T \\sin \\theta}{T \\cos \\theta}=\\frac{(10)^2}{10 \\times 10} \\)<\/p><p>\\(\\Rightarrow \\frac{T \\sin \\theta}{T \\cos \\theta}=\\frac{100}{100} \\)<\/p><p>\\(\\Rightarrow \\tan \\theta=1\\)<\/p><p>\\(\\therefore \\theta= 45^\\circ\\)<\/p><p>The angle subtended by the rod from the path is \\(45^{\\circ}\\).<\/p>",
                     null,
                     null,
                     [
@@ -27144,7 +27144,7 @@
                 [
                     849,
                     null,
-                    "<p>A book of mass \\(10 kg\\) is lying at the front desk of a classroom. coefficient of static friction is \\(0.5\\). A force of \\(40 N\\) is applied to the book. The book will:<br/><\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[150,64]\" data-book_with_3_col=\"[150,64]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/9aec1c24b3dc02894305260668069686.jpeg\" style=\"width: 150px; max-width: 150px; height: 64px; max-height: 64px;\"/><\/p>",
+                    "<p>A book of mass \\(10 kg\\) is lying at the front desk of a classroom. coefficient of static friction is \\(0.5\\). A force of \\(40 N\\) is applied to the book. The book will:<br/><\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[150,64]\" data-book_with_3_col=\"[150,64]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/9aec1c24b3dc02894305260668069686.jpeg\" style=\"width: 150px; max-width: 150px; height: 64px; max-height: 64px;\"/><\/p>",
                     [
                         "<p>Move<\/p>",
                         "<p>Not move<\/p>",
@@ -27187,7 +27187,7 @@
                         3
                     ],
                     null,
-                    "<p>Given,<\/p><p>Mass (m) = 5 kg<\/p><p>Coefficient of friction (\u03bc) = 0.3<\/p><p>g = 10 m/s2<\/p><p>Free body diagram of the given condition,<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[131,105]\" data-book_with_3_col=\"[85,72]\" src=\"static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/ef30b28796890e2bea2dcb9f025525b0.jpeg\"/><\/p><p>In vertical direction forces are balanced.<\/p><p><span>\u2234\u00a0<\/span>\\(N = mg\\)<\/p><p>The\u00a0friction force is calculated by,<\/p><p>\\(F =\u00a0\u03bc N =\u00a0\u00a0\u03bc mg\\)<\/p><p>\u2234 \\(F = 0.3\u00a0\u00d7 5\u00a0\u00d7 10 =\u00a015\\) N<\/p>",
+                    "<p>Given,<\/p><p>Mass (m) = 5 kg<\/p><p>Coefficient of friction (\u03bc) = 0.3<\/p><p>g = 10 m/s2<\/p><p>Free body diagram of the given condition,<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[131,105]\" data-book_with_3_col=\"[85,72]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/44e2cf8aa7d59c6b6527da98eddead56/ef30b28796890e2bea2dcb9f025525b0.jpeg\"/><\/p><p>In vertical direction forces are balanced.<\/p><p><span>\u2234\u00a0<\/span>\\(N = mg\\)<\/p><p>The\u00a0friction force is calculated by,<\/p><p>\\(F =\u00a0\u03bc N =\u00a0\u00a0\u03bc mg\\)<\/p><p>\u2234 \\(F = 0.3\u00a0\u00d7 5\u00a0\u00d7 10 =\u00a015\\) N<\/p>",
                     null,
                     null,
                     [
@@ -27251,7 +27251,7 @@
                         1
                     ],
                     null,
-                    "<p>When the block is moving on a rough surface, Kinetic Frictional forces try to resist the movement.<\/p><p><img alt=\"\" data-book_with_3_col=\"[200,95]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/9f078649a8f9d8cc0368dbec91a3a66a.png\" style=\"\" title=\"Current dimension: 244 X 117\r\nBook with 3 column: 200 X 95\"/><br/><\/p><span><\/span><p>Here, a block is moving with constant velocity, which means that no resultant force is acting on the block.\u00a0Thus, the frictional force is equal and opposite to the applied force and therefore 40 N force is acting on the block but in opposite direction to the external force.<\/p><p>Friction force = external force = 40 N<\/p>",
+                    "<p>When the block is moving on a rough surface, Kinetic Frictional forces try to resist the movement.<\/p><p><img alt=\"\" data-book_with_3_col=\"[200,95]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/9f078649a8f9d8cc0368dbec91a3a66a.png\" style=\"\" title=\"Current dimension: 244 X 117\r\nBook with 3 column: 200 X 95\"/><br/><\/p><span><\/span><p>Here, a block is moving with constant velocity, which means that no resultant force is acting on the block.\u00a0Thus, the frictional force is equal and opposite to the applied force and therefore 40 N force is acting on the block but in opposite direction to the external force.<\/p><p>Friction force = external force = 40 N<\/p>",
                     null,
                     null,
                     [
@@ -27336,7 +27336,7 @@
                 [
                     855,
                     null,
-                    "<p>Mayank is doing an experiment in a lab he suspended 5 Kg mass by string making angles 60\u00b0 and 30\u00b0 with horizontal as shown in the figure. Find the tension T<sub>1<\/sub> and T<sub>2<\/sub>. (Take g = 10 m/s2)<\/p><p><img alt=\"\" data-book_with_2_col=\"[218,92]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/6f960855fe32fa00c93743167d58e104.png\" style=\"width: 218px; max-width: 218px; height: 92px; max-height: 92px;\"/><br/><\/p>",
+                    "<p>Mayank is doing an experiment in a lab he suspended 5 Kg mass by string making angles 60\u00b0 and 30\u00b0 with horizontal as shown in the figure. Find the tension T<sub>1<\/sub> and T<sub>2<\/sub>. (Take g = 10 m/s2)<\/p><p><img alt=\"\" data-book_with_2_col=\"[218,92]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/6f960855fe32fa00c93743167d58e104.png\" style=\"width: 218px; max-width: 218px; height: 92px; max-height: 92px;\"/><br/><\/p>",
                     [
                         "<p>\\(T_{1}=25 N , T _{2}=25 \\sqrt{3} N\\)<\/p>",
                         "<p>\\(T_{1}=25 \\sqrt{3} N , T _{2}=25 N\\)<\/p>",
@@ -27347,7 +27347,7 @@
                         0
                     ],
                     null,
-                    "<p>Given,<\/p><p>\\(m = 5 Kg,\u00a0g = 10 m/s^2\\)<\/p><p>Below is free body diagram of the given figure with its horizontal and vertical component.<\/p><p><img alt=\"\" data-book_with_2_col=\"[236,186]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/fb57f54bbc0ae8c1851259e6936c86e3.png\" style=\"width: 236px; max-width: 236px; height: 186px; max-height: 186px;\" title=\"Current dimension: 236 X 186\r\nWeb/Mweb/Book with 2 column: 236 X 186\"/><br/><\/p><p>From the figure we get,<\/p><p>Horizontal component<\/p><p>\\(T_{1} \\cos 30^{\\circ}=T_{2}\\cos\u00a0 60^{\\circ} \\)<\/p><p>\\(\\therefore T_{1}\u00a0 \\cos 30^{\\circ}-T_{2} \\cos 60^{\\circ}=0 \\)<\/p><p>\\(\\Rightarrow T_{1} \\times \\frac{\\sqrt{3}}{2}-T_{2} \\times \\frac{1}{2}=0\\)<\/p><p>\\(\\Rightarrow \\sqrt{3}T_{1}=T_{2}\\)...(i)<\/p><p>Vertical component\u00a0<\/p><p>\\(T_{1} \\sin 30^{\\circ}+T_{2}\u00a0 \\sin 60^{\\circ}=50 N \\)<\/p><p>\\(\\Rightarrow T_{1} \\times \\frac{1}{2} +T_{2} \\times \\frac{\\sqrt{3}}{2}=50\\)<\/p><p>\\(\\Rightarrow \\frac{T_{1}}{2}+\\frac{\\sqrt{3}T_{2} }{2}=50\\)<\/p><p>\\(\\Rightarrow T_{1}+\\sqrt{3}T_{2} =100\\)...(ii)<\/p><p>By solving equation (i) and (ii), we get<\/p><p>\\( T_{1}+\\sqrt{3} \\times \\sqrt{3}T_{1} =100\\)<\/p><p>\\(\\Rightarrow 4T_{1}=100 \\)<\/p><p>\\(\\therefore T_{1}=25 N \\)\u00a0<\/p><p>\\(T_{2}=\\sqrt{3}T_{1}=\\sqrt{3} \\times 25=25 \\sqrt{3} N\\)<\/p>",
+                    "<p>Given,<\/p><p>\\(m = 5 Kg,\u00a0g = 10 m/s^2\\)<\/p><p>Below is free body diagram of the given figure with its horizontal and vertical component.<\/p><p><img alt=\"\" data-book_with_2_col=\"[236,186]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/fb57f54bbc0ae8c1851259e6936c86e3.png\" style=\"width: 236px; max-width: 236px; height: 186px; max-height: 186px;\" title=\"Current dimension: 236 X 186\r\nWeb/Mweb/Book with 2 column: 236 X 186\"/><br/><\/p><p>From the figure we get,<\/p><p>Horizontal component<\/p><p>\\(T_{1} \\cos 30^{\\circ}=T_{2}\\cos\u00a0 60^{\\circ} \\)<\/p><p>\\(\\therefore T_{1}\u00a0 \\cos 30^{\\circ}-T_{2} \\cos 60^{\\circ}=0 \\)<\/p><p>\\(\\Rightarrow T_{1} \\times \\frac{\\sqrt{3}}{2}-T_{2} \\times \\frac{1}{2}=0\\)<\/p><p>\\(\\Rightarrow \\sqrt{3}T_{1}=T_{2}\\)...(i)<\/p><p>Vertical component\u00a0<\/p><p>\\(T_{1} \\sin 30^{\\circ}+T_{2}\u00a0 \\sin 60^{\\circ}=50 N \\)<\/p><p>\\(\\Rightarrow T_{1} \\times \\frac{1}{2} +T_{2} \\times \\frac{\\sqrt{3}}{2}=50\\)<\/p><p>\\(\\Rightarrow \\frac{T_{1}}{2}+\\frac{\\sqrt{3}T_{2} }{2}=50\\)<\/p><p>\\(\\Rightarrow T_{1}+\\sqrt{3}T_{2} =100\\)...(ii)<\/p><p>By solving equation (i) and (ii), we get<\/p><p>\\( T_{1}+\\sqrt{3} \\times \\sqrt{3}T_{1} =100\\)<\/p><p>\\(\\Rightarrow 4T_{1}=100 \\)<\/p><p>\\(\\therefore T_{1}=25 N \\)\u00a0<\/p><p>\\(T_{2}=\\sqrt{3}T_{1}=\\sqrt{3} \\times 25=25 \\sqrt{3} N\\)<\/p>",
                     null,
                     null,
                     [
@@ -27667,7 +27667,7 @@
                         2
                     ],
                     null,
-                    "<p>Given,\u00a0<\/p><p>Mass = 5kg,\u00a0Acceleration of rope = 0.30 ms<sup>-2\u00a0<\/sup>, g = 9.8 ms<sup>-2<\/sup><\/p><p>Free body diagram:<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[316,165]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/8176bb7f12101186b6765205aa092e1f.jpeg\" style=\"width: 316px; max-width: 316px; height: 165px; max-height: 165px;\"/><\/p><p>\u2235\u00a0 Acceleration is upward with 0.3 ms<span><sup>-2<\/sup><\/span><o:p><\/o:p><\/p><p>\u2234\u00a0T \u2013 mg = ma<o:p><\/o:p><\/p><p>\u21d2 T \u2013 (5 \u00d7 9.8) = 5 \u00d7 0.30\u00a0= 50.5 N<\/p><p>So, the tension in the tope is 50.5 N.<\/p>",
+                    "<p>Given,\u00a0<\/p><p>Mass = 5kg,\u00a0Acceleration of rope = 0.30 ms<sup>-2\u00a0<\/sup>, g = 9.8 ms<sup>-2<\/sup><\/p><p>Free body diagram:<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[316,165]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/8176bb7f12101186b6765205aa092e1f.jpeg\" style=\"width: 316px; max-width: 316px; height: 165px; max-height: 165px;\"/><\/p><p>\u2235\u00a0 Acceleration is upward with 0.3 ms<span><sup>-2<\/sup><\/span><o:p><\/o:p><\/p><p>\u2234\u00a0T \u2013 mg = ma<o:p><\/o:p><\/p><p>\u21d2 T \u2013 (5 \u00d7 9.8) = 5 \u00d7 0.30\u00a0= 50.5 N<\/p><p>So, the tension in the tope is 50.5 N.<\/p>",
                     null,
                     null,
                     [
@@ -30792,7 +30792,7 @@
                 [
                     963,
                     null,
-                    "<p>Four identical particles of mass \\(M\\) are located at the corners of a square of side ' \\(a\\) '. What should be their speed if each of them revolves under the influence of others' gravitational field in a circular orbit circumscribing the square?<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/7c4b1aaa6cc5918c40c5dc128d2d1721/5be49edad83afab182acdba7af390036.png\"/><br/><\/p>",
+                    "<p>Four identical particles of mass \\(M\\) are located at the corners of a square of side ' \\(a\\) '. What should be their speed if each of them revolves under the influence of others' gravitational field in a circular orbit circumscribing the square?<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/7c4b1aaa6cc5918c40c5dc128d2d1721/5be49edad83afab182acdba7af390036.png\"/><br/><\/p>",
                     [
                         "<p>\\(1.16 \\sqrt{\\frac{G M}{a}}\\)<\/p>",
                         "<p>\\(1.41 \\sqrt{\\frac{G M}{a}}\\)<\/p>",
@@ -30803,7 +30803,7 @@
                         0
                     ],
                     null,
-                    "<p>For the net gravitational force on a particle.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/7c4b1aaa6cc5918c40c5dc128d2d1721/9721ab054e4ce6c5c988461c778866c2.png\"/><br/><\/p><p>\\(F=\\frac{G M^{2}}{a^{2}} \\).....(1)<\/p><p>\\(F_{1}=\\frac{G M^{2}}{(a \\sqrt{2})^{2}}\\)<\/p><p>\\(=\\frac{G M^{2}}{2 a^{2}}\\).....(2)<\/p><p>According to fig.:<\/p><p>For net force, \\(F=\\sqrt{F^{2}+F^{2}}+F_{1}\\)<\/p><p>\\(F_{net}=F \\sqrt{2}+F_{1}\\).....(3)<\/p><p>Put values from (1) and (2) in (3).<\/p><p>\\(F_{net}=\\frac{G M^{2}}{a^{2}} \\sqrt{2}+\\frac{G M^{2}}{2 a^{2}}\\)<\/p><p>This force will act as centripetal force. Distance of particle from centre of circle is \\(\\frac{\\mathrm{a}}{\\sqrt{2}}\\).<\/p><p>\\(\\mathrm{~F}_{\\mathrm{C}}=\\frac{\\mathrm{Mv}^{2}}{\\mathrm{r}} \\)<\/p><p>\\(\\mathrm{r}=\\frac{\\mathrm{a}}{\\sqrt{2}}\\)<\/p><p>\\(F_{C}=F_{net}\\)<\/p><p>\\(\\frac{\\mathrm{Mv}^{2}}{\\frac{\\mathrm{a}}{\\sqrt{2}}}=\\frac{\\mathrm{GM}^{2}}{\\mathrm{a}^{2}}\\left(\\frac{1}{2}+\\sqrt{2}\\right) \\)<\/p><p>\\(\\Rightarrow \\mathrm{v}^{2}=\\frac{\\mathrm{GM}}{\\mathrm{a}}\\left(\\frac{1}{2 \\sqrt{2}}+1\\right) \\)<\/p><p>\\(\\Rightarrow \\mathrm{v}^{2}=\\frac{\\mathrm{GM}}{\\mathrm{a}}(1.35) \\)<\/p><p>\\(\\Rightarrow \\mathrm{v}=1.16 \\sqrt{\\frac{\\mathrm{GM}}{\\mathrm{a}}}\\)<\/p>",
+                    "<p>For the net gravitational force on a particle.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/7c4b1aaa6cc5918c40c5dc128d2d1721/9721ab054e4ce6c5c988461c778866c2.png\"/><br/><\/p><p>\\(F=\\frac{G M^{2}}{a^{2}} \\).....(1)<\/p><p>\\(F_{1}=\\frac{G M^{2}}{(a \\sqrt{2})^{2}}\\)<\/p><p>\\(=\\frac{G M^{2}}{2 a^{2}}\\).....(2)<\/p><p>According to fig.:<\/p><p>For net force, \\(F=\\sqrt{F^{2}+F^{2}}+F_{1}\\)<\/p><p>\\(F_{net}=F \\sqrt{2}+F_{1}\\).....(3)<\/p><p>Put values from (1) and (2) in (3).<\/p><p>\\(F_{net}=\\frac{G M^{2}}{a^{2}} \\sqrt{2}+\\frac{G M^{2}}{2 a^{2}}\\)<\/p><p>This force will act as centripetal force. Distance of particle from centre of circle is \\(\\frac{\\mathrm{a}}{\\sqrt{2}}\\).<\/p><p>\\(\\mathrm{~F}_{\\mathrm{C}}=\\frac{\\mathrm{Mv}^{2}}{\\mathrm{r}} \\)<\/p><p>\\(\\mathrm{r}=\\frac{\\mathrm{a}}{\\sqrt{2}}\\)<\/p><p>\\(F_{C}=F_{net}\\)<\/p><p>\\(\\frac{\\mathrm{Mv}^{2}}{\\frac{\\mathrm{a}}{\\sqrt{2}}}=\\frac{\\mathrm{GM}^{2}}{\\mathrm{a}^{2}}\\left(\\frac{1}{2}+\\sqrt{2}\\right) \\)<\/p><p>\\(\\Rightarrow \\mathrm{v}^{2}=\\frac{\\mathrm{GM}}{\\mathrm{a}}\\left(\\frac{1}{2 \\sqrt{2}}+1\\right) \\)<\/p><p>\\(\\Rightarrow \\mathrm{v}^{2}=\\frac{\\mathrm{GM}}{\\mathrm{a}}(1.35) \\)<\/p><p>\\(\\Rightarrow \\mathrm{v}=1.16 \\sqrt{\\frac{\\mathrm{GM}}{\\mathrm{a}}}\\)<\/p>",
                     null,
                     null,
                     [
@@ -30867,7 +30867,7 @@
                         2
                     ],
                     null,
-                    "<p>Kepler's Second Law: The line that joins any planet to the sun sweeps equal areas in equal intervals of time.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/772806e8d03cbe4b545ba8aa27cbe1c5.jpeg\" style=\"width: 100%; max-width: 297px; height: auto; max-height: 210px;\"/><br/><\/p><p>The planet \\(\\mathrm{P}\\) moves around the sun in an elliptical orbit. The shaded area is the area \\(\\Delta A\\) swept out in a small interval of time \\(\\Delta t\\). i. e.,<\/p><p>\\(\\frac{\\mathrm{dA}}{\\mathrm{dt}}=\\) constant<\/p><p>From above it is clear that Kepler's second law (law of areas) is nothing but a statement of conservation of angular momentum.<\/p>",
+                    "<p>Kepler's Second Law: The line that joins any planet to the sun sweeps equal areas in equal intervals of time.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/772806e8d03cbe4b545ba8aa27cbe1c5.jpeg\" style=\"width: 100%; max-width: 297px; height: auto; max-height: 210px;\"/><br/><\/p><p>The planet \\(\\mathrm{P}\\) moves around the sun in an elliptical orbit. The shaded area is the area \\(\\Delta A\\) swept out in a small interval of time \\(\\Delta t\\). i. e.,<\/p><p>\\(\\frac{\\mathrm{dA}}{\\mathrm{dt}}=\\) constant<\/p><p>From above it is clear that Kepler's second law (law of areas) is nothing but a statement of conservation of angular momentum.<\/p>",
                     null,
                     null,
                     [
@@ -31219,7 +31219,7 @@
                         2
                     ],
                     null,
-                    "<p><img class=\"img-responsive\" data-book_with_3_col=\"[200,112]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/46b6dae3d3502015f96d0a5ef0e2bdb8.png\" style=\"width: 100%; max-width: 483px; height: auto; max-height: 260px;\"/><\/p><p>The satellite that is placed at a height of \\(36000 \\mathrm{~km}\\) from the earth's surface, their time period of rotation is the same as earth rotation period i.e. 24 hours that's why it looks stationary w.r.t earth and it is called geostationary orbit.<\/p><p>The time period of any satellite \\((T)=\\sqrt{\\frac{4 \\pi^{2}(R e+h)^{3}}{\\mu}}\\)<\/p><p>Where \\(\\mathrm{Re}=\\) earth radius \\(=6400 \\mathrm{~km}\\)<\/p><p>\\(h=\\) height from the surface of the earth<\/p><p>\\(\\mu=\\) Kepler's constant \\(=3.986 \\times 10^{5}\\)<\/p><p>for geostationary orbit \\(\\mathrm{h}=36000 \\mathrm{~km}\\)<\/p><p>\\(\\mathrm{T}=\\sqrt{\\frac{4 \\pi^{2}(6400+36000)^{3}}{3.986 \\times 10^{5}}} \\simeq 86400 \\mathrm{sec} \\)<\/p><p>\\(\\simeq 24 \\text { hour }\\)<\/p><p>The geostationary orbit lies on the same plane as the equator (inclination = 0), the geosynchronous satellites have a different inclination (not 0 ).<\/p><p>This is the key difference between the two types of orbits.<\/p>",
+                    "<p><img class=\"img-responsive\" data-book_with_3_col=\"[200,112]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/46b6dae3d3502015f96d0a5ef0e2bdb8.png\" style=\"width: 100%; max-width: 483px; height: auto; max-height: 260px;\"/><\/p><p>The satellite that is placed at a height of \\(36000 \\mathrm{~km}\\) from the earth's surface, their time period of rotation is the same as earth rotation period i.e. 24 hours that's why it looks stationary w.r.t earth and it is called geostationary orbit.<\/p><p>The time period of any satellite \\((T)=\\sqrt{\\frac{4 \\pi^{2}(R e+h)^{3}}{\\mu}}\\)<\/p><p>Where \\(\\mathrm{Re}=\\) earth radius \\(=6400 \\mathrm{~km}\\)<\/p><p>\\(h=\\) height from the surface of the earth<\/p><p>\\(\\mu=\\) Kepler's constant \\(=3.986 \\times 10^{5}\\)<\/p><p>for geostationary orbit \\(\\mathrm{h}=36000 \\mathrm{~km}\\)<\/p><p>\\(\\mathrm{T}=\\sqrt{\\frac{4 \\pi^{2}(6400+36000)^{3}}{3.986 \\times 10^{5}}} \\simeq 86400 \\mathrm{sec} \\)<\/p><p>\\(\\simeq 24 \\text { hour }\\)<\/p><p>The geostationary orbit lies on the same plane as the equator (inclination = 0), the geosynchronous satellites have a different inclination (not 0 ).<\/p><p>This is the key difference between the two types of orbits.<\/p>",
                     null,
                     null,
                     [
@@ -31283,7 +31283,7 @@
                         3
                     ],
                     null,
-                    "<p>Gravitational force is not the same for every pair of bodies, it will vary with different masses and distance between them. So option (D) is wrong.<\/p><p><b>Newton's law of gravitation:<\/b><\/p><p>Every particle in the universe attracts every other particle with a force, which is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[180,118]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/acce9ee928c22f029fd85e29cc62c127.png\" style=\"width: 180px; max-width: 180px; height: 118px; max-height: 118px;\"/><\/p><p>If two bodies with mass \\(m_{1}\\) and \\( m_{2}\\), where \\(r\\) be the distance between two masses, the gravitational force:<\/p><p>\\(F \\propto \\frac{m_{1} m_{2}}{r^{2}}\\)<\/p><p>\\(\\Rightarrow F=G \\frac{M m}{r^{2}}\\)<\/p><p>Where, \\(\\mathrm{F}=\\) force of attraction<\/p><p>\\(G=6.67 \\times 10^{-11} \\mathrm{~N}-\\mathrm{m}^{2} / \\mathrm{kg}^{2}\\) (gravitational constant)<\/p><p>\\(\\mathrm{m}_{1}\\) and \\(m_{2}=\\) mass of bodies<\/p><p>\\(r=\\) distance between them.<\/p><p>Unit of ' \\(\\mathbf{G}\\) ' is \\(\\mathrm{Nm}^{2} / \\mathrm{kg}^{2}\\)<\/p><p>Dimensional formula of \\(G\\) is \\(\\left[\\mathrm{M}^{-1} \\mathrm{~L}^{3} \\mathrm{~T}^{-2} \\mathrm{~J}\\right]\\).<\/p>",
+                    "<p>Gravitational force is not the same for every pair of bodies, it will vary with different masses and distance between them. So option (D) is wrong.<\/p><p><b>Newton's law of gravitation:<\/b><\/p><p>Every particle in the universe attracts every other particle with a force, which is directly proportional to the product of their masses and inversely proportional to the square of the distance between them.<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[180,118]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/acce9ee928c22f029fd85e29cc62c127.png\" style=\"width: 180px; max-width: 180px; height: 118px; max-height: 118px;\"/><\/p><p>If two bodies with mass \\(m_{1}\\) and \\( m_{2}\\), where \\(r\\) be the distance between two masses, the gravitational force:<\/p><p>\\(F \\propto \\frac{m_{1} m_{2}}{r^{2}}\\)<\/p><p>\\(\\Rightarrow F=G \\frac{M m}{r^{2}}\\)<\/p><p>Where, \\(\\mathrm{F}=\\) force of attraction<\/p><p>\\(G=6.67 \\times 10^{-11} \\mathrm{~N}-\\mathrm{m}^{2} / \\mathrm{kg}^{2}\\) (gravitational constant)<\/p><p>\\(\\mathrm{m}_{1}\\) and \\(m_{2}=\\) mass of bodies<\/p><p>\\(r=\\) distance between them.<\/p><p>Unit of ' \\(\\mathbf{G}\\) ' is \\(\\mathrm{Nm}^{2} / \\mathrm{kg}^{2}\\)<\/p><p>Dimensional formula of \\(G\\) is \\(\\left[\\mathrm{M}^{-1} \\mathrm{~L}^{3} \\mathrm{~T}^{-2} \\mathrm{~J}\\right]\\).<\/p>",
                     null,
                     null,
                     [
@@ -31315,7 +31315,7 @@
                         1
                     ],
                     null,
-                    "<p><img class=\"img-responsive\" data-book_with_2_col=\"[150,118]\" data-book_with_3_col=\"[162,130]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/7790d8b795647bfc1ed70c2e219daf4f.png\" style=\"width: 150px; max-width: 150px; height: 118px; max-height: 118px;\"/><\/p><p>The gravitational force at \\(\\mathrm{D}\\) due to \\(\\mathrm{C}\\) is:<\/p><p>\\(\\Rightarrow F_{D C}=G \\frac{M M}{\\left(\\frac{a}{2}\\right)^{2}}=G \\frac{4 M^{2}}{a^{2}}\\)<\/p><p>The gravitational force at D due to \\(B\\) is<\/p><p>\\( F_{D B}=G \\frac{M M}{\\left(\\frac{a}{2}\\right)^{2}}\\)<\/p><p>\\(=G \\frac{4 M^{2}}{a^{2}}\\)<\/p><p>Since \\(F_{B D}\\) and \\(F_{D C}\\) are equal in magnitude but they are opposite in direction, therefore they will cancel out each other.<\/p><p>So,<\/p><p>\\( A D^{2}=\\sqrt{A C^{2}-C D^{2}} \\)<\/p><p>\\(\\Rightarrow A D^{2}=\\sqrt{a^{2}-\\frac{a^{2}}{4}}\\)<\/p><p>\\(=\\sqrt{\\frac{3 a^{2}}{4}}\\)<\/p><p>The gravitational force at \\(\\mathrm{D}\\) due to \\(\\mathrm{A}\\) is<\/p><p>\\( F_{D C}=G \\frac{M M}{A D^{2}}\\)<\/p><p>\\(=G \\frac{4 M^{2}}{3 a^{2}}\\)<\/p>",
+                    "<p><img class=\"img-responsive\" data-book_with_2_col=\"[150,118]\" data-book_with_3_col=\"[162,130]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/7790d8b795647bfc1ed70c2e219daf4f.png\" style=\"width: 150px; max-width: 150px; height: 118px; max-height: 118px;\"/><\/p><p>The gravitational force at \\(\\mathrm{D}\\) due to \\(\\mathrm{C}\\) is:<\/p><p>\\(\\Rightarrow F_{D C}=G \\frac{M M}{\\left(\\frac{a}{2}\\right)^{2}}=G \\frac{4 M^{2}}{a^{2}}\\)<\/p><p>The gravitational force at D due to \\(B\\) is<\/p><p>\\( F_{D B}=G \\frac{M M}{\\left(\\frac{a}{2}\\right)^{2}}\\)<\/p><p>\\(=G \\frac{4 M^{2}}{a^{2}}\\)<\/p><p>Since \\(F_{B D}\\) and \\(F_{D C}\\) are equal in magnitude but they are opposite in direction, therefore they will cancel out each other.<\/p><p>So,<\/p><p>\\( A D^{2}=\\sqrt{A C^{2}-C D^{2}} \\)<\/p><p>\\(\\Rightarrow A D^{2}=\\sqrt{a^{2}-\\frac{a^{2}}{4}}\\)<\/p><p>\\(=\\sqrt{\\frac{3 a^{2}}{4}}\\)<\/p><p>The gravitational force at \\(\\mathrm{D}\\) due to \\(\\mathrm{A}\\) is<\/p><p>\\( F_{D C}=G \\frac{M M}{A D^{2}}\\)<\/p><p>\\(=G \\frac{4 M^{2}}{3 a^{2}}\\)<\/p>",
                     null,
                     null,
                     [
@@ -31379,7 +31379,7 @@
                         3
                     ],
                     null,
-                    "<p>Let the fig be like.<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[170,149]\" data-book_with_3_col=\"[150,131]\" src=\"https://testseries.edugorilla.com/static/media/wl_client/1/qdump/dd962b43da3e663bef2c213d7dbe3f88/2934ecf24e24c0c646b3a1b648a774e9.jpeg\" style=\"max-width: 170px; max-height: 149px; width: 170px; height: 149px;\"/><\/p><p>Force on one mass \\(\\mathrm{m}\\) is like. We know that each angle of the equilateral triangle is \\(60^{\\circ}\\).<br/><\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[170,120]\" data-book_with_3_col=\"[150,105]\" src=\"https://testseries.edugorilla.com/static/media/wl_client/1/qdump/dd962b43da3e663bef2c213d7dbe3f88/cd980703dbefc1a197efd1c70cd2bd10.jpeg\" style=\"width: 170px; max-width: 170px; height: 120px; max-height: 120px;\"/><\/p><p>So Apply vector addition of these two forces,<br/><\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[170,93]\" data-book_with_3_col=\"[170,84]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/27afc1cc2698c4a3e6a758672b40a477.png\" style=\"width: 170px; max-width: 170px; height: 93px; max-height: 93px;\"/><\/p><p>\\(F_{\\text {resultant }}=\\sqrt{F^{2}+(-F)^{2}+2 F \\cdot(-F) \\cos 120^{\\circ}} \\)<\/p><p>\\(=\\sqrt{2 F^{2}-2 F^{2}\\left(-\\frac{1}{2}\\right)}\\)<\/p><p>\\(=\\sqrt{3 F^{2}}\\)<\/p><p>\\(=F \\sqrt{3}\\)<\/p><p>Since, \\(F=G \\frac{m^{2}}{x^{2}}\\)<\/p><p>So, \\(F \\sqrt{3}=\\frac{\\sqrt{3} G m^{2}}{x^{2}}\\)<\/p>",
+                    "<p>Let the fig be like.<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[170,149]\" data-book_with_3_col=\"[150,131]\" src=\"https://testseries.edugorilla.com/static/media/wl_client/1/qdump/dd962b43da3e663bef2c213d7dbe3f88/2934ecf24e24c0c646b3a1b648a774e9.jpeg\" style=\"max-width: 170px; max-height: 149px; width: 170px; height: 149px;\"/><\/p><p>Force on one mass \\(\\mathrm{m}\\) is like. We know that each angle of the equilateral triangle is \\(60^{\\circ}\\).<br/><\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[170,120]\" data-book_with_3_col=\"[150,105]\" src=\"https://testseries.edugorilla.com/static/media/wl_client/1/qdump/dd962b43da3e663bef2c213d7dbe3f88/cd980703dbefc1a197efd1c70cd2bd10.jpeg\" style=\"width: 170px; max-width: 170px; height: 120px; max-height: 120px;\"/><\/p><p>So Apply vector addition of these two forces,<br/><\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[170,93]\" data-book_with_3_col=\"[170,84]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/27afc1cc2698c4a3e6a758672b40a477.png\" style=\"width: 170px; max-width: 170px; height: 93px; max-height: 93px;\"/><\/p><p>\\(F_{\\text {resultant }}=\\sqrt{F^{2}+(-F)^{2}+2 F \\cdot(-F) \\cos 120^{\\circ}} \\)<\/p><p>\\(=\\sqrt{2 F^{2}-2 F^{2}\\left(-\\frac{1}{2}\\right)}\\)<\/p><p>\\(=\\sqrt{3 F^{2}}\\)<\/p><p>\\(=F \\sqrt{3}\\)<\/p><p>Since, \\(F=G \\frac{m^{2}}{x^{2}}\\)<\/p><p>So, \\(F \\sqrt{3}=\\frac{\\sqrt{3} G m^{2}}{x^{2}}\\)<\/p>",
                     null,
                     null,
                     [
@@ -31688,7 +31688,7 @@
                 [
                     991,
                     null,
-                    "<p>Find the pressure \\(P\\) at the bottom of the liquid container if the atmospheric pressure is \\(P _0\\) and height of the liquid column is \\(H\\). (density of liquid is \\(\\rho\\) and \\(g\\) is the gravitational const.)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/305d2427aca0c8587362b1bf7c637a88.jpeg\"/><br/><\/p>",
+                    "<p>Find the pressure \\(P\\) at the bottom of the liquid container if the atmospheric pressure is \\(P _0\\) and height of the liquid column is \\(H\\). (density of liquid is \\(\\rho\\) and \\(g\\) is the gravitational const.)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/305d2427aca0c8587362b1bf7c637a88.jpeg\"/><br/><\/p>",
                     [
                         "<p>\\(P_0\\)<\/p>",
                         "<p>\\(\\rho gH\\)<\/p>",
@@ -31848,7 +31848,7 @@
                 [
                     996,
                     null,
-                    "<p>A hydraulic lift has two pistons. If the area of piston B is greater than the area of piston \\(A\\), find a relation in their masses.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/47b5c8736134c2c71243e7842340fbc1.jpeg\"/><br/><\/p>",
+                    "<p>A hydraulic lift has two pistons. If the area of piston B is greater than the area of piston \\(A\\), find a relation in their masses.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/47b5c8736134c2c71243e7842340fbc1.jpeg\"/><br/><\/p>",
                     [
                         "<p>\\(m _{ A }= m _{ B }\\)<\/p>",
                         "<p>\\(m_A&gt;m_B\\)<\/p>",
@@ -32307,7 +32307,7 @@
                         2
                     ],
                     null,
-                    "<p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/e40846b25ec911b77c0812bc23a88e30.jpeg\"/><br/><\/p><p>Path \\(A B C\\) is streamlined as shown in the figure and \\(v_1, v_2\\), and \\(v_3\\) are the velocities of the liquid particles at \\(A, B\\), and \\(C\\) point respectively.<\/p><p>From above it very much clear that the speed and the velocity of a particle in a streamline flow are the same as the preceding element passes through that point but it may change as it moves ahead.<\/p><p>All the particles arriving at a point in a streamline flow have the same velocity. Therefore all the particles arriving at that point will have the same kinetic energy and the same momentum.<\/p>",
+                    "<p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/e40846b25ec911b77c0812bc23a88e30.jpeg\"/><br/><\/p><p>Path \\(A B C\\) is streamlined as shown in the figure and \\(v_1, v_2\\), and \\(v_3\\) are the velocities of the liquid particles at \\(A, B\\), and \\(C\\) point respectively.<\/p><p>From above it very much clear that the speed and the velocity of a particle in a streamline flow are the same as the preceding element passes through that point but it may change as it moves ahead.<\/p><p>All the particles arriving at a point in a streamline flow have the same velocity. Therefore all the particles arriving at that point will have the same kinetic energy and the same momentum.<\/p>",
                     null,
                     null,
                     [
@@ -34792,7 +34792,7 @@
                 [
                     1088,
                     null,
-                    "<p>A spring is compressed between two blocks of masses \\(m_1\\) and \\(m_2\\) placed on a horizontal frictionless surface. When the blocks are released, the blocks travel distance \\({x}_1\\) and \\({x}_2\\) respectively before coming to rest. The ratio \\(\\frac{{x}_1}{ {x}_2}\\) is:<br/><\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/a41111a50c5ce864cfb97ed65132213f.png\"/><br/>",
+                    "<p>A spring is compressed between two blocks of masses \\(m_1\\) and \\(m_2\\) placed on a horizontal frictionless surface. When the blocks are released, the blocks travel distance \\({x}_1\\) and \\({x}_2\\) respectively before coming to rest. The ratio \\(\\frac{{x}_1}{ {x}_2}\\) is:<br/><\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/a41111a50c5ce864cfb97ed65132213f.png\"/><br/>",
                     [
                         "<p>\\(\\frac{m_1}{m_2}\\)<\/p>",
                         "<p>\\(\\frac{m_2}{m_1}\\)<\/p>",
@@ -35059,7 +35059,7 @@
                         1
                     ],
                     null,
-                    "<p>It is clear from the figure that vertical component of force will decrease the normal reaction \\(=\\mu(\\mathrm{mg}-\\mathrm{mg} \\cos \\theta)\\)<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/43a5ad770eafcb6aa4527e5b764aa6c9.png\" title=\"Current dimension: 251 X 184\"/><br/><\/p><p>and frictional force \\(=\\mu \\mathrm{N}\\)<\/p><p>Now block can be pulled when, horizontal component of force \\(\\geq\\) frictional force<\/p><p>i.e., \\(m g \\sin \\theta \\geq \\mu(m g-m g \\cos \\theta)\\)<\/p><p>or \\(2 \\sin \\frac{\\theta}{2} \\cos \\frac{\\theta}{2} \\geq \\mu(1-\\cos \\theta)\\)<\/p><p>or \\(2 \\sin \\frac{\\theta}{2} \\cos \\frac{\\theta}{2} \\geq 2 \\mu \\sin ^2 \\frac{\\theta}{2}\\)<\/p><p>or \\(\\cot \\frac{\\theta}{2} \\geq \\mu\\)action, i.e.,\u00a0\\({N}={mg}-{mg} \\cos \\theta\\)<\/p>",
+                    "<p>It is clear from the figure that vertical component of force will decrease the normal reaction \\(=\\mu(\\mathrm{mg}-\\mathrm{mg} \\cos \\theta)\\)<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/43a5ad770eafcb6aa4527e5b764aa6c9.png\" title=\"Current dimension: 251 X 184\"/><br/><\/p><p>and frictional force \\(=\\mu \\mathrm{N}\\)<\/p><p>Now block can be pulled when, horizontal component of force \\(\\geq\\) frictional force<\/p><p>i.e., \\(m g \\sin \\theta \\geq \\mu(m g-m g \\cos \\theta)\\)<\/p><p>or \\(2 \\sin \\frac{\\theta}{2} \\cos \\frac{\\theta}{2} \\geq \\mu(1-\\cos \\theta)\\)<\/p><p>or \\(2 \\sin \\frac{\\theta}{2} \\cos \\frac{\\theta}{2} \\geq 2 \\mu \\sin ^2 \\frac{\\theta}{2}\\)<\/p><p>or \\(\\cot \\frac{\\theta}{2} \\geq \\mu\\)action, i.e.,\u00a0\\({N}={mg}-{mg} \\cos \\theta\\)<\/p>",
                     "d0d41581d68a34715570982434aa18cc",
                     null,
                     [
@@ -35187,7 +35187,7 @@
                         3
                     ],
                     null,
-                    "<p>Free body diagrams of two masses are<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6e38baf2d9a737e2faaa4ff7e7c38bdd.png\" title=\"Current dimension: 301 X 161\"/><br/><\/p><p>We get equations<\/p><p>\\( T-f=m_A a\\)\u00a0<\/p><p>and \\(f=\\mu N=\\mu m_A g \\)<\/p><p>\\(\\Rightarrow T=m_A a+\\mu m_A g\\)\u00a0<\/p><p>and \\(T=m_B g\\)\u00a0 for (\\(a=0) \\)<\/p><p>\\(\\therefore \\mu N=m_B g\\)\u00a0<\/p><p>\\(\\Rightarrow m_B=\\mu m_A=0.2 \\times 2=0.4 {~kg}\\)<\/p>",
+                    "<p>Free body diagrams of two masses are<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6e38baf2d9a737e2faaa4ff7e7c38bdd.png\" title=\"Current dimension: 301 X 161\"/><br/><\/p><p>We get equations<\/p><p>\\( T-f=m_A a\\)\u00a0<\/p><p>and \\(f=\\mu N=\\mu m_A g \\)<\/p><p>\\(\\Rightarrow T=m_A a+\\mu m_A g\\)\u00a0<\/p><p>and \\(T=m_B g\\)\u00a0 for (\\(a=0) \\)<\/p><p>\\(\\therefore \\mu N=m_B g\\)\u00a0<\/p><p>\\(\\Rightarrow m_B=\\mu m_A=0.2 \\times 2=0.4 {~kg}\\)<\/p>",
                     "e7e189b3543f88d240d860461f2c4118",
                     null,
                     [
@@ -35272,7 +35272,7 @@
                 [
                     1103,
                     null,
-                    "<p>Consider we are planning a space station shaped like a doughnut. The distance between space pod and the centre of the ring of \"dough\" is \\(1 {~km}\\) as shown below:<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/e85956ef629ccbbfaef254b9be6639cc.png\"/><br/><\/p><p>In this case, what is the minimum angular velocity needed to create artificial gravity of \\(1{~g}\\) ?<br/><\/p>",
+                    "<p>Consider we are planning a space station shaped like a doughnut. The distance between space pod and the centre of the ring of \"dough\" is \\(1 {~km}\\) as shown below:<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/e85956ef629ccbbfaef254b9be6639cc.png\"/><br/><\/p><p>In this case, what is the minimum angular velocity needed to create artificial gravity of \\(1{~g}\\) ?<br/><\/p>",
                     [
                         "<p>\\(100 {~rad} /{sec}\\)<\/p>",
                         "<p>\\(10 {~rad} /{sec}\\)<\/p>",
@@ -35283,7 +35283,7 @@
                         3
                     ],
                     null,
-                    "<p>Centripetal acceleration \\(\\left(\\mathrm{a}_{\\mathrm{c}}\\right)\\) can be written as<\/p><p>\\(a_c=\\frac{v^2}{r}=r \\omega^2 \\ldots(\\because v=r \\omega)\\)<\/p><p>Where<\/p><p>\\({a}_{{C}}=\\) centripetal acceleration, \\({v}=\\) velocity, \\({R}=\\) the radius.<\/p><p>\\(\\omega=\\) angular velocity<\/p><p><img alt=\"\" data-book_with_2_col=\"[234,178]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/fdc26faa737e088f1ab95f43b1d6eee8.png\" style=\"width: 234px; max-width: 234px; height: 178px; max-height: 178px;\" title=\"Current dimension: 234 X 178\r\nWeb/Mweb/Book with 2 column: 234 X 178\"/><br/><\/p><p>The speed and kinetic energy of the particle remains constant.<\/p><p>Given that,<\/p><p>Radius of space station, \\(r=1={~km}\\)<\/p><p>Centrifugal acceleration, \\(a=a_c=1 g=\\frac{v^2}{r}\\)<\/p><p>\\(\\omega = \\sqrt{\\frac{a}{r}}=\\sqrt{\\frac{10}{1000}}=0.1 {~rad} /{sec}\\)<\/p>",
+                    "<p>Centripetal acceleration \\(\\left(\\mathrm{a}_{\\mathrm{c}}\\right)\\) can be written as<\/p><p>\\(a_c=\\frac{v^2}{r}=r \\omega^2 \\ldots(\\because v=r \\omega)\\)<\/p><p>Where<\/p><p>\\({a}_{{C}}=\\) centripetal acceleration, \\({v}=\\) velocity, \\({R}=\\) the radius.<\/p><p>\\(\\omega=\\) angular velocity<\/p><p><img alt=\"\" data-book_with_2_col=\"[234,178]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/fdc26faa737e088f1ab95f43b1d6eee8.png\" style=\"width: 234px; max-width: 234px; height: 178px; max-height: 178px;\" title=\"Current dimension: 234 X 178\r\nWeb/Mweb/Book with 2 column: 234 X 178\"/><br/><\/p><p>The speed and kinetic energy of the particle remains constant.<\/p><p>Given that,<\/p><p>Radius of space station, \\(r=1={~km}\\)<\/p><p>Centrifugal acceleration, \\(a=a_c=1 g=\\frac{v^2}{r}\\)<\/p><p>\\(\\omega = \\sqrt{\\frac{a}{r}}=\\sqrt{\\frac{10}{1000}}=0.1 {~rad} /{sec}\\)<\/p>",
                     null,
                     null,
                     [
@@ -37576,7 +37576,7 @@
                 [
                     1175,
                     null,
-                    "<p>A mass \\(M\\) of \\(100 {Kg}\\) is suspended with the use of string \\(A, B\\) and \\(C\\) as shown in the figure, where \\({W}\\) is a vertical wall and \\({R}\\) is a rigid horizontal rod. The tension in the string \\(B\\) is: (take \\(g\\) as a gravitational acceleration)<\/p><p><img alt=\"\" data-book_with_2_col=\"[181,146]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/af750e0b5db275b28711e44d5ef0dd3f.png\" style=\"width: 181px; max-width: 181px; height: 146px; max-height: 146px;\"/><br/><\/p>",
+                    "<p>A mass \\(M\\) of \\(100 {Kg}\\) is suspended with the use of string \\(A, B\\) and \\(C\\) as shown in the figure, where \\({W}\\) is a vertical wall and \\({R}\\) is a rigid horizontal rod. The tension in the string \\(B\\) is: (take \\(g\\) as a gravitational acceleration)<\/p><p><img alt=\"\" data-book_with_2_col=\"[181,146]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/af750e0b5db275b28711e44d5ef0dd3f.png\" style=\"width: 181px; max-width: 181px; height: 146px; max-height: 146px;\"/><br/><\/p>",
                     [
                         "<p>\\( 100 {g} {~N}\\)<\/p>",
                         "<p>\\(0\\)<\/p>",
@@ -37587,7 +37587,7 @@
                         0
                     ],
                     null,
-                    "<p>Given:<\/p><p>\\(m=100 kg\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[176,150]\" data-book_with_3_col=\"[185,157]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8575a91c97460e6842f98688441a41b1.png\"/><br/><\/p><p>Let angle \\({BPC}\\) is \\({X}\\).<\/p><p>We know that vertical wall \\(W\\) horizontal rod \\({R}\\) and string \\({B}\\) and \\({C}\\) are making a quadrilateral. The Sum of the angle of the quadrilateral is \\(360^{\\circ}\\).<\/p><p>\\(90^{\\circ}+45^{\\circ}+90^{\\circ}+X=360^{\\circ} \\)<\/p><p>\\(X=135^{\\circ}\\)<\/p><p>The free body diagram of the given figure is:<\/p><p><img alt=\"\" data-book_with_2_col=\"[208,186]\" data-book_with_3_col=\"[181,162]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/82e4f5e684979d3050190e72062f503d.png\"/><br/><\/p><p>Applying Lami's theorem,<\/p><p>\\(\\frac{{P}}{\\operatorname{Sin} A}=\\frac{{P}}{\\operatorname{Sin} A}=\\frac{{P}}{\\operatorname{Sin}C} \\)<\/p><p>\\(\\frac{{T}^{\\prime}}{\\operatorname{Sin} 135^{\\circ}}=\\frac{{A}}{\\operatorname{Sin} 135^{\\circ}}=\\frac{{T}}{\\operatorname{Sin} 90^{\\circ}} \\)<\/p><p>\\({T}^{\\prime}=\\operatorname{100g}{~N}\\)<\/p>",
+                    "<p>Given:<\/p><p>\\(m=100 kg\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[176,150]\" data-book_with_3_col=\"[185,157]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8575a91c97460e6842f98688441a41b1.png\"/><br/><\/p><p>Let angle \\({BPC}\\) is \\({X}\\).<\/p><p>We know that vertical wall \\(W\\) horizontal rod \\({R}\\) and string \\({B}\\) and \\({C}\\) are making a quadrilateral. The Sum of the angle of the quadrilateral is \\(360^{\\circ}\\).<\/p><p>\\(90^{\\circ}+45^{\\circ}+90^{\\circ}+X=360^{\\circ} \\)<\/p><p>\\(X=135^{\\circ}\\)<\/p><p>The free body diagram of the given figure is:<\/p><p><img alt=\"\" data-book_with_2_col=\"[208,186]\" data-book_with_3_col=\"[181,162]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/82e4f5e684979d3050190e72062f503d.png\"/><br/><\/p><p>Applying Lami's theorem,<\/p><p>\\(\\frac{{P}}{\\operatorname{Sin} A}=\\frac{{P}}{\\operatorname{Sin} A}=\\frac{{P}}{\\operatorname{Sin}C} \\)<\/p><p>\\(\\frac{{T}^{\\prime}}{\\operatorname{Sin} 135^{\\circ}}=\\frac{{A}}{\\operatorname{Sin} 135^{\\circ}}=\\frac{{T}}{\\operatorname{Sin} 90^{\\circ}} \\)<\/p><p>\\({T}^{\\prime}=\\operatorname{100g}{~N}\\)<\/p>",
                     "2850967151642de73a8a0d6041b480ad",
                     null,
                     [
@@ -37672,7 +37672,7 @@
                 [
                     1178,
                     null,
-                    "<p>The pulleys and the strings shown in the figure are smooth and of negligible mass. For the system to remain in equilibrium, angle \\(\\theta\\)\u00a0should be:<\/p><img alt=\"\" data-book_with_2_col=\"[253,142]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4c03fa26e6d7c449f963630594885423.png\" style=\"width: 253px; max-width: 253px; height: 142px; max-height: 142px;\"/><br/>",
+                    "<p>The pulleys and the strings shown in the figure are smooth and of negligible mass. For the system to remain in equilibrium, angle \\(\\theta\\)\u00a0should be:<\/p><img alt=\"\" data-book_with_2_col=\"[253,142]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/4c03fa26e6d7c449f963630594885423.png\" style=\"width: 253px; max-width: 253px; height: 142px; max-height: 142px;\"/><br/>",
                     [
                         "<p>\\(0 ^{\\circ}\\)<\/p>",
                         "<p>\\(30 ^{\\circ}\\)<\/p>",
@@ -37683,7 +37683,7 @@
                         2
                     ],
                     null,
-                    "<p>As they are equal masses so in equilibrium the tension for both masses is<\/p>\n<p>\\(\\mathrm{T}=\\mathrm{mg}\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[227,184]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/14472dc10d263dc2bbf55b7aa832399f.png\" style=\"width: 227px; max-width: 227px; height: 184px; max-height: 184px;\"/><br/><\/p>\n<p>Now for block of mass \\(\\sqrt{2} \\mathrm{~m}\\):<\/p>\n<p>\\(2 \\mathrm{T} \\cos \\theta=\\sqrt{2} \\mathrm{mg}\\)<\/p>\n<p>or, \\(2 \\mathrm{mg} \\cos \\theta=\\sqrt{2} \\mathrm{mg}\\)<\/p>\n<p>or, \\(\\cos \\theta=\\frac{1}{\\sqrt{2}}\\)<\/p>\n<p>\\( \\Rightarrow \\theta=45^{\\circ}\\)<\/p>",
+                    "<p>As they are equal masses so in equilibrium the tension for both masses is<\/p>\n<p>\\(\\mathrm{T}=\\mathrm{mg}\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[227,184]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/14472dc10d263dc2bbf55b7aa832399f.png\" style=\"width: 227px; max-width: 227px; height: 184px; max-height: 184px;\"/><br/><\/p>\n<p>Now for block of mass \\(\\sqrt{2} \\mathrm{~m}\\):<\/p>\n<p>\\(2 \\mathrm{T} \\cos \\theta=\\sqrt{2} \\mathrm{mg}\\)<\/p>\n<p>or, \\(2 \\mathrm{mg} \\cos \\theta=\\sqrt{2} \\mathrm{mg}\\)<\/p>\n<p>or, \\(\\cos \\theta=\\frac{1}{\\sqrt{2}}\\)<\/p>\n<p>\\( \\Rightarrow \\theta=45^{\\circ}\\)<\/p>",
                     "4fbcaf6096ddfa439327232f111fa710",
                     null,
                     [
@@ -37768,7 +37768,7 @@
                 [
                     1181,
                     null,
-                    "<p>Two masses \\({M}\\) and \\(\\frac{M}{2}\\) are joined together by means of the light inextensible string passed over a frictionless pulley as shown in the figure. When bigger mass is released, the small one will ascend with an acceleration of:<\/p><p><img alt=\"\" data-book_with_2_col=\"[86,152]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/cfc914a8e2329fbbe1817b645bc18927.png\" style=\"width: 100%; max-width: 86px; height: auto; max-height: 152px;\"/><br/><\/p>",
+                    "<p>Two masses \\({M}\\) and \\(\\frac{M}{2}\\) are joined together by means of the light inextensible string passed over a frictionless pulley as shown in the figure. When bigger mass is released, the small one will ascend with an acceleration of:<\/p><p><img alt=\"\" data-book_with_2_col=\"[86,152]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/cfc914a8e2329fbbe1817b645bc18927.png\" style=\"width: 100%; max-width: 86px; height: auto; max-height: 152px;\"/><br/><\/p>",
                     [
                         "<p>\\(\\frac{g}{3}\\)<\/p>",
                         "<p>\\(\\frac{3g}{2}\\)<\/p>",
@@ -37779,7 +37779,7 @@
                         0
                     ],
                     null,
-                    "<p>\\({F}={Ma}\\)<\/p><p>\\({T}-\\frac{{Mg}}{2}=\\frac{{M}}{2} {a} \\ldots . . \\text { (i) }\\)<\/p><p>\\({Mg}-{T}={Ma}\\ldots . . \\text { (ii) }\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[251,148]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f61aa658c57e59cf49af32f85da91321.png\" style=\"width: 251px; max-width: 251px; height: 148px; max-height: 148px;\"/><br/><\/p><p>Solving (i) and (ii)<\/p><p>\\({Mg}-\\frac{{Mg}}{2}=\\frac{3{M}}{2} {a}\\)<\/p><p>\\(a=\\frac{g}{3}\\)<\/p>",
+                    "<p>\\({F}={Ma}\\)<\/p><p>\\({T}-\\frac{{Mg}}{2}=\\frac{{M}}{2} {a} \\ldots . . \\text { (i) }\\)<\/p><p>\\({Mg}-{T}={Ma}\\ldots . . \\text { (ii) }\\)<\/p><p><img alt=\"\" data-book_with_2_col=\"[251,148]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f61aa658c57e59cf49af32f85da91321.png\" style=\"width: 251px; max-width: 251px; height: 148px; max-height: 148px;\"/><br/><\/p><p>Solving (i) and (ii)<\/p><p>\\({Mg}-\\frac{{Mg}}{2}=\\frac{3{M}}{2} {a}\\)<\/p><p>\\(a=\\frac{g}{3}\\)<\/p>",
                     "bb5559da687ecef1275c8d936ac32fff",
                     null,
                     [
@@ -37907,7 +37907,7 @@
                         3
                     ],
                     null,
-                    "<p>Here \\(\\theta\\) is the angle of banking<\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6796dd6bc6aea6f73dea278986f5c257.png\"/><p><span>From the figure<\/span><br/><\/p><p>\\(N \\cos \\theta=m g\\cdots(i)\\)<\/p><p>\\(N \\sin \\theta=\\frac{m v^2}{r}\\cdots(ii)\\)<\/p><p>Dividing equation (ii) by (i), we get<\/p><p>\\(\\tan \\theta=\\frac{v^2}{r g}\\)<\/p>",
+                    "<p>Here \\(\\theta\\) is the angle of banking<\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/6796dd6bc6aea6f73dea278986f5c257.png\"/><p><span>From the figure<\/span><br/><\/p><p>\\(N \\cos \\theta=m g\\cdots(i)\\)<\/p><p>\\(N \\sin \\theta=\\frac{m v^2}{r}\\cdots(ii)\\)<\/p><p>Dividing equation (ii) by (i), we get<\/p><p>\\(\\tan \\theta=\\frac{v^2}{r g}\\)<\/p>",
                     "ec04951aea2e3e4fc924c28fdfe11052",
                     null,
                     [
@@ -37939,7 +37939,7 @@
                         2
                     ],
                     null,
-                    "<img alt=\"\" data-book_with_2_col=\"[146,155]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eb20b8a8cb0d033bcfb46827b5ac313b.png\" style=\"width: 146px; max-width: 146px; height: 155px; max-height: 155px;\"/><br/><p>From the figure,\u00a0<\/p><p>\\(\\mathrm{T} \\sin \\theta=\\frac{\\mathrm{mv}^2}{\\mathrm{r}}\\cdots \\text { (i) } \\)\u00a0 (centripetal)<\/p><p>\\(\\mathrm{T} \\cos \\theta=\\mathrm{mg} \\cdots \\text { (ii) } \\) (force)\u00a0<\/p><p>From (i) and (ii)<\/p><p>\\(\\frac{\\mathrm{T} \\sin \\theta}{\\mathrm{T} \\cos \\theta}=\\frac{\\mathrm{mv}^2}{\\mathrm{r}} \\times \\frac{1}{\\mathrm{mg}} \\)<\/p><p>\\(\\tan \\theta=\\frac{\\mathrm{v}^2}{\\mathrm{rg}} \\)<\/p><p>Given that, radius \\(=10 \\mathrm{~m} \\)<\/p><p>velocity \\(=10 \\mathrm{~m} / \\mathrm{s} \\)<\/p><p>\\(\\mathrm{g}=10 \\mathrm{~m} / \\mathrm{s}^2 \\)<\/p><p>\\(\\tan \\theta=\\frac{10^2}{10 \\times 10}=1 \\Rightarrow \\theta=45^{\\circ}\\)<\/p>",
+                    "<img alt=\"\" data-book_with_2_col=\"[146,155]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eb20b8a8cb0d033bcfb46827b5ac313b.png\" style=\"width: 146px; max-width: 146px; height: 155px; max-height: 155px;\"/><br/><p>From the figure,\u00a0<\/p><p>\\(\\mathrm{T} \\sin \\theta=\\frac{\\mathrm{mv}^2}{\\mathrm{r}}\\cdots \\text { (i) } \\)\u00a0 (centripetal)<\/p><p>\\(\\mathrm{T} \\cos \\theta=\\mathrm{mg} \\cdots \\text { (ii) } \\) (force)\u00a0<\/p><p>From (i) and (ii)<\/p><p>\\(\\frac{\\mathrm{T} \\sin \\theta}{\\mathrm{T} \\cos \\theta}=\\frac{\\mathrm{mv}^2}{\\mathrm{r}} \\times \\frac{1}{\\mathrm{mg}} \\)<\/p><p>\\(\\tan \\theta=\\frac{\\mathrm{v}^2}{\\mathrm{rg}} \\)<\/p><p>Given that, radius \\(=10 \\mathrm{~m} \\)<\/p><p>velocity \\(=10 \\mathrm{~m} / \\mathrm{s} \\)<\/p><p>\\(\\mathrm{g}=10 \\mathrm{~m} / \\mathrm{s}^2 \\)<\/p><p>\\(\\tan \\theta=\\frac{10^2}{10 \\times 10}=1 \\Rightarrow \\theta=45^{\\circ}\\)<\/p>",
                     "e500eaaa01c18653b35593c7c82da0b3",
                     null,
                     [
@@ -38067,7 +38067,7 @@
                         3
                     ],
                     null,
-                    "<p>If \\(\\mu\\) be the coefficient of kinetic friction, then the friction force \\(f=\\mu \\mathrm{N}\\)<\/p><p>Now, normal force \\(\\mathrm{N}=\\mathrm{mg} \\cos \\theta\\)\u00a0<\/p><p>so \\(\\mathrm{f}=\\mu \\mathrm{mg} \\cos \\theta\\)\u00a0<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9c474e7d7655d1be64d92035e457c568.png\"/><br/><\/p><p>In equilibrium,\u00a0<\/p><p>\\(m g \\sin \\theta=f=\\mu m g \\cos \\theta\\)\u00a0<\/p><p>or \\(\\mu=\\frac{\\sin \\theta}{\\cos \\theta}=\\tan \\theta\\)<\/p>",
+                    "<p>If \\(\\mu\\) be the coefficient of kinetic friction, then the friction force \\(f=\\mu \\mathrm{N}\\)<\/p><p>Now, normal force \\(\\mathrm{N}=\\mathrm{mg} \\cos \\theta\\)\u00a0<\/p><p>so \\(\\mathrm{f}=\\mu \\mathrm{mg} \\cos \\theta\\)\u00a0<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/9c474e7d7655d1be64d92035e457c568.png\"/><br/><\/p><p>In equilibrium,\u00a0<\/p><p>\\(m g \\sin \\theta=f=\\mu m g \\cos \\theta\\)\u00a0<\/p><p>or \\(\\mu=\\frac{\\sin \\theta}{\\cos \\theta}=\\tan \\theta\\)<\/p>",
                     "cc186f3b963a80ec2f0babb81ea31670",
                     null,
                     [
@@ -38088,7 +38088,7 @@
                 [
                     1191,
                     null,
-                    "<p>Find the force \\(F_1\\) and \\(F_2\\) in the given figure if the system is in equilibrium?<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/957f9b7b4fbbae1389f0b75109997ee7.png\"/><br/><\/p>",
+                    "<p>Find the force \\(F_1\\) and \\(F_2\\) in the given figure if the system is in equilibrium?<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/957f9b7b4fbbae1389f0b75109997ee7.png\"/><br/><\/p>",
                     [
                         "<p>\\(F_1=-\\frac{10}{\\sqrt{3}} N\\) and \\(F_2=\\frac{10}{\\sqrt{3}} N\\)<\/p>",
                         "<p>\\(F_1=\\frac{10}{\\sqrt{3}} {~N}\\) and \\({F}_2=\\frac{20}{\\sqrt{3}} {~N}\\)<\/p>",
@@ -38099,7 +38099,7 @@
                         0
                     ],
                     null,
-                    "<img alt=\"\" data-book_with_2_col=\"[218,190]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/fff661666d287c8ea6ab76e38e8a89ce.png\" style=\"width: 218px; max-width: 218px; height: 190px; max-height: 190px;\" title=\"Current dimension: 218 X 190\r\nWeb/Mweb/Book with 2 column: 218 X 190\"/><p>From the figure we get,\u00a0<\/p><p>Vertical Component<\/p><p>\\(F_2 \\sin 60^{\\circ}+10 \\sin 30^{\\circ}=10 \\)<\/p><p>\\(F_2 \\sin 60^{\\circ}=10-10 \\sin 30^{\\circ} \\)<\/p><p>\\(F_2=\\frac{10}{\\sqrt{3}}{~N}\\)<\/p><p>Horizontal Component<\/p><p>\\({F}_2 \\cos 60^{\\circ}={F}_1+10 \\cos 30^{\\circ}\\)<\/p><p>\\({F}_1={F}_2 \\cos 60^{\\circ}-10 \\cos 30^{\\circ} \\)<\/p><p>\\({F}_1=-\\frac{10}{\\sqrt{3}}{~N}\\)<\/p>",
+                    "<img alt=\"\" data-book_with_2_col=\"[218,190]\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/fff661666d287c8ea6ab76e38e8a89ce.png\" style=\"width: 218px; max-width: 218px; height: 190px; max-height: 190px;\" title=\"Current dimension: 218 X 190\r\nWeb/Mweb/Book with 2 column: 218 X 190\"/><p>From the figure we get,\u00a0<\/p><p>Vertical Component<\/p><p>\\(F_2 \\sin 60^{\\circ}+10 \\sin 30^{\\circ}=10 \\)<\/p><p>\\(F_2 \\sin 60^{\\circ}=10-10 \\sin 30^{\\circ} \\)<\/p><p>\\(F_2=\\frac{10}{\\sqrt{3}}{~N}\\)<\/p><p>Horizontal Component<\/p><p>\\({F}_2 \\cos 60^{\\circ}={F}_1+10 \\cos 30^{\\circ}\\)<\/p><p>\\({F}_1={F}_2 \\cos 60^{\\circ}-10 \\cos 30^{\\circ} \\)<\/p><p>\\({F}_1=-\\frac{10}{\\sqrt{3}}{~N}\\)<\/p>",
                     null,
                     null,
                     [
@@ -38184,7 +38184,7 @@
                 [
                     1194,
                     null,
-                    "<p>Ram is playing with a thread and a brick of mass \\(2 \\mathrm{~Kg}\\). He tied a thread one of its end with brick and another end with the roof. He holds the thread at \\(1 \\mathrm{~m}\\) below the roof and applying a force of \\(50 \\mathrm{~N}\\). What is the tension that appeared in the upper part of the thread which is stick with the roof? (Take Tan \\(68^{\\circ}=2.5\\), Cos \\(68^{\\circ}=0.37, {g}=\\) \\(10 {~m}/{s}^2\\) )<img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7fbc748182bd6d7fe32f0e77d6497f68.png\"/><br/><\/p>",
+                    "<p>Ram is playing with a thread and a brick of mass \\(2 \\mathrm{~Kg}\\). He tied a thread one of its end with brick and another end with the roof. He holds the thread at \\(1 \\mathrm{~m}\\) below the roof and applying a force of \\(50 \\mathrm{~N}\\). What is the tension that appeared in the upper part of the thread which is stick with the roof? (Take Tan \\(68^{\\circ}=2.5\\), Cos \\(68^{\\circ}=0.37, {g}=\\) \\(10 {~m}/{s}^2\\) )<img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/7fbc748182bd6d7fe32f0e77d6497f68.png\"/><br/><\/p>",
                     [
                         "<p>\\(53.38 {~N}\\)<\/p>",
                         "<p>\\(38.89 {~N}\\)<\/p>",
@@ -38195,7 +38195,7 @@
                         0
                     ],
                     null,
-                    "<p>First, we draw free body diagram of the given figure,<\/p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/d78734e1068f04d0f55362167c4e098f.png\" title=\"Current dimension: 177 X 201\"/><p><p><p>Horizontal component \\(T_1 \\operatorname{Cos} \\theta\\) and vertical component \\(T_1 \\operatorname{Sin} \\theta\\).<\/p><p>By analysing the free body diagram we get,<\/p><p>\\({T}_1 \\operatorname{Cos} \\theta=20 {~N}\\quad \\ldots . {eq}({i}) \\)<\/p><p>\\({~T}_1 \\operatorname{Sin} \\theta=50 {~N} \\quad \\ldots . {eq}({ii}) \\)<\/p><p>\n<p>On deviding eq. (ii) with eq. (i) we get<\/p><p>\\(\\operatorname{Tan} \\theta=\\frac{5}{2} =2.5 \\)<\/p><p>\\(\\theta=\\operatorname{Tan}^{-1} 2.5 \\)<\/p><p>\\(\\theta=68^{\\circ}\\)<\/p><p>By putting value of \\(\\theta=68^{\\circ}\\) in eq (i) we get<\/p><p>\\({T}_1 \\operatorname{Cos}68^{\\circ}=20 \\)<\/p><p>\\({~T}_1=\\frac{20}{\\operatorname{Cos}68^{\\circ}}\\)<\/p><p>\\({T}_1={53.38} {N}\\)<\/p><\/p><\/p><\/p>",
+                    "<p>First, we draw free body diagram of the given figure,<\/p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/d78734e1068f04d0f55362167c4e098f.png\" title=\"Current dimension: 177 X 201\"/><p><p><p>Horizontal component \\(T_1 \\operatorname{Cos} \\theta\\) and vertical component \\(T_1 \\operatorname{Sin} \\theta\\).<\/p><p>By analysing the free body diagram we get,<\/p><p>\\({T}_1 \\operatorname{Cos} \\theta=20 {~N}\\quad \\ldots . {eq}({i}) \\)<\/p><p>\\({~T}_1 \\operatorname{Sin} \\theta=50 {~N} \\quad \\ldots . {eq}({ii}) \\)<\/p><p>\n<p>On deviding eq. (ii) with eq. (i) we get<\/p><p>\\(\\operatorname{Tan} \\theta=\\frac{5}{2} =2.5 \\)<\/p><p>\\(\\theta=\\operatorname{Tan}^{-1} 2.5 \\)<\/p><p>\\(\\theta=68^{\\circ}\\)<\/p><p>By putting value of \\(\\theta=68^{\\circ}\\) in eq (i) we get<\/p><p>\\({T}_1 \\operatorname{Cos}68^{\\circ}=20 \\)<\/p><p>\\({~T}_1=\\frac{20}{\\operatorname{Cos}68^{\\circ}}\\)<\/p><p>\\({T}_1={53.38} {N}\\)<\/p><\/p><\/p><\/p>",
                     null,
                     null,
                     [
@@ -39528,7 +39528,7 @@
                 [
                     1236,
                     null,
-                    "<p>Three dumbbells are shown in the figure. They have a massless rod of length \\(d\\) and spherical weights attached to their ends. If the spheres on the first and second dumbbell have the same density \\(\\rho\\) and that of the third sphere is \\(2 \\rho\\), what can be concluded about their centre of mass?<\/p><p><img alt=\"\" data-book_with_2_col=\"[235,138]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f1657dcca31580a24bfe367154170f8b.png\" style=\"width: 235px; max-width: 235px; height: 138px; max-height: 138px;\"/><br/><\/p>",
+                    "<p>Three dumbbells are shown in the figure. They have a massless rod of length \\(d\\) and spherical weights attached to their ends. If the spheres on the first and second dumbbell have the same density \\(\\rho\\) and that of the third sphere is \\(2 \\rho\\), what can be concluded about their centre of mass?<\/p><p><img alt=\"\" data-book_with_2_col=\"[235,138]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f1657dcca31580a24bfe367154170f8b.png\" style=\"width: 235px; max-width: 235px; height: 138px; max-height: 138px;\"/><br/><\/p>",
                     [
                         "<p>The centre of mass of first dumbbell is to the extreme left side.<\/p>",
                         "<p>The centre of mass of third dumbbell is to the extreme right side.<\/p>",
@@ -39816,7 +39816,7 @@
                 [
                     1245,
                     null,
-                    "<p>A circular disc of radius \\({R}\\) is removed from a bigger circular disc of radius \\(2 R\\) such that their circumferences coincide. The centre of mass of the new disc is at a distance of \\(\\alpha R\\) from the centre of the bigger disc. The value of \\(\\alpha \\) is:<br/><\/p><img alt=\"\" data-book_with_2_col=\"[148,148]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b526a54b4bd2481651095844e71a910a.png\" style=\"width: 148px; max-width: 148px; height: 148px; max-height: 148px;\"/><br/>",
+                    "<p>A circular disc of radius \\({R}\\) is removed from a bigger circular disc of radius \\(2 R\\) such that their circumferences coincide. The centre of mass of the new disc is at a distance of \\(\\alpha R\\) from the centre of the bigger disc. The value of \\(\\alpha \\) is:<br/><\/p><img alt=\"\" data-book_with_2_col=\"[148,148]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/b526a54b4bd2481651095844e71a910a.png\" style=\"width: 148px; max-width: 148px; height: 148px; max-height: 148px;\"/><br/>",
                     [
                         "<p><span>\\(\\frac{1}{4}\\)<\/span><\/p>",
                         "<p><span>\\(\\frac{1}{3}\\)<\/span><\/p>",
@@ -39827,7 +39827,7 @@
                         1
                     ],
                     null,
-                    "<p>Let the mass per unit area be \\(\\sigma\\).<\/p><p>Then the mass of the complete disc \\(=\\sigma\\left[\\pi(2 R)^2\\right]=4 \\pi \\sigma R^2\\)<\/p><p>The mass of the removed disc \\(=\\sigma\\left(\\pi R^2\\right)=\\pi \\sigma R^2\\)<\/p><p>Let us consider the above situation to be a complete disc of radius \\(2 R\\) on which a disc of radius \\(R\\) of negative mass is superimposed.<\/p><p>Let \\(O\\) be the origin.\u00a0<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/0e719706af0ef3b2b04305ab206330d5.png\"/><br/><\/p><p>\\(X_{com}=\\frac{\\left(4 \\pi \\sigma R^2\\right) \\times 0+\\left(-\\pi \\sigma R^2\\right) R}{4 \\pi \\sigma R^2-\\pi \\sigma R^2} \\)<\/p><p>\\(\\therefore X_{com}=\\frac{-\\pi \\sigma R^2 \\times R}{3 \\pi \\sigma R^2} \\)<\/p><p>\\(\\therefore R_{com}=-\\frac{R}{3}\\)<\/p><p>So, distance of centre of mass from centre of big disc is \\(=\\frac{R}{3}\\)\u00a0<\/p><p>\\(\\Rightarrow\u00a0 \\alpha =\\frac{1}{3}\\)<\/p>",
+                    "<p>Let the mass per unit area be \\(\\sigma\\).<\/p><p>Then the mass of the complete disc \\(=\\sigma\\left[\\pi(2 R)^2\\right]=4 \\pi \\sigma R^2\\)<\/p><p>The mass of the removed disc \\(=\\sigma\\left(\\pi R^2\\right)=\\pi \\sigma R^2\\)<\/p><p>Let us consider the above situation to be a complete disc of radius \\(2 R\\) on which a disc of radius \\(R\\) of negative mass is superimposed.<\/p><p>Let \\(O\\) be the origin.\u00a0<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/0e719706af0ef3b2b04305ab206330d5.png\"/><br/><\/p><p>\\(X_{com}=\\frac{\\left(4 \\pi \\sigma R^2\\right) \\times 0+\\left(-\\pi \\sigma R^2\\right) R}{4 \\pi \\sigma R^2-\\pi \\sigma R^2} \\)<\/p><p>\\(\\therefore X_{com}=\\frac{-\\pi \\sigma R^2 \\times R}{3 \\pi \\sigma R^2} \\)<\/p><p>\\(\\therefore R_{com}=-\\frac{R}{3}\\)<\/p><p>So, distance of centre of mass from centre of big disc is \\(=\\frac{R}{3}\\)\u00a0<\/p><p>\\(\\Rightarrow\u00a0 \\alpha =\\frac{1}{3}\\)<\/p>",
                     "11a2ee1ff2ced0f33b6dd946f41856aa",
                     null,
                     [
@@ -39848,7 +39848,7 @@
                 [
                     1246,
                     null,
-                    "<p>A given shaped glass tube having uniform cross-section is filled with water and is mounted on a rotatable shaft as shown in figure. If the tube is rotated with a constant angular velocity \\(\\omega\\), then:<br/><\/p><img alt=\"\" data-book_with_2_col=\"[182,150]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8898170aac1445fce0ca990b3e25edcd.png\" style=\"width: 182px; max-width: 182px; height: 150px; max-height: 150px;\"/>",
+                    "<p>A given shaped glass tube having uniform cross-section is filled with water and is mounted on a rotatable shaft as shown in figure. If the tube is rotated with a constant angular velocity \\(\\omega\\), then:<br/><\/p><img alt=\"\" data-book_with_2_col=\"[182,150]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8898170aac1445fce0ca990b3e25edcd.png\" style=\"width: 182px; max-width: 182px; height: 150px; max-height: 150px;\"/>",
                     [
                         "<p>Water levels in both sections \\(A\\) and \\(B\\) go up<\/p>",
                         "<p>Water level in section \\(A\\) goes up and that in \\(B\\) comes down<\/p>",
@@ -39987,7 +39987,7 @@
                         3
                     ],
                     null,
-                    "<p>We know that, <\/p>\n<p>Torque \\(\\vec{\\tau}=\\vec{r} \\times \\vec{F}\\)<\/p>\n<p>where \\(\\vec{r}=\\) Position vector and \\(\\vec{F}=\\) Force on the particle<\/p><img alt=\"\" data-book_with_2_col=\"[218,130]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/14d455ec4ac4ab563ba485ef73d87ca8.png\" style=\"width: 218px; max-width: 218px; height: 130px; max-height: 130px;\"/><p>The direction of force is along the direction of the radius. It means the angle between radius and torque is \\(0^{\\circ}\\).<\/p><p>\\(\\vec{\\tau}=\\vec{r} \\times \\vec{F}=r F \\sin \\theta \\)<\/p><p>As \\(\\sin \\theta=\\sin 0^{\\circ}=0\\)\u00a0<\/p><p>So \\(\\vec{\\tau}=r F \\sin \\theta=r F \\sin 0^{\\circ}=0\\)<\/p>",
+                    "<p>We know that, <\/p>\n<p>Torque \\(\\vec{\\tau}=\\vec{r} \\times \\vec{F}\\)<\/p>\n<p>where \\(\\vec{r}=\\) Position vector and \\(\\vec{F}=\\) Force on the particle<\/p><img alt=\"\" data-book_with_2_col=\"[218,130]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/14d455ec4ac4ab563ba485ef73d87ca8.png\" style=\"width: 218px; max-width: 218px; height: 130px; max-height: 130px;\"/><p>The direction of force is along the direction of the radius. It means the angle between radius and torque is \\(0^{\\circ}\\).<\/p><p>\\(\\vec{\\tau}=\\vec{r} \\times \\vec{F}=r F \\sin \\theta \\)<\/p><p>As \\(\\sin \\theta=\\sin 0^{\\circ}=0\\)\u00a0<\/p><p>So \\(\\vec{\\tau}=r F \\sin \\theta=r F \\sin 0^{\\circ}=0\\)<\/p>",
                     "f26ec047a486b401cff233297297b778",
                     null,
                     [

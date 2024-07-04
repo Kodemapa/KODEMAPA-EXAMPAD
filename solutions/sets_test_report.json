@@ -392,7 +392,7 @@
                 [
                     13,
                     null,
-                    "<p>Let \\(\\mathrm{n(U)=42, n(X)=15, n(Y)=12}\\) and \\(\\mathrm{n(X \\cup Y)=22}\\), then find cardinality of the shaded region in the below-given Venn diagram.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/aa3f72d7d1af95747167550eb58a19e2.png\" style=\"width: 100%; max-width: 156px; height: auto; max-height: 102px;\"/><br/><\/p>",
+                    "<p>Let \\(\\mathrm{n(U)=42, n(X)=15, n(Y)=12}\\) and \\(\\mathrm{n(X \\cup Y)=22}\\), then find cardinality of the shaded region in the below-given Venn diagram.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/aa3f72d7d1af95747167550eb58a19e2.png\" style=\"width: 100%; max-width: 156px; height: auto; max-height: 102px;\"/><br/><\/p>",
                     [
                         "30",
                         "20",
@@ -467,7 +467,7 @@
                         0
                     ],
                     null,
-                    "<p>This problem can be solved using the Venn diagram as:<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/98748a0eb0772a84fd054146f159d7b1.png\" title=\"Current dimension: 145 X 226\"/><br/><\/p><p>S<span>o, \\((A-B) \\cup(B-A) \\cup(A \\cap B)=A \\cup B\\).<\/span><\/p><p><span>Thus, the<\/span><span>\u00a0answer is \\(A \\cup B\\).<\/span><\/p>",
+                    "<p>This problem can be solved using the Venn diagram as:<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/98748a0eb0772a84fd054146f159d7b1.png\" title=\"Current dimension: 145 X 226\"/><br/><\/p><p>S<span>o, \\((A-B) \\cup(B-A) \\cup(A \\cap B)=A \\cup B\\).<\/span><\/p><p><span>Thus, the<\/span><span>\u00a0answer is \\(A \\cup B\\).<\/span><\/p>",
                     null,
                     null,
                     [
@@ -979,7 +979,7 @@
                         0
                     ],
                     null,
-                    "<p>It is given that 80 households use neither Brand \\(A\\) nor Brand \\(B\\), then \\(200-80=120\\) must use Brand \\(A,\\) Brand \\(B\\), or both. It is also given that 60 households use only Brand \\(A\\) and that three times as many households use Brand B exclusively as use both brands. If \\(x\\) is the number of households that use both Brand \\(A\\) and Brand \\(B\\), then \\(3 x\\) use Brand \\(B\\) alone. A Venn diagram can be helpful for visualizing the logic of the given information for this item:<br/><\/p><p>All the sections in the circles can be added up and set equal to 120, then\u00a0<\/p><p>\\(n(A \\cup B)=n(A)+n(B)-n(A \\cap B)\\)<br/><\/p><p>\\(60+x+3 x=120\\)<\/p><p>\\(60+4 x=120\\) combine like terms<\/p><p>\\(4 x=60\\) subtract 60 from both sides<\/p><p>\\(x=15\\)\u00a0<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f7ddc5c455db9dfb0aa7ab41c910e935.png\"/><br/><\/p>",
+                    "<p>It is given that 80 households use neither Brand \\(A\\) nor Brand \\(B\\), then \\(200-80=120\\) must use Brand \\(A,\\) Brand \\(B\\), or both. It is also given that 60 households use only Brand \\(A\\) and that three times as many households use Brand B exclusively as use both brands. If \\(x\\) is the number of households that use both Brand \\(A\\) and Brand \\(B\\), then \\(3 x\\) use Brand \\(B\\) alone. A Venn diagram can be helpful for visualizing the logic of the given information for this item:<br/><\/p><p>All the sections in the circles can be added up and set equal to 120, then\u00a0<\/p><p>\\(n(A \\cup B)=n(A)+n(B)-n(A \\cap B)\\)<br/><\/p><p>\\(60+x+3 x=120\\)<\/p><p>\\(60+4 x=120\\) combine like terms<\/p><p>\\(4 x=60\\) subtract 60 from both sides<\/p><p>\\(x=15\\)\u00a0<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f7ddc5c455db9dfb0aa7ab41c910e935.png\"/><br/><\/p>",
                     "f8f9555764da7e25c45264054fc7a8ef",
                     null,
                     [
@@ -1416,7 +1416,7 @@
                 [
                     45,
                     null,
-                    "<p>Consider the following Venn diagram, where X, Y and Z are three sets. Let the number of elements in Z be denoted by n(Z). which is equal to 90.<\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3e9a855cfc5f01be06740d29b7ec0236.png\" style=\"width: 100%; max-width: 162px; height: auto; max-height: 159px;\"/><br/><p>What is the value of n(X) + n(Y) + n(Z) - n(X \u2229 Y) - n(Y \u2229 Z) - n(X \u2229 Z) + n(X \u2229 Y \u2229 Z)?<br/><\/p>",
+                    "<p>Consider the following Venn diagram, where X, Y and Z are three sets. Let the number of elements in Z be denoted by n(Z). which is equal to 90.<\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3e9a855cfc5f01be06740d29b7ec0236.png\" style=\"width: 100%; max-width: 162px; height: auto; max-height: 159px;\"/><br/><p>What is the value of n(X) + n(Y) + n(Z) - n(X \u2229 Y) - n(Y \u2229 Z) - n(X \u2229 Z) + n(X \u2229 Y \u2229 Z)?<br/><\/p>",
                     [
                         "<p>a + b + 43<\/p>",
                         "<p>a + b + 63<\/p>",
@@ -3763,7 +3763,7 @@
                         1
                     ],
                     null,
-                    "<p>As shown in the following Venn diagram, there are 50 adults speak all three languages:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[211,150]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ebcaf25262e7831af96af924e70e143b.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 100 adults speak Hindi or English:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[213,146]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8de8e7eb501ac3f9621d64075c8d02c9.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 150 adults speak English or Urdu:<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2f16149257af99c604feda550fe8fa1f.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 80 adults speak Hindi or Urdu.<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2e32681c1fa1f13ffd107ad5b8178fd4.png\"/><br/><\/p><p>Therefore, the total number of adults who speak exactly two of the three languages = \\(50+100+30=180\\)<br/><\/p>",
+                    "<p>As shown in the following Venn diagram, there are 50 adults speak all three languages:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[211,150]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ebcaf25262e7831af96af924e70e143b.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 100 adults speak Hindi or English:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[213,146]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8de8e7eb501ac3f9621d64075c8d02c9.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 150 adults speak English or Urdu:<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2f16149257af99c604feda550fe8fa1f.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 80 adults speak Hindi or Urdu.<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2e32681c1fa1f13ffd107ad5b8178fd4.png\"/><br/><\/p><p>Therefore, the total number of adults who speak exactly two of the three languages = \\(50+100+30=180\\)<br/><\/p>",
                     "81474a09355e83ea76cf20fe637880f9",
                     null,
                     [

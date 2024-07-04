@@ -7251,7 +7251,7 @@
                         1
                     ],
                     null,
-                    "<p>As shown in the following Venn diagram, there are 50 adults speak all three languages:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[211,150]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ebcaf25262e7831af96af924e70e143b.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 100 adults speak Hindi or English:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[213,146]\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8de8e7eb501ac3f9621d64075c8d02c9.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 150 adults speak English or Urdu:<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2f16149257af99c604feda550fe8fa1f.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 80 adults speak Hindi or Urdu.<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2e32681c1fa1f13ffd107ad5b8178fd4.png\"/><br/><\/p><p>Therefore, the total number of adults who speak exactly two of the three languages = \\(50+100+30=180\\)<br/><\/p>",
+                    "<p>As shown in the following Venn diagram, there are 50 adults speak all three languages:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[211,150]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/ebcaf25262e7831af96af924e70e143b.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 100 adults speak Hindi or English:<br/><\/p><p><img alt=\"\" data-book_with_2_col=\"[213,146]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/8de8e7eb501ac3f9621d64075c8d02c9.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 150 adults speak English or Urdu:<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2f16149257af99c604feda550fe8fa1f.png\"/><br/><\/p><p>As shown in the following Venn diagram, there are 80 adults speak Hindi or Urdu.<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/2e32681c1fa1f13ffd107ad5b8178fd4.png\"/><br/><\/p><p>Therefore, the total number of adults who speak exactly two of the three languages = \\(50+100+30=180\\)<br/><\/p>",
                     "81474a09355e83ea76cf20fe637880f9",
                     null,
                     [
@@ -9299,7 +9299,7 @@
                         0
                     ],
                     null,
-                    "<p>Given,<\/p><p>The area of a triangle is 5 square units.<\/p><p>Equation of line is \\(5 x-y=0\\)<\/p><p>The equation of a line perpendicular to a given line is<\/p><p>\\( x+5 y=\\lambda\\)....(i)<\/p><p>\\(\\Rightarrow \\frac{x}{\\lambda}+\\frac{5 y}{\\lambda}=1\\)<\/p><p>\\(\\Rightarrow \\frac{x}{\\lambda}+\\frac{y}{\\left(\\frac{\\lambda}{5}\\right)}=1\\)<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[93,87]\" data-book_with_3_col=\"[90,82]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/9377a280d9b211ae1533894fe74fce1b.png\" style=\"width: 93px; max-width: 93px; height: 87px; max-height: 87px;\"/><\/p><p>Area of triangle \\(=5\\) square units<\/p><p>Area of triangle = \\(\\frac{1}{2}\u00d7b\u00d7h\\)<\/p><p>\\(\\frac{1}{2} \\times \\lambda \\times \\frac{\\lambda}{5}=5\\)<\/p><p>\\(\\Rightarrow \\lambda^{2}=50 \\)<\/p><p>\\(\\Rightarrow\\lambda=\\pm 5 \\sqrt{2}\\)<\/p><p>Put the value of \\(\\lambda\\) in equation (i) we get,<\/p><p>\u00a0\\(x+5 y=\\pm 5 \\sqrt{2}\\)<\/p><p>\\(\\Rightarrow x+5 y \\pm 5 \\sqrt{2}=0\\)<\/p>",
+                    "<p>Given,<\/p><p>The area of a triangle is 5 square units.<\/p><p>Equation of line is \\(5 x-y=0\\)<\/p><p>The equation of a line perpendicular to a given line is<\/p><p>\\( x+5 y=\\lambda\\)....(i)<\/p><p>\\(\\Rightarrow \\frac{x}{\\lambda}+\\frac{5 y}{\\lambda}=1\\)<\/p><p>\\(\\Rightarrow \\frac{x}{\\lambda}+\\frac{y}{\\left(\\frac{\\lambda}{5}\\right)}=1\\)<\/p><p><img class=\"img-responsive\" data-book_with_2_col=\"[93,87]\" data-book_with_3_col=\"[90,82]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/9377a280d9b211ae1533894fe74fce1b.png\" style=\"width: 93px; max-width: 93px; height: 87px; max-height: 87px;\"/><\/p><p>Area of triangle \\(=5\\) square units<\/p><p>Area of triangle = \\(\\frac{1}{2}\u00d7b\u00d7h\\)<\/p><p>\\(\\frac{1}{2} \\times \\lambda \\times \\frac{\\lambda}{5}=5\\)<\/p><p>\\(\\Rightarrow \\lambda^{2}=50 \\)<\/p><p>\\(\\Rightarrow\\lambda=\\pm 5 \\sqrt{2}\\)<\/p><p>Put the value of \\(\\lambda\\) in equation (i) we get,<\/p><p>\u00a0\\(x+5 y=\\pm 5 \\sqrt{2}\\)<\/p><p>\\(\\Rightarrow x+5 y \\pm 5 \\sqrt{2}=0\\)<\/p>",
                     null,
                     null,
                     [
@@ -13843,7 +13843,7 @@
                         1
                     ],
                     null,
-                    "<p><span>A triangular region in the 3rd quadrant<\/span><\/p><p><span>Given inequalities x \u2265 0 , y \u2265 0 , 2x + y + 6 \u2265 0<\/span><\/p><p><span>Now take x = 0, y = 0 and 2x + y + 6 = 0<\/span><\/p><p><span>when x = 0, y = -6<\/span><\/p><p><span>when y = 0, x = -3<\/span><\/p><p><span>So, the points are A(0, 0), B(0, -6) and C(-3, 0)<\/span><\/p><img alt=\"\" data-book_with_3_col=\"[152,133]\" src=\"static/media/wl_client/1/qdump/12720c6e8a3ce689b37c9ea18b75b907/d26653f927eb16863631b7df95c6b7cd.png\" style=\"\"/><span><br/><\/span><p>So, the graph of the inequations x \u2264 0 , y \u2264 0 , and 2x + y + 6 \u2265 0 is a triangular region in the 3rd quadrant.<br/><\/p>",
+                    "<p><span>A triangular region in the 3rd quadrant<\/span><\/p><p><span>Given inequalities x \u2265 0 , y \u2265 0 , 2x + y + 6 \u2265 0<\/span><\/p><p><span>Now take x = 0, y = 0 and 2x + y + 6 = 0<\/span><\/p><p><span>when x = 0, y = -6<\/span><\/p><p><span>when y = 0, x = -3<\/span><\/p><p><span>So, the points are A(0, 0), B(0, -6) and C(-3, 0)<\/span><\/p><img alt=\"\" data-book_with_3_col=\"[152,133]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/12720c6e8a3ce689b37c9ea18b75b907/d26653f927eb16863631b7df95c6b7cd.png\" style=\"\"/><span><br/><\/span><p>So, the graph of the inequations x \u2264 0 , y \u2264 0 , and 2x + y + 6 \u2265 0 is a triangular region in the 3rd quadrant.<br/><\/p>",
                     null,
                     null,
                     [
@@ -13875,7 +13875,7 @@
                         2
                     ],
                     null,
-                    "<p><span>Given inequalities x \u2265 0, y \u2265 0, 2x + y + 6 \u2264 0<\/span><\/p><p><span>Now take x = 0, y = 0 and 2x + y + 6 = 0<\/span><\/p><p><span>when x = 0, y = -6<\/span><\/p><p><span>when y = 0, x = -3<\/span><\/p><p><span>So, the points are A(0, 0), B(0, -6) and C(-3, 0)<\/span><\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/12720c6e8a3ce689b37c9ea18b75b907/aea181e2cb9346e2623c5edd1346a08b.png\"/><span><br/><\/span><p><span>Since region is outside from the line 2x + y + 6 = 0<\/span><br/><span>So, it does not represent any figure.<\/span><br/><\/p>",
+                    "<p><span>Given inequalities x \u2265 0, y \u2265 0, 2x + y + 6 \u2264 0<\/span><\/p><p><span>Now take x = 0, y = 0 and 2x + y + 6 = 0<\/span><\/p><p><span>when x = 0, y = -6<\/span><\/p><p><span>when y = 0, x = -3<\/span><\/p><p><span>So, the points are A(0, 0), B(0, -6) and C(-3, 0)<\/span><\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/12720c6e8a3ce689b37c9ea18b75b907/aea181e2cb9346e2623c5edd1346a08b.png\"/><span><br/><\/span><p><span>Since region is outside from the line 2x + y + 6 = 0<\/span><br/><span>So, it does not represent any figure.<\/span><br/><\/p>",
                     null,
                     null,
                     [
@@ -19507,7 +19507,7 @@
                         1
                     ],
                     null,
-                    "<p><span>A triangular region in the 3rd quadrant<\/span><\/p><p><span>Given inequalities x \u2265 0 , y \u2265 0 , 2x + y + 6 \u2265 0<\/span><\/p><p><span>Now take x = 0, y = 0 and 2x + y + 6 = 0<\/span><\/p><p><span>when x = 0, y = -6<\/span><\/p><p><span>when y = 0, x = -3<\/span><\/p><p><span>So, the points are A(0, 0), B(0, -6) and C(-3, 0)<\/span><\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/3a0dab880c1fde9c42d379bc3332c711.png\"/><span><br/><\/span><p>So, the graph of the inequations x \u2264 0 , y \u2264 0 , and 2x + y + 6 \u2265 0 is a triangular region in the 3rd quadrant.<br/><\/p>",
+                    "<p><span>A triangular region in the 3rd quadrant<\/span><\/p><p><span>Given inequalities x \u2265 0 , y \u2265 0 , 2x + y + 6 \u2265 0<\/span><\/p><p><span>Now take x = 0, y = 0 and 2x + y + 6 = 0<\/span><\/p><p><span>when x = 0, y = -6<\/span><\/p><p><span>when y = 0, x = -3<\/span><\/p><p><span>So, the points are A(0, 0), B(0, -6) and C(-3, 0)<\/span><\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/3a0dab880c1fde9c42d379bc3332c711.png\"/><span><br/><\/span><p>So, the graph of the inequations x \u2264 0 , y \u2264 0 , and 2x + y + 6 \u2265 0 is a triangular region in the 3rd quadrant.<br/><\/p>",
                     null,
                     null,
                     [
@@ -19827,7 +19827,7 @@
                         2
                     ],
                     null,
-                    "<p>Here, constraints: \\(x \\leq 40, y \\leq 20\\) and \\(x, y \\geq 0\\)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3911a746a927a9559014a6e38c07dec0.jpeg\"/><br/><\/p><p>We get minimum value of \\(P\\), only when \\(x=0\\) and \\(y=0\\)\u00a0<\/p><p>So, \\(P=6(0)+16(0)=0\\)<br/><\/p>",
+                    "<p>Here, constraints: \\(x \\leq 40, y \\leq 20\\) and \\(x, y \\geq 0\\)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3911a746a927a9559014a6e38c07dec0.jpeg\"/><br/><\/p><p>We get minimum value of \\(P\\), only when \\(x=0\\) and \\(y=0\\)\u00a0<\/p><p>So, \\(P=6(0)+16(0)=0\\)<br/><\/p>",
                     null,
                     null,
                     [
@@ -19859,7 +19859,7 @@
                         1
                     ],
                     null,
-                    "<p>Given:<\/p><p>\\(\\frac{4}{x}&lt;\\frac{1}{3} \\)<\/p><p>\\(\\Rightarrow \\frac{4}{x}-\\frac{1}{3}&lt;0 \\)<\/p><p>\\(\\Rightarrow \\frac{12-x}{3 x}&lt;0 \\)<\/p><p>\\(\\Rightarrow \\frac{-(x-12)}{3 x}&lt;0\\)<\/p><p>Multiplying each side of an inequality by a negative number reverses the direction of the inequality symbol.<\/p><p>\\(\\Rightarrow \\frac{(x-12)}{3 x}&gt;0, \\) Here \\(x \\neq 0\\)<br/><\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/413115c2bfb3c8c92286e4338471cbce.jpeg\"/><span><br/><\/span><p>\\(\\therefore x&lt;0\\) or \\(x&gt;12\\)<br/><\/p>",
+                    "<p>Given:<\/p><p>\\(\\frac{4}{x}&lt;\\frac{1}{3} \\)<\/p><p>\\(\\Rightarrow \\frac{4}{x}-\\frac{1}{3}&lt;0 \\)<\/p><p>\\(\\Rightarrow \\frac{12-x}{3 x}&lt;0 \\)<\/p><p>\\(\\Rightarrow \\frac{-(x-12)}{3 x}&lt;0\\)<\/p><p>Multiplying each side of an inequality by a negative number reverses the direction of the inequality symbol.<\/p><p>\\(\\Rightarrow \\frac{(x-12)}{3 x}&gt;0, \\) Here \\(x \\neq 0\\)<br/><\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/413115c2bfb3c8c92286e4338471cbce.jpeg\"/><span><br/><\/span><p>\\(\\therefore x&lt;0\\) or \\(x&gt;12\\)<br/><\/p>",
                     null,
                     null,
                     [
@@ -25267,7 +25267,7 @@
                         0
                     ],
                     null,
-                    "<p>It is given that 80 households use neither Brand \\(A\\) nor Brand \\(B\\), then \\(200-80=120\\) must use Brand \\(A,\\) Brand \\(B\\), or both. It is also given that 60 households use only Brand \\(A\\) and that three times as many households use Brand B exclusively as use both brands. If \\(x\\) is the number of households that use both Brand \\(A\\) and Brand \\(B\\), then \\(3 x\\) use Brand \\(B\\) alone. A Venn diagram can be helpful for visualizing the logic of the given information for this item:<br/><\/p><p>All the sections in the circles can be added up and set equal to 120, then\u00a0<\/p><p>\\(n(A \\cup B)=n(A)+n(B)-n(A \\cap B)\\)<br/><\/p><p>\\(60+x+3 x=120\\)<\/p><p>\\(60+4 x=120\\) combine like terms<\/p><p>\\(4 x=60\\) subtract 60 from both sides<\/p><p>\\(x=15\\)\u00a0<br/><\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f7ddc5c455db9dfb0aa7ab41c910e935.png\"/><br/><\/p>",
+                    "<p>It is given that 80 households use neither Brand \\(A\\) nor Brand \\(B\\), then \\(200-80=120\\) must use Brand \\(A,\\) Brand \\(B\\), or both. It is also given that 60 households use only Brand \\(A\\) and that three times as many households use Brand B exclusively as use both brands. If \\(x\\) is the number of households that use both Brand \\(A\\) and Brand \\(B\\), then \\(3 x\\) use Brand \\(B\\) alone. A Venn diagram can be helpful for visualizing the logic of the given information for this item:<br/><\/p><p>All the sections in the circles can be added up and set equal to 120, then\u00a0<\/p><p>\\(n(A \\cup B)=n(A)+n(B)-n(A \\cap B)\\)<br/><\/p><p>\\(60+x+3 x=120\\)<\/p><p>\\(60+4 x=120\\) combine like terms<\/p><p>\\(4 x=60\\) subtract 60 from both sides<\/p><p>\\(x=15\\)\u00a0<br/><\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/f7ddc5c455db9dfb0aa7ab41c910e935.png\"/><br/><\/p>",
                     "f8f9555764da7e25c45264054fc7a8ef",
                     null,
                     [
@@ -25704,7 +25704,7 @@
                 [
                     804,
                     null,
-                    "<p>Consider the following Venn diagram, where X, Y and Z are three sets. Let the number of elements in Z be denoted by n(Z). which is equal to 90.<\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3e9a855cfc5f01be06740d29b7ec0236.png\" style=\"width: 100%; max-width: 162px; height: auto; max-height: 159px;\"/><br/><p>What is the value of n(X) + n(Y) + n(Z) - n(X \u2229 Y) - n(Y \u2229 Z) - n(X \u2229 Z) + n(X \u2229 Y \u2229 Z)?<br/><\/p>",
+                    "<p>Consider the following Venn diagram, where X, Y and Z are three sets. Let the number of elements in Z be denoted by n(Z). which is equal to 90.<\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/3e9a855cfc5f01be06740d29b7ec0236.png\" style=\"width: 100%; max-width: 162px; height: auto; max-height: 159px;\"/><br/><p>What is the value of n(X) + n(Y) + n(Z) - n(X \u2229 Y) - n(Y \u2229 Z) - n(X \u2229 Z) + n(X \u2229 Y \u2229 Z)?<br/><\/p>",
                     [
                         "<p>a + b + 43<\/p>",
                         "<p>a + b + 63<\/p>",
@@ -28531,7 +28531,7 @@
                         3
                     ],
                     null,
-                    "<p>Slope form of line:\r\n<\/p><p>\\({y}={mx}+{c},\\) where \\({m}\\) is the slope and \\({c}\\) is \\({y}\\) intercept.<\/p><p><img alt=\"\" data-book_with_3_col=\"[150,119]\" src=\"static/media/wl_client/1/qdump/bd403da3116cbd5bf077aad115ae1543/41b4c6ad4a325a5da8a72b05a9b4f58e.png\" style=\"\"/><br/><\/p><p>Given:<\/p><p>Intercept \\(=c=-2\\)<\/p><p>Slope \\(=m=\\tan \\theta\\)\r\n\r\n\r\n<\/p><p>\\(\\Rightarrow m=\\tan 30^{\\circ}\\)<\/p><p>\\(\\Rightarrow m =\\frac {1}{\\sqrt{3}}\\)<\/p><p>Intercept form of a line is given as:<\/p><p>\\(y=m x+c\\)<\/p><p>where \\(m\\) is the slope and \\(c\\) is \\(y\\) -intercept.<\/p><p>\\(\\Rightarrow y=(\\frac{1}{\\sqrt {3}}) x-2\\)<\/p><p>\\(\\Rightarrow \\sqrt{3}y=x-2 \\sqrt{3}\\)<\/p><p>\\(\\Rightarrow x-\\sqrt{3} y-2 \\sqrt{3}=0\\)<\/p>",
+                    "<p>Slope form of line:\r\n<\/p><p>\\({y}={mx}+{c},\\) where \\({m}\\) is the slope and \\({c}\\) is \\({y}\\) intercept.<\/p><p><img alt=\"\" data-book_with_3_col=\"[150,119]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/bd403da3116cbd5bf077aad115ae1543/41b4c6ad4a325a5da8a72b05a9b4f58e.png\" style=\"\"/><br/><\/p><p>Given:<\/p><p>Intercept \\(=c=-2\\)<\/p><p>Slope \\(=m=\\tan \\theta\\)\r\n\r\n\r\n<\/p><p>\\(\\Rightarrow m=\\tan 30^{\\circ}\\)<\/p><p>\\(\\Rightarrow m =\\frac {1}{\\sqrt{3}}\\)<\/p><p>Intercept form of a line is given as:<\/p><p>\\(y=m x+c\\)<\/p><p>where \\(m\\) is the slope and \\(c\\) is \\(y\\) -intercept.<\/p><p>\\(\\Rightarrow y=(\\frac{1}{\\sqrt {3}}) x-2\\)<\/p><p>\\(\\Rightarrow \\sqrt{3}y=x-2 \\sqrt{3}\\)<\/p><p>\\(\\Rightarrow x-\\sqrt{3} y-2 \\sqrt{3}=0\\)<\/p>",
                     null,
                     null,
                     [
@@ -36840,7 +36840,7 @@
                 [
                     1152,
                     null,
-                    "<p>Let \\(\\mathrm{n(U)=42, n(X)=15, n(Y)=12}\\) and \\(\\mathrm{n(X \\cup Y)=22}\\), then find cardinality of the shaded region in the below-given Venn diagram.<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/aa3f72d7d1af95747167550eb58a19e2.png\" style=\"width: 100%; max-width: 156px; height: auto; max-height: 102px;\"/><br/><\/p>",
+                    "<p>Let \\(\\mathrm{n(U)=42, n(X)=15, n(Y)=12}\\) and \\(\\mathrm{n(X \\cup Y)=22}\\), then find cardinality of the shaded region in the below-given Venn diagram.<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/aa3f72d7d1af95747167550eb58a19e2.png\" style=\"width: 100%; max-width: 156px; height: auto; max-height: 102px;\"/><br/><\/p>",
                     [
                         "30",
                         "20",
@@ -36915,7 +36915,7 @@
                         0
                     ],
                     null,
-                    "<p>This problem can be solved using the Venn diagram as:<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/98748a0eb0772a84fd054146f159d7b1.png\" title=\"Current dimension: 145 X 226\"/><br/><\/p><p>S<span>o, \\((A-B) \\cup(B-A) \\cup(A \\cap B)=A \\cup B\\).<\/span><\/p><p><span>Thus, the<\/span><span>\u00a0answer is \\(A \\cup B\\).<\/span><\/p>",
+                    "<p>This problem can be solved using the Venn diagram as:<\/p><p><img alt=\"\" data-placement=\"right\" data-toggle=\"tooltip\" data-trigger=\"manual\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/98748a0eb0772a84fd054146f159d7b1.png\" title=\"Current dimension: 145 X 226\"/><br/><\/p><p>S<span>o, \\((A-B) \\cup(B-A) \\cup(A \\cap B)=A \\cup B\\).<\/span><\/p><p><span>Thus, the<\/span><span>\u00a0answer is \\(A \\cup B\\).<\/span><\/p>",
                     null,
                     null,
                     [
@@ -38419,7 +38419,7 @@
                         3
                     ],
                     null,
-                    "<p>A and B are the centres of outer and inner circles.<\/p><p>\\(B C=4 \\mathrm{cm}\\) and \\(A O=6 \\mathrm{cm}\\)<\/p><p>\\(\\therefore A C=O C-O A\\)<\/p><p>\\(=(8-6) \\mathrm{cm}=2 \\mathrm{cm}\\)<\/p><p>Longest chord is \\(D E\\) or \\(D C\\)<\/p><p>\\(D C^{2}=A D^{2}-A C^{2}\\)<\/p><p>\\(=6^{2}-2^{2}=32\\)<\/p><p>\\(\\therefore D C=4 \\sqrt{2}\\)<\/p><p>\\(\\therefore D E=8 \\sqrt{2} \\mathrm{cm}\\)<\/p><p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eb08167c0c0f954bfec5df466356e98c.png\"/><br/><\/p>",
+                    "<p>A and B are the centres of outer and inner circles.<\/p><p>\\(B C=4 \\mathrm{cm}\\) and \\(A O=6 \\mathrm{cm}\\)<\/p><p>\\(\\therefore A C=O C-O A\\)<\/p><p>\\(=(8-6) \\mathrm{cm}=2 \\mathrm{cm}\\)<\/p><p>Longest chord is \\(D E\\) or \\(D C\\)<\/p><p>\\(D C^{2}=A D^{2}-A C^{2}\\)<\/p><p>\\(=6^{2}-2^{2}=32\\)<\/p><p>\\(\\therefore D C=4 \\sqrt{2}\\)<\/p><p>\\(\\therefore D E=8 \\sqrt{2} \\mathrm{cm}\\)<\/p><p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/eb08167c0c0f954bfec5df466356e98c.png\"/><br/><\/p>",
                     "c336153810821cba9a4296813b9f49b9",
                     null,
                     [
@@ -38632,7 +38632,7 @@
                 [
                     1208,
                     null,
-                    "<p>In the given figure 0 is the centre of the circle and \\(\\angle P Q R=40^{\\circ},\\) find the measure of \\(\\angle P O R\\).<br/><\/p><img alt=\"\" src=\"static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/c0195105194280b7e9cfd14a3207cd04.png\"/><br/>",
+                    "<p>In the given figure 0 is the centre of the circle and \\(\\angle P Q R=40^{\\circ},\\) find the measure of \\(\\angle P O R\\).<br/><\/p><img alt=\"\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e55a342d057a52acc35b29ffdedd2ff4/c0195105194280b7e9cfd14a3207cd04.png\"/><br/>",
                     [
                         "<p>80\u00b0<\/p>",
                         "<p>180\u00b0<\/p>",
@@ -39571,7 +39571,7 @@
                         3
                     ],
                     null,
-                    "<p>As we know,\u00a0Standard equation of a circle,<\/p>\n<p>\\((x-h)^{2}+(y-k)^{2}=R^{2}\\)<\/p>\n<p>Where the center is \\((h, k)\\) and radius is \\(R\\).<\/p>\n<p>The distance between a point on a circle and the center is the radius of the circle.<\/p>\n<p>Distance between 2 points \\(\\left(x_{1}, y_{1}\\right)\\) and \\(\\left(x_{2}, y_{2}\\right)\\) is:<\/p>\n<p>\\(D=\\sqrt{\\left(y_{2}-y_{1}\\right)^{2}+\\left(x_{2}-x_{1}\\right)^{2}}\\)<\/p>\n<p>Perpendicular distance of a point \\(\\left(x_{1}, y_{1}\\right)\\) from the line \\(a x+b y+c=0\\),<\/p>\n<p>\\(D=\\left|\\frac{a x_{1}+b y_{1}+c}{\\sqrt{a^{2}+b^{2}}}\\right|\\)<\/p><p>Given,\u00a0The circle touches the x and y-axis, i.e., the x and y-axis are tangent to the circle.<\/p><p>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0<img class=\"img-responsive\" data-book_with_3_col=\"[66,67]\" src=\"static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/2cc315912e1913d273281be84b854b80.png\" style=\"\"/><\/p><p>Equation of the \\(x\\)-axis is \\(y=0\\).<\/p><p>Radius is perpendicular distance of centre \\(\\left(-2,-2\\right)\\) from the tangent \\(\\left(y=0\\right)\\)<\/p><p>Radius \\( r=\\left|\\frac{a x_{1}+b y_{1}+c}{\\sqrt{a^{2}+b^{2}}}\\right| \\)<\/p><p>\\(\\Rightarrow r=\\left|\\frac{0 \\times(-2)+1 \\times(-2)+0}{\\sqrt{0^{2}+1^{2}}}\\right| \\)<\/p><p>\\(\\Rightarrow r=|-2|=2\\)<\/p><p>Equation of circle having centre \\(\\left(-2,-2\\right)\\) and radius \\(r=2\\) is:<\/p><p>\\(\\left(x-h\\right)^{2}+(y-k)^{2}=R^{2} \\)<\/p><p>\\(\\Rightarrow(x-(-2)^{2})+\\left(y-(-2)\\right)^{2}=2^{2} \\)<\/p><p>\\(\\Rightarrow x^{2}+y^{2}+4 x+4 y+8=4 \\)<\/p><p>\\(\\Rightarrow x^{2}+y^{2}+4 x+4 y+4=0\\)<\/p>",
+                    "<p>As we know,\u00a0Standard equation of a circle,<\/p>\n<p>\\((x-h)^{2}+(y-k)^{2}=R^{2}\\)<\/p>\n<p>Where the center is \\((h, k)\\) and radius is \\(R\\).<\/p>\n<p>The distance between a point on a circle and the center is the radius of the circle.<\/p>\n<p>Distance between 2 points \\(\\left(x_{1}, y_{1}\\right)\\) and \\(\\left(x_{2}, y_{2}\\right)\\) is:<\/p>\n<p>\\(D=\\sqrt{\\left(y_{2}-y_{1}\\right)^{2}+\\left(x_{2}-x_{1}\\right)^{2}}\\)<\/p>\n<p>Perpendicular distance of a point \\(\\left(x_{1}, y_{1}\\right)\\) from the line \\(a x+b y+c=0\\),<\/p>\n<p>\\(D=\\left|\\frac{a x_{1}+b y_{1}+c}{\\sqrt{a^{2}+b^{2}}}\\right|\\)<\/p><p>Given,\u00a0The circle touches the x and y-axis, i.e., the x and y-axis are tangent to the circle.<\/p><p>\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0<img class=\"img-responsive\" data-book_with_3_col=\"[66,67]\" src=\"https://kodemapa.com/static/media/wl_client/1/qdump/e15a7351bd3aa55f4a06d4d7dd6f96fc/2cc315912e1913d273281be84b854b80.png\" style=\"\"/><\/p><p>Equation of the \\(x\\)-axis is \\(y=0\\).<\/p><p>Radius is perpendicular distance of centre \\(\\left(-2,-2\\right)\\) from the tangent \\(\\left(y=0\\right)\\)<\/p><p>Radius \\( r=\\left|\\frac{a x_{1}+b y_{1}+c}{\\sqrt{a^{2}+b^{2}}}\\right| \\)<\/p><p>\\(\\Rightarrow r=\\left|\\frac{0 \\times(-2)+1 \\times(-2)+0}{\\sqrt{0^{2}+1^{2}}}\\right| \\)<\/p><p>\\(\\Rightarrow r=|-2|=2\\)<\/p><p>Equation of circle having centre \\(\\left(-2,-2\\right)\\) and radius \\(r=2\\) is:<\/p><p>\\(\\left(x-h\\right)^{2}+(y-k)^{2}=R^{2} \\)<\/p><p>\\(\\Rightarrow(x-(-2)^{2})+\\left(y-(-2)\\right)^{2}=2^{2} \\)<\/p><p>\\(\\Rightarrow x^{2}+y^{2}+4 x+4 y+8=4 \\)<\/p><p>\\(\\Rightarrow x^{2}+y^{2}+4 x+4 y+4=0\\)<\/p>",
                     null,
                     null,
                     [
