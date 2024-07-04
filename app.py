@@ -800,10 +800,15 @@ def download_solutions():
     
     # Add solutions to the document
     for index, qid in enumerate(question_ids, start=1):
-        correct_answers = solutions.get(qid, {}).get('correct_answers', 'solution not found')
-        solution = solutions.get(str(correct_answers), 'Solution not found')
-        doc.add_heading(f'Question {index}', level=2)
-        doc.add_paragraph(solution)
+        solution = solutions.get(qid, {}).get('correct_answers', 'solution not found')[0]
+        # solution = solutions.get(str(correct_answers[0]), 'Solution not found')
+        # doc.add_heading(f'Question {index}', level=2)
+        if isinstance(solution,int):
+            quest = f'[{index}]. {solution+1}'
+            doc.add_paragraph(quest)
+        else:
+            quest = f'[{index}]. {qid}'
+            doc.add_paragraph(quest)
     
     # Save the document
     docx_filename = f'{test_name}_solutions.docx'
