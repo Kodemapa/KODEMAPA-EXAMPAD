@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Select Category</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Select Category For {{data['name']}}</h1>
+        </div>
+        <div class="form-container">
+            <form method="POST">
+                <div class="button-group">
+                    {% for category in data['L3'] %}
+                    <div>
+                        <input type="radio" id="{{ category['id'] }}" name="l3_category" value="{{ category['id'] }}"
+                            required>
+                        <label for="{{ category['id'] }}">{{ category['name'] }}</label>
+                    </div>
+                    {% endfor %}
+                </div>
+                <button type="submit">Proceed</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
