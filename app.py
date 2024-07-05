@@ -294,24 +294,43 @@ def test_page():
     query_params = request.query_string.decode('utf-8')
     test_urls_by_category = urllib.parse.parse_qs(query_params)
     
-    # Decode the dictionary values
-    for category in test_urls_by_category:
-        test_urls_by_category[category] = test_urls_by_category[category][0].split(',')
-    
     questions_by_section = {}
     selected_questions_ids = set()
     try:
         for category, test_urls in test_urls_by_category.items():
             questions_by_section[category] = []
-            for test_url in test_urls:
-                test_url = ast.literal_eval(test_url)
-                json_file = test_url["file_path"]
+            # Join the list of URLs back into a single string
+            full_url_string = ','.join(test_urls)
+            
+            # Use regex to find all JSON-like structures
+            json_strings = re.findall(r'\{[^}]+\}', full_url_string)
+            
+            for json_string in json_strings:
+                try:
+                    # Replace single quotes with double quotes and remove any leading/trailing '+'
+                    json_string = json_string.replace("'", '"').strip('+')
+                    test_url_dict = json.loads(json_string)
+                except json.JSONDecodeError:
+                    print(f"Error parsing URL for {category}: {json_string}")
+                    continue  # Skip this problematic URL and continue with the next one
+
+                json_file = test_url_dict.get("file_path")
+                if not json_file:
+                    print(f"No file_path found in: {test_url_dict}")
+                    continue
+
                 json_file = json_file.replace('\\', '/')
                 # Load data from selected JSON file
-                with open(json_file, 'r') as file:
-                    data = json.load(file)['result']['data']
+                try:
+                    with open(json_file, 'r') as file:
+                        data = json.load(file)['result']['data']
+                except FileNotFoundError:
+                    print(f"File not found: {json_file}")
+                    continue
+                except json.JSONDecodeError:
+                    print(f"Error decoding JSON file: {json_file}")
+                    continue
 
-                
                 for test_info in data:
                     if 'sec_details' in test_info:
                         for sec_detail in test_info['sec_details']:
@@ -326,8 +345,6 @@ def test_page():
                                         # Ensure difficulty_level is lowercase
                                         question['difficulty_level'] = question['difficulty_level'].lower()
                                     
-                                    
-                                    
                                     # Clean the q_string field
                                     q_string = question['que']['1']['q_string']
                                     
@@ -337,18 +354,11 @@ def test_page():
                                     question['que']['1']['q_string'] = q_string
 
                                     questions_by_section[category].append(question)
-                                    # Add the question to the category
-                                else:
-                                    continue
-                                
                     else:
                         print(f"Warning: 'sec_details' not found in test_info: {test_info}")
 
-    
-    except requests.exceptions.RequestException as e:
-        return f"Error fetching data from the endpoint: {e}", 500
-    except json.JSONDecodeError as e:
-        return f"Error decoding JSON: {e}", 500
+    except Exception as e:
+        return f"An error occurred: {str(e)}", 500
     
     if request.method == 'POST':
         selected_questions_indices = request.form.getlist('question')
@@ -937,7 +947,7 @@ def convert_json_to_docx(selected_questions, docx_file, test_name):
         markdown_output = json_to_markdown(json_data, test_name)
 
         # Print Markdown content to console
-        print(markdown_output)
+        # print(markdown_output)
         
         # Convert Markdown to DOCX using pypandoc
         pypandoc.convert_text(markdown_output, 'docx', format='md', outputfile=docx_file)
