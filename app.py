@@ -272,7 +272,7 @@ def l4_l5_screen(class_selection, l3_id):
                         <div class="button-group">
                             {% for test in section['L5'] %}
                                 <div>
-                                    <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}" value="{{ test[11] }}">
+                                    <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}" value="{{ test[10] }}">
                                     <label for="{{ test[10] }}">{{ test[0] }}</label>
                                 </div>
                             {% endfor %}
