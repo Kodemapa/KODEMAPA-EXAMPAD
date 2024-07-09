@@ -867,6 +867,12 @@ def clean_html(raw_html):
     clean = re.sub(r'<[^>]+>', '', clean)
     return clean.strip()
 
+def clean_latex(text):
+    # Remove space after opening $ and before closing $
+    text = re.sub(r'\$\s+', '$', text)
+    text = re.sub(r'\s+\$', '$', text)
+    return text
+
 def process_latex(text):
     # Define a regex pattern for HTML entities
     entity_pattern = r'&[a-zA-Z0-9#]+;'
@@ -923,7 +929,8 @@ def json_to_markdown(json_data, test_name):
         q_string = handle_tables(q_string)
         q_string = latex_to_markdown(q_string)
         q_string = clean_html(q_string)
-        
+        q_string = clean_latex(q_string)
+
         markdown_content += f"{q_string}\n\n"
         
         if 'q_option' in question['que']['1']:
@@ -961,7 +968,7 @@ def convert_json_to_docx(selected_questions, docx_file, test_name):
         markdown_output = json_to_markdown(json_data, test_name)
 
         # Print Markdown content to console
-        # print(markdown_output)
+        print(markdown_output)
         
         # Convert Markdown to DOCX using pypandoc
         pypandoc.convert_text(markdown_output, 'docx', format='md', outputfile=docx_file)
