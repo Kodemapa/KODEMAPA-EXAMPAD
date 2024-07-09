@@ -1,4 +1,5 @@
 import ast
+import html
 import random
 import re
 from flask import Flask, jsonify, render_template_string, request, redirect, url_for , send_file
@@ -867,9 +868,22 @@ def clean_html(raw_html):
     return clean.strip()
 
 def process_latex(text):
-    text = re.sub(r'\\mathrm{([^}]+)}', r'\\mathrm{\1}', text)
-    text = re.sub(r'\\\(|\\\)', '$', text)
-    text = re.sub(r'(\$[^$]+)\$\s*(\$[^$]+\$)', r'\1\2', text)
+    # Define a regex pattern for HTML entities
+    entity_pattern = r'&[a-zA-Z0-9#]+;'
+    
+    # Find all HTML entities in the text
+    entities = re.findall(entity_pattern, text)
+    
+    # Unescape each entity individually
+    for entity in entities:
+        unescaped = html.unescape(entity)
+        text = text.replace(entity, unescaped)
+    
+    # Now process LaTeX-specific patterns
+    text = re.sub(r'\\mathrm{([^}]+)}', r'\1', text)  # Remove \mathrm
+    text = re.sub(r'\\\(|\\\)', '$', text)  # Replace \( and \) with $
+    text = re.sub(r'(\$[^$]+)\$\s*(\$[^$]+\$)', r'\1\2', text)  # Combine adjacent LaTeX expressions
+    
     return text
 
 def latex_to_markdown(latex):
