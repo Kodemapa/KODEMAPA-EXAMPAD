@@ -65,5 +65,5 @@ def main(input_filename):
         print(f"An unexpected error occurred: {e}")
 
 if __name__ == "__main__":
-    input_fileName = r'C:\Users\pavan\OneDrive\Desktop\Exampad\EXAMPAD\KODEMAPA-EXAMPAD\solutions\maths_test.json'
+    input_fileName = r"C:\Users\pavan\OneDrive\Desktop\km_sol_Json\km_sol_Json\PhysicsXII.json"
     main(input_fileName)
