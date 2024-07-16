@@ -263,7 +263,7 @@ def l4_l5_screen(class_selection, l3_id):
     <body>
     <div class="container">
         <div class="header">
-            <h1>CBSE XI MATHS</h1>
+            <h1>Select the topics</h1>
         </div>
         <div class="form-container">
             <form method="POST">
@@ -795,6 +795,29 @@ def test_page():
         
         return render_template_string(html_template, questions_by_section=questions_by_section, enumerate=enumerate)
 
+
+def combine_json_files(input_file1, input_file2,input_file3):
+    # Load the JSON data from both input files
+    with open(input_file1, 'r', encoding='utf-8') as file1:
+        data1 = json.load(file1)
+        
+    with open(input_file2, 'r', encoding='utf-8') as file2:
+        data2 = json.load(file2)
+
+    with open(input_file3, 'r', encoding='utf-8') as file2:
+        data3 = json.load(file2)
+    
+    # Combine the data
+    combined_data = {**data1, **data3,**data2}
+    
+    # Return the combined data as a dictionary
+    return combined_data
+
+# Example usage
+input_file1 = 'Answers/solutions1.json'
+input_file2 = 'Answers/solutions2.json'
+input_file3 = 'Answers/solutions3.json'
+
 @app.route('/download_solutions', methods=['POST'])
 def download_solutions():
     data = request.json
@@ -802,9 +825,9 @@ def download_solutions():
     question_ids = data['question_ids']
     
     # Load the solutions from the JSON file with UTF-8 encoding
-    with open('Answers/solutions.json', 'r', encoding='utf-8') as f:
-        solutions = json.load(f)
-    
+    # with open('Answers/solutions.json', 'r', encoding='utf-8') as f:
+    #     solutions = json.load(f)
+    solutions = combine_json_files(input_file1, input_file2,input_file3)
     # Create a DOCX document
     doc = Document()
     doc.add_heading(f'Solutions for {test_name}', level=1)
@@ -814,8 +837,20 @@ def download_solutions():
         solution = solutions.get(qid, {}).get('correct_answers', 'solution not found')[0]
         # solution = solutions.get(str(correct_answers[0]), 'Solution not found')
         # doc.add_heading(f'Question {index}', level=2)
-        if isinstance(solution,int):
+        if isinstance(solution,int) :
             quest = f'[{index}]. {solution+1}'
+            doc.add_paragraph(quest)
+        elif  isinstance(solution, float):
+            quest = f'[{index}]. {solution}'
+            doc.add_paragraph(quest)
+        elif isinstance(solution,str) :
+            q_string = handle_images(solution)
+            q_string = handle_tables(q_string)
+            q_string = latex_to_markdown(q_string)
+            q_string = clean_html(q_string)
+            q_string = clean_latex(q_string)
+            quest = f'[{index}]. {q_string}'
+            # docx_content = pypandoc.convert_text(quest, 'docx', format='md')
             doc.add_paragraph(quest)
         else:
             quest = f'[{index}]. {qid}'

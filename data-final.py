@@ -16,7 +16,7 @@ def get_unique_filename(directory, filename):
     return unique_filename
 
 # Load data from local JSON file
-with open('CBSE_XII.json', 'r') as file:
+with open('CBSE_XI.json', 'r') as file:
     data = json.load(file)['result']['data']
 
 # Directory to save response bodies
@@ -33,7 +33,7 @@ headers = {
     'Accept-Language': 'en-US,en;q=0.9,en-IN;q=0.8,fi;q=0.7',
     'Connection': 'keep-alive',
     'Content-Type': 'application/json',
-    'Cookie': 'G_ENABLED_IDPS=google; __stripe_mid=5348a0e2-0460-4150-b6c5-96020a471031008362; lang=1; profile_img_url=%2Fstatic%2Fimages%2Fuser_profile.png; client_meta=%7B%22homepage_masthead%22%3A%22%7B%5C%22show_banner%5C%22%3A%20%5C%221%5C%22%2C%20%5C%22usm_so%5C%22%3A%20%5C%220%5C%22%2C%20%5C%22usm_cceg%5C%22%3A%204000%2C%20%5C%22background%5C%22%3A%20%5B%5C%22e9e8e8%5C%22%2C%20%5C%2200a9e5%5C%22%5D%2C%20%5C%22tagline%5C%22%3A%20%5C%22Discover%20the%20Joy%20of%20Lucid%20Learning%5C%22%2C%20%5C%22show_actv_key%5C%22%3A%20%5C%221%5C%22%7D%22%2C%22android_main_app_url%22%3A%22https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.app.learningsolutions.kodemapa%26amp%3Bpcampaignid%3Dweb_share%22%2C%22url_advertise_with_us%22%3A%22%22%7D; eg_user="2|1:0|10:1720162884|7:eg_user|48:MTs0ZDAxZTg4MGMwODg0MWU3YmJmOTRiZDQxMThlZjc2OQ==|038ae1d7a5e5e9ed18acad51ee106465994ede869d0d8e1cc1d9383a3ad46e88"; g_state={"i_l":0,"i_t":1720249284591}',
+    'Cookie': 'client_meta=%7B%22android_main_app_url%22%3A%22https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.app.learningsolutions.kodemapa%26amp%3Bpcampaignid%3Dweb_share%22%2C%22url_advertise_with_us%22%3A%22%22%2C%22homepage_masthead%22%3A%22%7B%5C%22show_banner%5C%22%3A%20%5C%221%5C%22%2C%20%5C%22usm_so%5C%22%3A%20%5C%220%5C%22%2C%20%5C%22usm_cceg%5C%22%3A%204000%2C%20%5C%22background%5C%22%3A%20%5B%5C%22e9e8e8%5C%22%2C%20%5C%2200a9e5%5C%22%5D%2C%20%5C%22tagline%5C%22%3A%20%5C%22Discover%20the%20Joy%20of%20Lucid%20Learning%5C%22%2C%20%5C%22show_actv_key%5C%22%3A%20%5C%221%5C%22%7D%22%7D; eg_user="2|1:0|10:1721108202|7:eg_user|48:MTs5MTk2N2UzNTJjYWE0MGI0YTNiYWIwNmZjMThkN2ZkNQ==|fcdb087e4bea6d5902c2b0d84ec8e3fbefc0636557b8320990124b8d48a8bde8"; g_state={"i_l":0,"i_t":1721194602856}; profile_img_url=%2Fstatic%2Fimages%2Fuser_profile.png',
     'Referer': 'https://kodemapa.com/login',
     'Sec-Fetch-Dest': 'empty',
     'Sec-Fetch-Mode': 'cors',
@@ -87,7 +87,7 @@ for l3_category in data['L3']:
 
 # Save the updated data back to the JSON file
 updated_data = {'result': {'data': data}}
-with open('CBSE_XII.json', 'w') as file:
+with open('CBSE_XI.json', 'w') as file:
     json.dump(updated_data, file, indent=4)
 
 print("Process completed successfully.")
