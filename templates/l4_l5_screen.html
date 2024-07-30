@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CBSE XI MATHS</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            width: 95%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            width: 50px; /* Adjusted size */
+            height: auto;
+        }
+        .contact-details {
+            text-align: right;
+        }
+        .form-header {
+            padding: 20px;
+        }
+        .form-container {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .section-container {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .button-group div {
+            margin: 5px;
+        }
+        .form-container button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <div class="contact-details">
+            <p>Contact us: +91 88842 49383</p>
+            <p>Email: admin@kodemapa.com</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="form-header">
+            <h1>Select the topics</h1>
+        </div>
+        <div class="form-container">
+            <form method="POST">
+                {% for section in l4_data %}
+                    <div class="section-container">
+                        <h3>{{ section['name'] }}</h3>
+                        <div class="button-group">
+                            {% for test in section['L5'] %}
+                                <div>
+                                    <input type="checkbox" id="{{ test[10] }}" name="{{ section['name'] }}" value="{{ test[10] }}">
+                                    <label for="{{ test[10] }}">{{ test[0] }}</label>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endfor %}
+                <button type="submit">Proceed</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Kodemapa Exampad &copy; All rights reserved</p>
+    </div>
+</body>
+</html>

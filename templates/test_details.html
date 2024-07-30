@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Details</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/logo.png') }}" type="image/x-icon">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .container {
+            flex: 1;
+            width: 95%;
+            margin: 0 auto;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            width: 50px; /* Adjusted size */
+            height: auto;
+        }
+        .contact-details {
+            text-align: right;
+        }
+        .test-header {
+            text-align: center;
+            padding: 20px;
+        }
+        .test-info, .section-info, .question-list {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .question-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .question {
+            width: 45%;
+            margin: 2.5%;
+        }
+        .question p {
+            margin: 5px 0;
+        }
+        .question-options ol {
+            margin-left: 20px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+        <div class="contact-details">
+            <p>Contact us: +91 88842 49383</p>
+            <p>Email: admin@kodemapa.com</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="test-header">
+            <h1>{{ test_name }}</h1>
+            <p>Time: {{ test_time }} minutes</p>
+        </div>
+        <div class="question-list">
+            {% for index, question in enumerate(selected_questions) %}
+                <div class="question" data-qid="{{ question['qid'] }}">
+                    <p><strong>Question {{ index + 1 }}:</strong> {{ question['que']['1']['q_string'] | safe }}</p>
+                    <div class="question-options">
+                        <ol>
+                            {% for option in question['que']['1']['q_option'] %}
+                                <li>{{ option | safe }}</li>
+                            {% endfor %}
+                        </ol>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <button onclick="submitData()">Export Selected Questions to DOCX</button>
+        <button type="button" onclick="downloadSolutions('{{ test_name }}')">Download Solutions</button>
+    </div>
+    <div class="footer">
+        <p>Kodemapa Exampad &copy; All rights reserved</p>
+    </div>
+    <script>
+        function submitData() {
+            const testName = "{{ test_name }}";
+            const testTime = "{{ test_time }}";
+            const selectedQuestions = {{ selected_questions | tojson | safe }};
+            
+            const data = {
+                test_name: testName,
+                test_time: testTime,
+                selected_questions: selectedQuestions
+            };
+
+            fetch('/export_to_docx', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.blob())
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = testName + '.docx';
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+        function downloadSolutions(testName) {
+            if (!testName) {
+                console.error('Test name is not provided');
+                alert('Test name is missing. Please ensure you have entered a test name.');
+                return;
+            }
+
+            const selectedQuestions = Array.from(document.querySelectorAll('.question'))
+                .map(questionDiv => questionDiv.getAttribute('data-qid'))
+                .filter(qid => qid); // Filter out any null or undefined values
+
+            if (selectedQuestions.length === 0) {
+                alert('No questions found. Please ensure questions are loaded before downloading solutions.');
+                return;
+            }
+
+            const data = {
+                test_name: testName,
+                question_ids: selectedQuestions
+            };
+
+            fetch('/download_solutions', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.blob();
+            })
+            .then(blob => {
+                const url = window.URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.style.display = 'none';
+                a.href = url;
+                a.download = `${testName}_solutions.docx`;
+                document.body.appendChild(a);
+                a.click();
+                window.URL.revokeObjectURL(url);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while downloading the solutions. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>
