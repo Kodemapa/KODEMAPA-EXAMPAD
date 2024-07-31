@@ -489,7 +489,9 @@ def process_latex(text):
 import re
 
 def latex_to_markdown(latex):
+    latex = re.sub(r'<fmath.*?>(.*?)</fmath>', r'$\1$', latex)
     latex = html.unescape(latex)
+    latex = process_latex(latex)
     # Remove HTML tags
     latex = re.sub(r'</?p>', '', latex)
 
