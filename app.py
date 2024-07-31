@@ -872,7 +872,6 @@ def determine_difficulty(question):
     else:
         return 'Difficult'
 
-
 @app.route('/export_to_docx', methods=['POST'])
 def export_to_docx():
     try:
@@ -906,6 +905,8 @@ def clean_latex(text):
     # Remove space after opening $ and before closing $
     text = re.sub(r'\$\s+', '$', text)
     text = re.sub(r'\s+\$', '$', text)
+    # Preserve important LaTeX structures
+    text = text.replace('\\left', '').replace('\\right', '')
     return text
 
 def process_latex(text):
@@ -927,12 +928,54 @@ def process_latex(text):
     
     return text
 
+import re
+
 def latex_to_markdown(latex):
-    latex = re.sub(r'<fmath.*?>(.*?)</fmath>', r'$\1$', latex)
-    latex = process_latex(latex)
-    latex = re.sub(r'\\([a-zA-Z]+)', r'\\\1', latex)
-    latex = re.sub(r'\s+', ' ', latex)
-    return latex
+    latex = html.unescape(latex)
+    # Remove HTML tags
+    latex = re.sub(r'</?p>', '', latex)
+
+    # Handle the piecewise function
+    piecewise_pattern = r'\\left\\{\\begin\{array\}\{cc\}.*?\\end\{array\}\\right\.'
+    piecewise_match = re.search(piecewise_pattern, latex, re.DOTALL)
+    
+    if piecewise_match:
+        piecewise = piecewise_match.group(0)
+        # Replace \left\{ and \right. with \{ and \}
+        piecewise = piecewise.replace('\\left\\{', '\\{').replace('\\right.', '\\}')
+        # Replace \begin{array}{cc} and \end{array} with cases environment
+        piecewise = piecewise.replace('\\begin{array}{cc}', '\\begin{cases}').replace('\\end{array}', '\\end{cases}')
+        latex = latex.replace(piecewise_match.group(0), piecewise)
+
+    # Replace \( and \) with $
+    latex = latex.replace('\\(', '$').replace('\\)', '$')
+
+    # Handle LaTeX symbols and commands
+    symbol_map = {
+        '\\rightarrow': '→',
+        '\\leftarrow': '←',
+        '\\Rightarrow': '⇒',
+        '\\Leftarrow': '⇐',
+        '\\leftrightarrow': '↔',
+        '\\Leftrightarrow': '⇔',
+        '\\leq': '≤',
+        '\\geq': '≥',
+        '\\lt': '<',
+        '\\gt': '>',
+        '\\ne': '≠',
+    }
+    for latex_symbol, unicode_symbol in symbol_map.items():
+        latex = latex.replace(latex_symbol, unicode_symbol)
+
+    return latex.strip()
+    
+def clean_latex(text):
+    # Remove space after opening $ and before closing $
+    text = re.sub(r'\$\s+', '$', text)
+    text = re.sub(r'\s+\$', '$', text)
+    # Preserve important LaTeX structures
+    text = text.replace('\\left', '').replace('\\right', '')
+    return text
 
 def handle_images(content):
     img_pattern = r'<img[^>]+src="([^">]+)"[^>]*>'
@@ -975,10 +1018,9 @@ def json_to_markdown(json_data, test_name):
                 option_text = handle_tables(option_text)
                 option_text = latex_to_markdown(option_text)
                 option_text = clean_html(option_text)
+                option_text = clean_latex(option_text)
                 markdown_content += f"{chr(i)}) {option_text}\n"
             markdown_content += "\n"
-        
-        # markdown_content += f"Max Marks: {question.get('max_marks', 'N/A')}, Negative Marks: {question.get('neg_marks', 'N/A')}\n\n"
     
     return markdown_content
 
